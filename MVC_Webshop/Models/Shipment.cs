@@ -5,7 +5,7 @@ namespace MVC_Webshop.Models
     public class Shipment
     {
         [Key]
-        public int Id { get; set; }
-        public double Price { get; set; }
+        public string ShipmentId { get; set; }
+        public string ShoppingCartId { get; set; }
     }
 }

@@ -22,6 +22,21 @@ namespace MVC_Webshop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.Property<string>("CategoriesCategoryId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProductsProductId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CategoriesCategoryId", "ProductsProductId");
+
+                    b.HasIndex("ProductsProductId");
+
+                    b.ToTable("CategoryProduct");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -51,22 +66,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "09d5fb32-707b-4731-bf27-41450a52df13",
-                            ConcurrencyStamp = "e8fd1fc4-b443-4081-a046-68e3900b7a19",
+                            Id = "05df5e68-e31a-40a7-a8c6-fd7bfbe727d8",
+                            ConcurrencyStamp = "e3d9ee5a-a55a-4874-a71c-2f04b9266abf",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "0009ba45-733f-49a8-9c95-efe1cfcf533b",
-                            ConcurrencyStamp = "502d6820-a5aa-43a0-a301-7c532112ec5e",
+                            Id = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            ConcurrencyStamp = "bbc7fe38-f31f-4f8a-96c5-45142e046c12",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "158365d4-7a7a-430a-ad83-3bca4375ec24",
-                            ConcurrencyStamp = "c4559bd8-f0b4-4410-bc7a-6a0dd60ef571",
+                            Id = "7e1e5259-24b7-4c03-afa4-400ae6f08066",
+                            ConcurrencyStamp = "2c86091d-07bd-420d-a374-ad4797a0bd76",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -163,8 +178,8 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "0009ba45-733f-49a8-9c95-efe1cfcf533b",
-                            RoleId = "09d5fb32-707b-4731-bf27-41450a52df13"
+                            UserId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            RoleId = "05df5e68-e31a-40a7-a8c6-fd7bfbe727d8"
                         });
                 });
 
@@ -221,7 +236,6 @@ namespace MVC_Webshop.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -292,9 +306,9 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0009ba45-733f-49a8-9c95-efe1cfcf533b",
+                            Id = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c8e45e48-b891-45f0-bb2f-42d156cab821",
+                            ConcurrencyStamp = "ae099ad7-0f1d-404a-a37f-bbf5865c8848",
                             CreditCardNumber = "zigiplz",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -304,10 +318,10 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
                             OrderId = 0,
-                            PasswordHash = "AQAAAAEAACcQAAAAEIESMEUzdrK4RQn6ttQ8kXUWEecMteKIDOEzzDWay9zSWe+SHGhm2V8pcjP22LOYLw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKsoEGcylaZJbXixQMZ4nR6ok5roQrFo3Uyby8t4/5qutkWq6Yqf/ybqXhEEIezrNQ==",
                             PhoneNumberConfirmed = false,
                             RoleId = 0,
-                            SecurityStamp = "05b8218b-a4ca-4d5e-87cb-c6b422a0dbe8",
+                            SecurityStamp = "491a4fa5-b242-4356-a978-dfb9a39f55dd",
                             ShipmentId = 0,
                             ShoppingCartId = 0,
                             TwoFactorEnabled = false,
@@ -317,90 +331,92 @@ namespace MVC_Webshop.Migrations
 
             modelBuilder.Entity("MVC_Webshop.Models.Category", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("CategoryId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            Name = "Birds",
+                            ProductId = "gerp"
+                        });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("OrderId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
+                    b.HasKey("OrderId");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            OrderId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            OrderDate = new DateTime(2023, 1, 9, 12, 54, 39, 222, DateTimeKind.Local).AddTicks(969),
+                            ProductId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
+                        });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Product", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("ProductId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Brand")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryId1")
-                        .HasColumnType("int");
+                    b.Property<string>("CategoryId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<string>("OrderId")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int?>("ShoppingCartId")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ShortDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("StockId")
-                        .HasColumnType("int");
+                    b.Property<string>("StockId")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId1");
+                    b.HasKey("ProductId");
 
                     b.HasIndex("OrderId");
 
@@ -409,64 +425,106 @@ namespace MVC_Webshop.Migrations
                     b.HasIndex("StockId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = "gerp",
+                            Brand = "Birdstuff",
+                            CategoryId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            Description = "it's a type of bird",
+                            Name = "Gerpgork",
+                            Price = 2000.0,
+                            Quantity = 1,
+                            ShortDescription = "tb"
+                        });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Shipment", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("ShipmentId")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("ShoppingCartId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
+                    b.HasKey("ShipmentId");
 
                     b.ToTable("Shipments");
+
+                    b.HasData(
+                        new
+                        {
+                            ShipmentId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            ShoppingCartId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
+                        });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.ShoppingCart", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
+                    b.HasKey("ShoppingCartId");
 
                     b.ToTable("ShoppingCarts");
+
+                    b.HasData(
+                        new
+                        {
+                            ShoppingCartId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            ProductId = "gerp",
+                            UserId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
+                        });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Stock", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<string>("StockId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductQuantity")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
+                    b.HasKey("StockId");
 
                     b.ToTable("Stocks");
+
+                    b.HasData(
+                        new
+                        {
+                            StockId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            ProductId = "gerp",
+                            ProductQuantity = 50
+                        });
+                });
+
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.HasOne("MVC_Webshop.Models.Category", null)
+                        .WithMany()
+                        .HasForeignKey("CategoriesCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MVC_Webshop.Models.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -520,25 +578,8 @@ namespace MVC_Webshop.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
-                {
-                    b.HasOne("MVC_Webshop.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("MVC_Webshop.Models.Product", b =>
                 {
-                    b.HasOne("MVC_Webshop.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MVC_Webshop.Models.Order", null)
                         .WithMany("Products")
                         .HasForeignKey("OrderId");
@@ -550,30 +591,6 @@ namespace MVC_Webshop.Migrations
                     b.HasOne("MVC_Webshop.Models.Stock", null)
                         .WithMany("Products")
                         .HasForeignKey("StockId");
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("MVC_Webshop.Models.ShoppingCart", b =>
-                {
-                    b.HasOne("MVC_Webshop.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("MVC_Webshop.Models.Stock", b =>
-                {
-                    b.HasOne("MVC_Webshop.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
