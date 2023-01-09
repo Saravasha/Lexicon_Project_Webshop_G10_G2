@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.AspNetCore.Identity;
 using System.Xml.Linq;
 using System.Reflection.Emit;
+using System;
 
 namespace MVC_Webshop.Data
 {
@@ -16,13 +17,12 @@ namespace MVC_Webshop.Data
         }
 
         //DBSets
-        //public DbSet<ApplicationUser> Users { get; set; } = default!;
         public DbSet<Category> Categories { get; set; } = default!;
         public DbSet<Product> Products { get; set; } = default!;
         public DbSet<Order> Orders { get; set; } = default!;
-        public DbSet<Shipment> Shipments { get; set; } = default!;
         public DbSet<ShoppingCart> ShoppingCarts { get; set; } = default!;
-        public DbSet<Stock> Stocks { get; set; } = default!;
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; } = default!;
+
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
@@ -48,9 +48,9 @@ namespace MVC_Webshop.Data
             });
             modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole
             {
-               Id = managerId,
-               Name = "Manager",
-               NormalizedName = "MANAGER"
+                Id = managerId,
+                Name = "Manager",
+                NormalizedName = "MANAGER"
             });
 
             PasswordHasher<ApplicationUser> passwordHasher = new PasswordHasher<ApplicationUser>();
@@ -73,62 +73,56 @@ namespace MVC_Webshop.Data
                 UserId = userId,
             });
 
-            modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
-            {
-                RoleId = userId,
-                UserId = userId,
-            });
-
-            modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
-            {
-                RoleId = managerId,
-                UserId = userId,
-            });
 
             // Shopping Cart Seeding
-            modelbuilder.Entity<ShoppingCart>().HasData(new ShoppingCart { 
-                ShoppingCartId = userId, 
-                UserId = userId, 
-                ProductId = "gerp",
-             });
+            modelbuilder.Entity<ShoppingCart>().HasData(new ShoppingCart
+            {
+                ShoppingCartId = userId,
+                UserId = userId,
+                ShoppingCartItemQuantity = 1,
+            });
+            modelbuilder.Entity<ShoppingCartItem>().HasData(new ShoppingCartItem
+            {
+                ShoppingCartId = userId,
+                ProductId = userId,
+                ShoppingCartItemId = userId
+            });
 
+            Random rando = new Random();
+            var number = rando.Next(1, 5);
             modelbuilder.Entity<Order>().HasData(new Order
             {
                 OrderId = userId,
-                OrderDate = DateTime.Now,
+                UserId = userId,
+                ShippingDate = DateTime.Now,
+                ExpectedDelivery = rando.ToString(),
+                Shipped = false,
                 ProductId = userId,
+                OrderDate = DateTime.Now,
             });
 
-            modelbuilder.Entity<Shipment>().HasData(new Shipment
+            modelbuilder.Entity<Product>().HasData(new Product
             {
-                ShipmentId = userId,
-                ShoppingCartId = userId,
-            });
-            // Stock Seeding
-            modelbuilder.Entity<Stock>().HasData(new Stock
-            {
-                StockId = userId,
-                ProductId = "gerp",
-                ProductQuantity = 50
+                Id = userId,
+                Name = "Gerpgork",
+                Brand = "Birdstuff",
+                Price = 2000,
+                Description = "it's a type of bird",
+                ShortDescription = "tb",
+                Quantity = 1,
+                CategoryId = userId
             });
 
             modelbuilder.Entity<Category>().HasData(new Category
             {
-                CategoryId = userId,
-                ProductId = "gerp",
+                Id = userId,
+                ProductId = userId,
                 Name = "Birds",
+
             });
 
-            modelbuilder.Entity<Product>().HasData(new Product { 
-                ProductId = "gerp", 
-                Name = "Gerpgork", 
-                Brand = "Birdstuff", 
-                Price = 2000, 
-                Description = "it's a type of bird", 
-                ShortDescription = "tb", 
-                Quantity = 1,
-                CategoryId = userId   
-            });
+            modelbuilder.Entity<Category>().HasMany(p => p.Products).WithMany(c => c.Categories).UsingEntity(j => j.HasData(new { ProductsId = userId, CategoriesId = userId }
+            ));
         }
 
         public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<ApplicationUser>

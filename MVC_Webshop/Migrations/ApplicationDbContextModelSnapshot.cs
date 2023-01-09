@@ -24,17 +24,24 @@ namespace MVC_Webshop.Migrations
 
             modelBuilder.Entity("CategoryProduct", b =>
                 {
-                    b.Property<string>("CategoriesCategoryId")
+                    b.Property<string>("CategoriesId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ProductsProductId")
+                    b.Property<string>("ProductsId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("CategoriesCategoryId", "ProductsProductId");
+                    b.HasKey("CategoriesId", "ProductsId");
 
-                    b.HasIndex("ProductsProductId");
+                    b.HasIndex("ProductsId");
 
                     b.ToTable("CategoryProduct");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoriesId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ProductsId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -66,22 +73,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "05df5e68-e31a-40a7-a8c6-fd7bfbe727d8",
-                            ConcurrencyStamp = "e3d9ee5a-a55a-4874-a71c-2f04b9266abf",
+                            Id = "2eac3538-ff99-4060-ae39-001d3e82c610",
+                            ConcurrencyStamp = "a40f9c13-c6af-463f-b1f1-6073dc9293db",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            ConcurrencyStamp = "bbc7fe38-f31f-4f8a-96c5-45142e046c12",
+                            Id = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ConcurrencyStamp = "55d9cdf5-b1fa-4378-a969-2fa541575c50",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "7e1e5259-24b7-4c03-afa4-400ae6f08066",
-                            ConcurrencyStamp = "2c86091d-07bd-420d-a374-ad4797a0bd76",
+                            Id = "410f2b57-1791-4b3d-840f-efd433dccd66",
+                            ConcurrencyStamp = "f5176a31-7e12-4c64-8e88-0fe33f0b423e",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -178,8 +185,8 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            RoleId = "05df5e68-e31a-40a7-a8c6-fd7bfbe727d8"
+                            UserId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            RoleId = "2eac3538-ff99-4060-ae39-001d3e82c610"
                         });
                 });
 
@@ -306,9 +313,9 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            Id = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ae099ad7-0f1d-404a-a37f-bbf5865c8848",
+                            ConcurrencyStamp = "6a62ceec-7b4f-4aa0-a2a4-a00e843ead45",
                             CreditCardNumber = "zigiplz",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -318,10 +325,10 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
                             OrderId = 0,
-                            PasswordHash = "AQAAAAEAACcQAAAAEKsoEGcylaZJbXixQMZ4nR6ok5roQrFo3Uyby8t4/5qutkWq6Yqf/ybqXhEEIezrNQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECXeI6aaNkLYBI+M9aeLG02oerAARP6Kr/vhCf+S7Tvv9fDtbzrkf50YIYJ1ZbB9gw==",
                             PhoneNumberConfirmed = false,
                             RoleId = 0,
-                            SecurityStamp = "491a4fa5-b242-4356-a978-dfb9a39f55dd",
+                            SecurityStamp = "300cd5f9-5a51-4186-a053-520ff654c393",
                             ShipmentId = 0,
                             ShoppingCartId = 0,
                             TwoFactorEnabled = false,
@@ -331,7 +338,7 @@ namespace MVC_Webshop.Migrations
 
             modelBuilder.Entity("MVC_Webshop.Models.Category", b =>
                 {
-                    b.Property<string>("CategoryId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
@@ -342,16 +349,16 @@ namespace MVC_Webshop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("CategoryId");
+                    b.HasKey("Id");
 
                     b.ToTable("Categories");
 
                     b.HasData(
                         new
                         {
-                            CategoryId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            Id = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
                             Name = "Birds",
-                            ProductId = "gerp"
+                            ProductId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5"
                         });
                 });
 
@@ -360,10 +367,24 @@ namespace MVC_Webshop.Migrations
                     b.Property<string>("OrderId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ExpectedDelivery")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Shipped")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ShippingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -374,15 +395,19 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            OrderId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            OrderDate = new DateTime(2023, 1, 9, 12, 54, 39, 222, DateTimeKind.Local).AddTicks(969),
-                            ProductId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
+                            OrderId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ExpectedDelivery = "System.Random",
+                            OrderDate = new DateTime(2023, 1, 9, 16, 51, 16, 389, DateTimeKind.Local).AddTicks(512),
+                            ProductId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            Shipped = false,
+                            ShippingDate = new DateTime(2023, 1, 9, 16, 51, 16, 389, DateTimeKind.Local).AddTicks(465),
+                            UserId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5"
                         });
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Product", b =>
                 {
-                    b.Property<string>("ProductId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Brand")
@@ -398,40 +423,25 @@ namespace MVC_Webshop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OrderId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<double?>("Price")
                         .HasColumnType("float");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<string>("ShoppingCartId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("ShortDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("StockId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("ProductId");
-
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("ShoppingCartId");
-
-                    b.HasIndex("StockId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
 
                     b.HasData(
                         new
                         {
-                            ProductId = "gerp",
+                            Id = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
                             Brand = "Birdstuff",
-                            CategoryId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
+                            CategoryId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
                             Description = "it's a type of bird",
                             Name = "Gerpgork",
                             Price = 2000.0,
@@ -440,35 +450,13 @@ namespace MVC_Webshop.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MVC_Webshop.Models.Shipment", b =>
-                {
-                    b.Property<string>("ShipmentId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ShoppingCartId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ShipmentId");
-
-                    b.ToTable("Shipments");
-
-                    b.HasData(
-                        new
-                        {
-                            ShipmentId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            ShoppingCartId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
-                        });
-                });
-
             modelBuilder.Entity("MVC_Webshop.Models.ShoppingCart", b =>
                 {
                     b.Property<string>("ShoppingCartId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ProductId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ShoppingCartItemQuantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -481,34 +469,37 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            ShoppingCartId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            ProductId = "gerp",
-                            UserId = "159f7b84-af29-4ad1-b491-ef589e63f0aa"
+                            ShoppingCartId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ShoppingCartItemQuantity = 1,
+                            UserId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5"
                         });
                 });
 
-            modelBuilder.Entity("MVC_Webshop.Models.Stock", b =>
+            modelBuilder.Entity("MVC_Webshop.Models.ShoppingCartItem", b =>
                 {
-                    b.Property<string>("StockId")
+                    b.Property<string>("ShoppingCartItemId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProductId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductQuantity")
-                        .HasColumnType("int");
+                    b.Property<string>("ShoppingCartId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("StockId");
+                    b.HasKey("ShoppingCartItemId");
 
-                    b.ToTable("Stocks");
+                    b.HasIndex("ShoppingCartId");
+
+                    b.ToTable("ShoppingCartItems");
 
                     b.HasData(
                         new
                         {
-                            StockId = "159f7b84-af29-4ad1-b491-ef589e63f0aa",
-                            ProductId = "gerp",
-                            ProductQuantity = 50
+                            ShoppingCartItemId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ProductId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5",
+                            ShoppingCartId = "3e3fef36-b6cf-48a2-8028-3111abbb07e5"
                         });
                 });
 
@@ -516,13 +507,13 @@ namespace MVC_Webshop.Migrations
                 {
                     b.HasOne("MVC_Webshop.Models.Category", null)
                         .WithMany()
-                        .HasForeignKey("CategoriesCategoryId")
+                        .HasForeignKey("CategoriesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MVC_Webshop.Models.Product", null)
                         .WithMany()
-                        .HasForeignKey("ProductsProductId")
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -578,34 +569,18 @@ namespace MVC_Webshop.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MVC_Webshop.Models.Product", b =>
+            modelBuilder.Entity("MVC_Webshop.Models.ShoppingCartItem", b =>
                 {
-                    b.HasOne("MVC_Webshop.Models.Order", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderId");
-
                     b.HasOne("MVC_Webshop.Models.ShoppingCart", null)
-                        .WithMany("Products")
-                        .HasForeignKey("ShoppingCartId");
-
-                    b.HasOne("MVC_Webshop.Models.Stock", null)
-                        .WithMany("Products")
-                        .HasForeignKey("StockId");
-                });
-
-            modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
-                {
-                    b.Navigation("Products");
+                        .WithMany("ShoppingCartItems")
+                        .HasForeignKey("ShoppingCartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.ShoppingCart", b =>
                 {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("MVC_Webshop.Models.Stock", b =>
-                {
-                    b.Navigation("Products");
+                    b.Navigation("ShoppingCartItems");
                 });
 #pragma warning restore 612, 618
         }

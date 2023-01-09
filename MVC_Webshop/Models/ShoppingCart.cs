@@ -7,8 +7,8 @@ namespace MVC_Webshop.Models
         [Key]
         public string ShoppingCartId { get; set; }
         public string UserId { get; set; }
-        public string ProductId { get; set; }
-        public List<Product> Products { get; set; } = new();
+        public int ShoppingCartItemQuantity { get; set; }
+        public List<ShoppingCartItem> ShoppingCartItems { get; set; } = new();
 
     }
 }
