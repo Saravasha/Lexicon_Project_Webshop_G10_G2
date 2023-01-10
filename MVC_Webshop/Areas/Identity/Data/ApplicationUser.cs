@@ -1,10 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace MVC_Webshop.Models;
 
     public class ApplicationUser : IdentityUser
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public string UserId { get; set; }
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Address { get; set; }

@@ -271,3 +271,4 @@ C:\Users\siava\Source\Repos\Lexicon_Project_Webshop_G10_G2\MVC_Webshop\bin\Debug
 C:\Users\siava\Source\Repos\Lexicon_Project_Webshop_G10_G2\MVC_Webshop\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\siava\Source\Repos\Lexicon_Project_Webshop_G10_G2\MVC_Webshop\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\siava\Source\Repos\Lexicon_Project_Webshop_G10_G2\MVC_Webshop\obj\Debug\net6.0\MVC_Webshop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\siava\Source\Repos\Lexicon_Project_Webshop_G10_G2\MVC_Webshop\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
