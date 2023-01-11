@@ -13,6 +13,7 @@ namespace MVC_Webshop.Models
         public double Price { get; set; }
         public string Description { get; set; }
         public string ShortDescription { get; set; }
+        public string ImageUrl { get; set; }
 
         //Quantity in Stock
         public int Quantity { get; set; }

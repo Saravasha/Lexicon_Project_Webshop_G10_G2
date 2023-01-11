@@ -33,7 +33,7 @@ namespace MVC_Webshop.Data
             var number = rando.Next(1, 5).ToString();
 
             // Product
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1 });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1, });
             modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, CategoryId = 2 });
             modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, CategoryId = 3 });
 
@@ -43,13 +43,12 @@ namespace MVC_Webshop.Data
             modelbuilder.Entity<Category>().HasData(new Category { Id = 3, ProductId = 3, Name = "Bilar", });
 
             // Order
-            
-            modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
-            //modelbuilder.Entity<Order>().HasData(new Order { Id = 2, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
+            modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
+            modelbuilder.Entity<Order>().HasData(new Order { Id = 2, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
 
-          
             // Cart
-            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 1  });
+            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 1 });
+            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 2 });
 
             // Item
             modelbuilder.Entity<Item>().HasData(new Item { Id = 1, CartId = 1, ProductIdRef = 1, Quantity = 1, });
@@ -64,56 +63,72 @@ namespace MVC_Webshop.Data
             //modelbuilder.Entity<Cart>().HasMany(t => t.Items);
 
             // Identity Roles
-           
-            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole { 
-                Id = adminId, 
-                Name = "Admin", 
-                NormalizedName = "ADMIN" 
+
+            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = adminId,
+                Name = "Admin",
+                NormalizedName = "ADMIN"
             });
-            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole { 
-                Id = userId, 
-                Name = "User", 
-                NormalizedName = "USER" 
+            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = userId,
+                Name = "User",
+                NormalizedName = "USER"
             });
-            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole { 
-                Id = managerId, 
-                Name = "Manager", 
-                NormalizedName = "MANAGER" 
+            modelbuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = managerId,
+                Name = "Manager",
+                NormalizedName = "MANAGER"
             });
 
             PasswordHasher<ApplicationUser> passwordHasher = new PasswordHasher<ApplicationUser>();
-           
-            modelbuilder.Entity<ApplicationUser>().HasData(new ApplicationUser 
-            { 
-                Id = userId,
-                Email = "admin@admin.com", 
-                NormalizedEmail = "ADMIN@ADMIN.COM", 
-                UserName = "Admin", 
-                NormalizedUserName = "ADMIN", 
-                FirstName = "Admin",
-                LastName = "Adminson",
-                CreditCardNumber = "666",
-                CartId = 1, 
-                OrderId = 1,
-                PasswordHash = passwordHasher.HashPassword(null, "password") 
-            });
-         
 
-            modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string> 
-            { 
-                RoleId = adminId, 
-                UserId = userId, 
-            });
+            modelbuilder.Entity<ApplicationUser>().HasData(
+                new ApplicationUser
+                {
+                    Id = userId,
+                    Email = "admin@admin.com",
+                    NormalizedEmail = "ADMIN@ADMIN.COM",
+                    UserName = "Admin",
+                    NormalizedUserName = "ADMIN",
+                    FirstName = "Admin",
+                    LastName = "Adminson",
+                    CreditCardNumber = "234",
+                    CartId = 1,
+                    OrderId = 1,
+                    PasswordHash = passwordHasher.HashPassword(null, "password")
+                },
+
+                new ApplicationUser
+                {
+                    Id = managerId,
+                    Email = "karen@manager.com",
+                    NormalizedEmail = "KAREN@MANAGER.COM",
+                    UserName = "Karen",
+                    NormalizedUserName = "KAREN",
+                    FirstName = "Karen",
+                    LastName = "Managerson",
+                    CreditCardNumber = "123",
+                    CartId = 2,
+                    OrderId = 2,
+                    PasswordHash = passwordHasher.HashPassword(null, "password")
+                }
+            );
+
+            modelbuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    RoleId = adminId,
+                    UserId = userId,
+                },
+                new IdentityUserRole<string>
+                {
+                    RoleId = managerId,
+                    UserId = userId
+                }
+            );
         }
-
-        //public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<ApplicationUser>
-        //{
-        //    public void Configure(EntityTypeBuilder<ApplicationUser> modelbuilder)
-        //    {
-        //        modelbuilder.Property(u => u.FirstName).HasMaxLength(255);
-        //        modelbuilder.Property(u => u.LastName).HasMaxLength(255);
-        //    }
-            
-        //}
     }
 }

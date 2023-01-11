@@ -10,7 +10,7 @@ namespace MVC_Webshop.Models
         public int ProductIdRef { get; set; }
         public int Quantity { get; set; }
         public int CartId { get; set; }
-        public Cart Cart { get; set; }
+        public Cart? Cart { get; set; }
 
     }
 }
