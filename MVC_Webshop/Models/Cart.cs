@@ -6,10 +6,9 @@ namespace MVC_Webshop.Models
 
     public class Cart
     {
-       
+        [Key]
         public int Id { get; set; }
-        public int UserId { get; set; }
-        public List<Item>? Items { get; set; } = new List<Item>();
-
+        public ApplicationUser User { get; set; }
+        public List<Item> Items { get; set; }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.AspNetCore.Identity;
 
 namespace MVC_Webshop.Data
@@ -19,6 +18,7 @@ namespace MVC_Webshop.Data
         public DbSet<Order> Orders { get; set; } = default!;
         public DbSet<Cart> Carts { get; set; } = default!;
         public DbSet<Item> Items { get; set; } = default!;
+        public DbSet<OrderItem> OrderItems { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
@@ -32,7 +32,6 @@ namespace MVC_Webshop.Data
             Random rando = new Random();
             var number = rando.Next(1, 5).ToString();
 
-
             // Product
             modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1 });
             modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, CategoryId = 2 });
@@ -45,20 +44,16 @@ namespace MVC_Webshop.Data
 
             // Order
             
-            modelbuilder.Entity<Order>().HasData(new Order { OrderId = userId, UserId = userId, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
-            modelbuilder.Entity<Order>().HasData(new Order { OrderId = managerId, UserId = managerId, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
-            
+            modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
+            //modelbuilder.Entity<Order>().HasData(new Order { Id = 2, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now, });
 
-
+          
             // Cart
-
-            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 1, UserId = 1, });
-            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 2, UserId = 2, });
+            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 1  });
 
             // Item
-
-            modelbuilder.Entity<Item>().HasData(new Item { Id = 1, CartId = 1, ProductIdRef = 1, Quantity = 5, });
-            modelbuilder.Entity<Item>().HasData(new Item { Id = 2, CartId = 2, ProductIdRef = 2, Quantity = 2, });
+            modelbuilder.Entity<Item>().HasData(new Item { Id = 1, CartId = 1, ProductIdRef = 1, Quantity = 1, });
+            //modelbuilder.Entity<Item>().HasData(new Item { Id = 2, CartId = 2, ProductIdRef = 2, Quantity = 2, });
 
             // Join Fluent API
             modelbuilder.Entity<Product>().HasMany(p => p.Categories)
@@ -87,18 +82,22 @@ namespace MVC_Webshop.Data
             });
 
             PasswordHasher<ApplicationUser> passwordHasher = new PasswordHasher<ApplicationUser>();
+           
             modelbuilder.Entity<ApplicationUser>().HasData(new ApplicationUser 
             { 
                 Id = userId,
                 Email = "admin@admin.com", 
                 NormalizedEmail = "ADMIN@ADMIN.COM", 
                 UserName = "Admin", 
-                NormalizedUserName = "ADMIN@ADMIN.COM", 
+                NormalizedUserName = "ADMIN", 
                 FirstName = "Admin",
                 LastName = "Adminson",
-                CreditCardNumber = "zigiplz",
+                CreditCardNumber = "666",
+                CartId = 1, 
+                OrderId = 1,
                 PasswordHash = passwordHasher.HashPassword(null, "password") 
             });
+         
 
             modelbuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string> 
             { 
