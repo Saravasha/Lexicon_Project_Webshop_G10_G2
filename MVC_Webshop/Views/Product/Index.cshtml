@@ -1,0 +1,51 @@
+﻿@model ProductViewModel
+
+@{
+    ViewData["Title"] = "Product Index";
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table  table-sm">
+    <thead>
+        <tr class="table-dark">
+            <th>Products</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>About</th>
+            <th>Category</th>
+            <th>In Stock</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.listOfProducts)
+        {
+            <tr class="table-success">
+                <td><img src="@product.ImageUrl" class="img-fluid" style="height:100px;" /></td>
+                <td>@Html.DisplayFor(modelItem => product.Name)</td>
+                <td>@Html.DisplayFor(modelItem => product.Brand)</td>
+                <td>@Html.DisplayFor(modelItem => product.Price)</td>
+                <td>@Html.DisplayFor(modelItem => product.ShortDescription)</td>
+
+
+                <td>
+                    @foreach (var prodCat in product.Categories)
+                    {
+                        @prodCat.Name
+                    }
+                </td>
+
+                <td>@Html.DisplayFor(modelItem => product.Quantity)</td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@product.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@product.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -33,9 +33,9 @@ namespace MVC_Webshop.Data
             var number = rando.Next(1, 5).ToString();
 
             // Product
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1, });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, CategoryId = 2 });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, CategoryId = 3 });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1, ImageUrl = "/img/bird.jpg" });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, CategoryId = 2, ImageUrl = "/img/banana.jpg" });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, CategoryId = 3, ImageUrl = "/img/volvo.jpg" });
 
             // Category
             modelbuilder.Entity<Category>().HasData(new Category { Id = 1, ProductId = 1, Name = "Birds", });

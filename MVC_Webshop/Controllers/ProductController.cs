@@ -1,24 +1,38 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MVC_Webshop.Data;
+using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Controllers
 {
     public class ProductController : Controller
     {
-        // GET: ProductController
-        public ActionResult Index()
+        private readonly ApplicationDbContext _context;
+        static ProductViewModel pvm = new();
+
+        public ProductController(ApplicationDbContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        // GET: ProductController
+        public IActionResult Index()
+        {
+            pvm.listOfProducts = _context.Products
+                .Include(c => c.Categories).ToList();
+
+            return View(pvm);
         }
 
         // GET: ProductController/Details/5
-        public ActionResult Details(int id)
+        public IActionResult Details(int id)
         {
             return View();
         }
 
         // GET: ProductController/Create
-        public ActionResult Create()
+        public IActionResult Create()
         {
             return View();
         }
@@ -26,7 +40,7 @@ namespace MVC_Webshop.Controllers
         // POST: ProductController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create(IFormCollection collection)
         {
             try
             {
@@ -39,7 +53,7 @@ namespace MVC_Webshop.Controllers
         }
 
         // GET: ProductController/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int id)
         {
             return View();
         }
@@ -47,7 +61,7 @@ namespace MVC_Webshop.Controllers
         // POST: ProductController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Edit(int id, IFormCollection collection)
         {
             try
             {
@@ -60,7 +74,7 @@ namespace MVC_Webshop.Controllers
         }
 
         // GET: ProductController/Delete/5
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int id)
         {
             return View();
         }
@@ -68,7 +82,7 @@ namespace MVC_Webshop.Controllers
         // POST: ProductController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public IActionResult Delete(int id, IFormCollection collection)
         {
             try
             {

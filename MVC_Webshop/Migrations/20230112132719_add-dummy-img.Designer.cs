@@ -4,6 +4,7 @@ using MVC_Webshop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230112132719_add-dummy-img")]
+    partial class adddummyimg
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,22 +75,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "3277b0f9-1901-4210-bcf3-edc3268d6691",
-                            ConcurrencyStamp = "6766151a-aa78-45d1-ae6f-d46856b6dedf",
+                            Id = "8cb528a1-0870-435c-a783-397fd662ab11",
+                            ConcurrencyStamp = "99a4731a-7566-4ac7-8b9c-9b959a7cfb29",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            ConcurrencyStamp = "bc5fee56-c704-40d7-97e5-f2ee63cc578b",
+                            Id = "67c61137-17f8-4652-a4cf-3b8cb691524e",
+                            ConcurrencyStamp = "78979da4-5ea4-4e51-8345-df666eea2921",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "2135ed9f-69aa-423d-b8c0-72dbc38610b7",
-                            ConcurrencyStamp = "43278256-04d5-4fd3-89ee-85e79865906f",
+                            Id = "c805e25d-54b2-4c6c-99bc-f1effdb29802",
+                            ConcurrencyStamp = "de1bafbc-628b-433b-8d97-d7ded375b5b2",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -185,13 +187,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            RoleId = "3277b0f9-1901-4210-bcf3-edc3268d6691"
+                            UserId = "67c61137-17f8-4652-a4cf-3b8cb691524e",
+                            RoleId = "8cb528a1-0870-435c-a783-397fd662ab11"
                         },
                         new
                         {
-                            UserId = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            RoleId = "2135ed9f-69aa-423d-b8c0-72dbc38610b7"
+                            UserId = "67c61137-17f8-4652-a4cf-3b8cb691524e",
+                            RoleId = "c805e25d-54b2-4c6c-99bc-f1effdb29802"
                         });
                 });
 
@@ -313,10 +315,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
+                            Id = "67c61137-17f8-4652-a4cf-3b8cb691524e",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "323f20c2-01f2-4b76-95f6-fedde831a087",
+                            ConcurrencyStamp = "24ab7800-5fb3-4f08-aed7-046a624dbe44",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -326,18 +328,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEGtY6YnHphNCAx9jCzHlrlGjOAYKbRycJ6wc9/2ImFRNDfFzpxkzH54UZexdlc0Bjg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIZEUHwjhqG/FB4YEFe8Rl+u6OxhVf3C07SDXn6hau1hZoAwyiM9Wm8Cyumn8GYOuA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e6bd20eb-a458-48c4-b6af-b20a1afa7741",
+                            SecurityStamp = "4b9640dd-5ebb-4bf0-9f57-baeb18c8da24",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "2135ed9f-69aa-423d-b8c0-72dbc38610b7",
+                            Id = "c805e25d-54b2-4c6c-99bc-f1effdb29802",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "869d71dc-2ba8-4450-9e4b-b3a8707acf42",
+                            ConcurrencyStamp = "da323145-83e5-4dd4-a2e3-0592f6c43bcf",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -347,9 +349,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEDaBQyAxQHmYIDhNqxZIkSVrdTWj3iJWeRhkluQo2r+hkEgM4uvOU64gx9K917j/6w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECQpMENffLMnlm+pa7URFI6pIh3r1j7NcNnIfYtMUhakx9Sbt7T6DS+MiOdz1EEvJg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "959521c7-19f0-4183-b5ad-1918e9fbd2a6",
+                            SecurityStamp = "a3223f94-18db-428e-96e6-8d8fc2f1131d",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -486,17 +488,17 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             ExpectedDelivery = "4",
-                            OrderDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1566),
+                            OrderDate = new DateTime(2023, 1, 12, 14, 27, 19, 59, DateTimeKind.Local).AddTicks(1029),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1522)
+                            ShippingDate = new DateTime(2023, 1, 12, 14, 27, 19, 59, DateTimeKind.Local).AddTicks(989)
                         },
                         new
                         {
                             Id = 2,
                             ExpectedDelivery = "4",
-                            OrderDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1582),
+                            OrderDate = new DateTime(2023, 1, 12, 14, 27, 19, 59, DateTimeKind.Local).AddTicks(1048),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1580)
+                            ShippingDate = new DateTime(2023, 1, 12, 14, 27, 19, 59, DateTimeKind.Local).AddTicks(1045)
                         });
                 });
 
@@ -576,7 +578,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Birdstuff",
                             CategoryId = 1,
                             Description = "it's a type of bird",
-                            ImageUrl = "/img/bird.jpg",
+                            ImageUrl = "~/img/bird.jpg",
                             Name = "Gerpgork",
                             Price = 2000.0,
                             Quantity = 1,
@@ -588,7 +590,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Chiquita",
                             CategoryId = 2,
                             Description = "it's a type of Banana",
-                            ImageUrl = "/img/banana.jpg",
+                            ImageUrl = "~/img/banana.jpg",
                             Name = "Banana",
                             Price = 5.0,
                             Quantity = 1,
@@ -600,7 +602,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Volvo",
                             CategoryId = 3,
                             Description = "it's a type of car",
-                            ImageUrl = "/img/volvo.jpg",
+                            ImageUrl = "~/img/volvo.jpg",
                             Name = "Volvo XC70",
                             Price = 500000.0,
                             Quantity = 1,
