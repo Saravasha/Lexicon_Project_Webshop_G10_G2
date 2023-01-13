@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230112103352_image-url")]
-    partial class imageurl
+    [Migration("20230113154020_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,6 +43,16 @@ namespace MVC_Webshop.Migrations
                         {
                             CategoriesId = 1,
                             ProductsId = 1
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 2
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 3
                         });
                 });
 
@@ -75,22 +85,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e4d3509d-8bdf-4aa4-b255-18df53af4711",
-                            ConcurrencyStamp = "cdf36368-c3ff-450c-b7ab-7c2edce0ada4",
+                            Id = "49b3e32d-dddf-40fe-9994-37d49314b282",
+                            ConcurrencyStamp = "fbfabc48-14d8-4499-b2ee-e449aa2602c4",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "1bb93f82-1ef9-4b21-b803-0e7180eb703f",
-                            ConcurrencyStamp = "5b6b080c-ee4c-4b06-b59b-dbde20116e56",
+                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            ConcurrencyStamp = "8e071371-d046-4851-9731-71e5827c8b5f",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "8886c640-8bee-4820-9d24-a785289b97e0",
-                            ConcurrencyStamp = "aea58782-ff5e-43b6-9410-d63321f75555",
+                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
+                            ConcurrencyStamp = "75f49bde-bef9-4ff0-8bcb-1a86616f796c",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -187,13 +197,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "1bb93f82-1ef9-4b21-b803-0e7180eb703f",
-                            RoleId = "e4d3509d-8bdf-4aa4-b255-18df53af4711"
+                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            RoleId = "49b3e32d-dddf-40fe-9994-37d49314b282"
                         },
                         new
                         {
-                            UserId = "1bb93f82-1ef9-4b21-b803-0e7180eb703f",
-                            RoleId = "8886c640-8bee-4820-9d24-a785289b97e0"
+                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            RoleId = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85"
                         });
                 });
 
@@ -315,10 +325,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1bb93f82-1ef9-4b21-b803-0e7180eb703f",
+                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "6e6a7ecd-e1e3-4513-86f3-aa8e4b84716f",
+                            ConcurrencyStamp = "8eda1d02-fba6-497b-89d1-7d3a358fe122",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -328,18 +338,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEFSJjsrZ3RohIyABlQnjBwRRjoFvG7g2fKoOSqF1dv4hZY7wNhYOoLkYLQM+6XT0sw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK0yW8pllbFighz8mlwqgqxJb9/Gcu5u6AmM3UXHk6YMA7s3NjfflP12JrQo6FmQvw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "3b96e2e9-4a72-4495-b82f-1f4b2796c2ed",
+                            SecurityStamp = "f220ad61-9968-44d3-971b-bc75761cc556",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "8886c640-8bee-4820-9d24-a785289b97e0",
+                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "96ce24d2-b797-4032-92a5-cb91f9444147",
+                            ConcurrencyStamp = "a01a272e-ccb5-42ba-96b5-361ae5197e07",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -349,9 +359,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEN5OhQ9Z1CsMUqcVP/vUSo2/sY6IwqHuY7Hhb43HvuBNEc1EqBFDePiLZP4G1TJE1w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJUuBkHWborfh5DHdoEm5Igv4BCNqr/ot3YKI7fFbDCUQbMzEDQ5QaUsvlge+lif2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f35fae91-0aa3-4a59-bb5e-24bcb88011eb",
+                            SecurityStamp = "977ff2da-f029-4a16-92fb-7e16e911eb97",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -389,7 +399,6 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductId")
@@ -404,19 +413,19 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             Name = "Birds",
-                            ProductId = 1
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 2,
                             Name = "Fruit",
-                            ProductId = 2
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 3,
                             Name = "Bilar",
-                            ProductId = 3
+                            ProductId = 0
                         });
                 });
 
@@ -487,18 +496,18 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 12, 11, 33, 52, 345, DateTimeKind.Local).AddTicks(1633),
+                            ExpectedDelivery = "2",
+                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(433),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 11, 33, 52, 345, DateTimeKind.Local).AddTicks(1596)
+                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(393)
                         },
                         new
                         {
                             Id = 2,
-                            ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 12, 11, 33, 52, 345, DateTimeKind.Local).AddTicks(1654),
+                            ExpectedDelivery = "2",
+                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(449),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 11, 33, 52, 345, DateTimeKind.Local).AddTicks(1651)
+                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(446)
                         });
                 });
 
@@ -539,32 +548,27 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Brand")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("ShortDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -576,9 +580,9 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             Brand = "Birdstuff",
-                            CategoryId = 1,
+                            CategoryId = 0,
                             Description = "it's a type of bird",
-                            ImageUrl = "",
+                            ImageUrl = "/img/bird.jpg",
                             Name = "Gerpgork",
                             Price = 2000.0,
                             Quantity = 1,
@@ -588,9 +592,9 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 2,
                             Brand = "Chiquita",
-                            CategoryId = 2,
+                            CategoryId = 0,
                             Description = "it's a type of Banana",
-                            ImageUrl = "",
+                            ImageUrl = "/img/banana.jpg",
                             Name = "Banana",
                             Price = 5.0,
                             Quantity = 1,
@@ -600,9 +604,9 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 3,
                             Brand = "Volvo",
-                            CategoryId = 3,
+                            CategoryId = 0,
                             Description = "it's a type of car",
-                            ImageUrl = "",
+                            ImageUrl = "/img/volvo.jpg",
                             Name = "Volvo XC70",
                             Price = 500000.0,
                             Quantity = 1,

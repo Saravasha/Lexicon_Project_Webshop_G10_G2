@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
+using MVC_Webshop.Models;
 using MVC_Webshop.ViewModels;
+using System.Linq;
 
 namespace MVC_Webshop.Controllers
 {
@@ -28,27 +31,63 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController/Details/5
         public IActionResult Details(int id)
         {
-            return View();
+            Product? product = _context.Products
+                .Include(c => c.Categories)
+                .FirstOrDefault(p => p.Id == id);
+
+            return View(product);
         }
 
         // GET: ProductController/Create
         public IActionResult Create()
         {
-            return View();
+            var pcvm = new ProductCreateViewModel();
+            var categories = _context.Categories;
+
+            ViewBag.CategoryList = new SelectList(categories, "Id", "Name");
+
+            return View(pcvm);
         }
 
         // POST: ProductController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(IFormCollection collection)
+        //[ValidateAntiForgeryToken]
+        public IActionResult Create(ProductCreateViewModel product)
         {
-            try
+            var pcvm = new ProductCreateViewModel();
+
+            ModelState.Remove("Id");
+            if(ModelState.IsValid && product.CategoryId != 0)
             {
+                var ProductToAdd = new Product()
+                {
+                    Name = product.Name,
+                    Brand = product.Brand,
+                    Price = product.Price,
+                    ShortDescription = product.ShortDescription,
+                    Description = product.Description,
+                    Quantity = product.Quantity,
+                    CategoryId = product.CategoryId,
+
+                    ImageUrl = "/img/banana.jpg"
+                };
+
+                _context.Products.Add(ProductToAdd);
+                _context.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                if (product.CategoryId == 0)
+                {
+                    ViewBag.CategoryError = "Category is Required";
+                }
+
+                var categories = _context.Categories;
+                ViewBag.CategoryList = new SelectList(categories, "Id", "Name");
+
+                return View(pcvm);
             }
         }
 

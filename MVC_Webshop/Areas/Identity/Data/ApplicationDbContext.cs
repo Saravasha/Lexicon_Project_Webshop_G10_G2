@@ -23,7 +23,6 @@ namespace MVC_Webshop.Data
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             base.OnModelCreating(modelbuilder);
-            //modelbuilder.ApplyConfiguration(new ApplicationUserEntityConfiguration());
 
             string adminId = Guid.NewGuid().ToString();
             string userId = Guid.NewGuid().ToString();
@@ -32,15 +31,19 @@ namespace MVC_Webshop.Data
             Random rando = new Random();
             var number = rando.Next(1, 5).ToString();
 
-            // Product
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, CategoryId = 1, ImageUrl = "/img/bird.jpg" });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, CategoryId = 2, ImageUrl = "/img/banana.jpg" });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, CategoryId = 3, ImageUrl = "/img/volvo.jpg" });
-
             // Category
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 1, ProductId = 1, Name = "Birds", });
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 2, ProductId = 2, Name = "Fruit", });
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 3, ProductId = 3, Name = "Bilar", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 1, ProductId = 1, Name = "Birds", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 2, ProductId = 2, Name = "Fruit", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 3, ProductId = 3, Name = "Bilar", });
+
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 1,  Name = "Birds", });
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 2,  Name = "Fruit", });
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 3,  Name = "Bilar", });
+
+            // Product
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/bird.jpg" });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/banana.jpg" });
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/volvo.jpg" });
 
             // Order
             modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
@@ -57,8 +60,11 @@ namespace MVC_Webshop.Data
             // Join Fluent API
             modelbuilder.Entity<Product>().HasMany(p => p.Categories)
                 .WithMany(c => c.Products)
-                .UsingEntity(j => j.HasData(new { CategoriesId = 1, ProductsId = 1 }
-                ));
+                .UsingEntity(j => j.HasData(
+                    new { CategoriesId = 1, ProductsId = 1 },
+                    new { CategoriesId = 2, ProductsId = 2 },
+                    new { CategoriesId = 3, ProductsId = 3 }
+            ));
 
             //modelbuilder.Entity<Cart>().HasMany(t => t.Items);
 

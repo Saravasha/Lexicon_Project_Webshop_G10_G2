@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using MVC_Webshop.Models;
 using System.Xml.Linq;
 
 namespace MVC_Webshop.ViewModels
 {
     public class ProductCreateViewModel
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Product Name is required")]
         [Display(Name = "Product Name:")]
         public string? Name { get; set; }
@@ -26,7 +29,11 @@ namespace MVC_Webshop.ViewModels
 
         // PRODUCT IMAGE UPLOAD
 
-        [Display(Name = "Description:")]
+        [Display(Name = "Stock:")]
         public int? Quantity { get; set; }
+
+        [Display(Name = "Category:")]
+        [Required(ErrorMessage = "Category is Required")]
+        public int CategoryId { get; set; }
     }
 }

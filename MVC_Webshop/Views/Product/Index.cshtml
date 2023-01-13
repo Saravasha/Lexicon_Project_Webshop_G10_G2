@@ -24,12 +24,11 @@
         @foreach (var product in Model.listOfProducts)
         {
             <tr class="table-success">
-                <td><img src="@product.ImageUrl" class="img-fluid" style="height:100px;" /></td>
+                <td><img src="@product.ImageUrl" class="img-fluid" style="max-height:100px;" /></td>
                 <td>@Html.DisplayFor(modelItem => product.Name)</td>
                 <td>@Html.DisplayFor(modelItem => product.Brand)</td>
                 <td>@Html.DisplayFor(modelItem => product.Price)</td>
                 <td>@Html.DisplayFor(modelItem => product.ShortDescription)</td>
-
 
                 <td>
                     @foreach (var prodCat in product.Categories)

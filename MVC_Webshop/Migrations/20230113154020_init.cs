@@ -42,7 +42,7 @@ namespace MVC_Webshop.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductId = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -55,12 +55,13 @@ namespace MVC_Webshop.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Brand = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ShortDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Brand = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Price = table.Column<double>(type: "float", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShortDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Quantity = table.Column<int>(type: "int", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -308,9 +309,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "acffbb4c-e538-4f7c-82a0-a13dc751e6cb", "3ecda72d-3f08-4650-a7a3-3b3d5ccb9dce", "User", "USER" },
-                    { "c3064c70-d882-426c-b95f-c8d37ecf893f", "feba3923-5a08-4511-8198-dd1785c7819c", "Admin", "ADMIN" },
-                    { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", "5f59fe66-00ce-441a-9beb-f77afc951f8f", "Manager", "MANAGER" }
+                    { "49b3e32d-dddf-40fe-9994-37d49314b282", "fbfabc48-14d8-4499-b2ee-e449aa2602c4", "Admin", "ADMIN" },
+                    { "9444982e-1751-4a4f-9e21-02c372198a64", "8e071371-d046-4851-9731-71e5827c8b5f", "User", "USER" },
+                    { "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85", "75f49bde-bef9-4ff0-8bcb-1a86616f796c", "Manager", "MANAGER" }
                 });
 
             migrationBuilder.InsertData(
@@ -327,9 +328,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "Name", "ProductId" },
                 values: new object[,]
                 {
-                    { 1, "Birds", 1 },
-                    { 2, "Fruit", 2 },
-                    { 3, "Bilar", 3 }
+                    { 1, "Birds", 0 },
+                    { 2, "Fruit", 0 },
+                    { 3, "Bilar", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -337,18 +338,18 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ExpectedDelivery", "OrderDate", "Shipped", "ShippingDate", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "2", new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1788), false, new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1746), null },
-                    { 2, "2", new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1804), false, new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1802), null }
+                    { 1, "2", new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(433), false, new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(393), null },
+                    { 2, "2", new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(449), false, new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(446), null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "Brand", "CategoryId", "Description", "Name", "Price", "Quantity", "ShortDescription" },
+                columns: new[] { "Id", "Brand", "CategoryId", "Description", "ImageUrl", "Name", "Price", "Quantity", "ShortDescription" },
                 values: new object[,]
                 {
-                    { 1, "Birdstuff", 1, "it's a type of bird", "Gerpgork", 2000.0, 1, "tb" },
-                    { 2, "Chiquita", 2, "it's a type of Banana", "Banana", 5.0, 1, "tb" },
-                    { 3, "Volvo", 3, "it's a type of car", "Volvo XC70", 500000.0, 1, "tb" }
+                    { 1, "Birdstuff", 0, "it's a type of bird", "/img/bird.jpg", "Gerpgork", 2000.0, 1, "tb" },
+                    { 2, "Chiquita", 0, "it's a type of Banana", "/img/banana.jpg", "Banana", 5.0, 1, "tb" },
+                    { 3, "Volvo", 0, "it's a type of car", "/img/volvo.jpg", "Volvo XC70", 500000.0, 1, "tb" }
                 });
 
             migrationBuilder.InsertData(
@@ -356,14 +357,19 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "CartId", "City", "ConcurrencyStamp", "Country", "CreditCardNumber", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "OrderId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "acffbb4c-e538-4f7c-82a0-a13dc751e6cb", 0, null, 1, null, "d5f3b771-2a2c-4bf9-9c03-52f4a533efc4", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEK07F4Q5LCzK51mhkA5vGJRRu+zpSFkJZXryDhQs60N4fYvMdwiBUiEuWY4s27ZiLw==", null, false, null, "9103a88d-ab90-400b-a61b-7ece4a797574", false, "Admin" },
-                    { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", 0, null, 2, null, "8932d0ca-db2a-41c8-8035-737e6537ffee", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAEBPw8mOaWRO08t0GBJ+C0Hk4idgIWon9uOeO77R3Hx/Vpqyqu/QFB9V3BRxiS5l9Ng==", null, false, null, "84c217b6-00f6-46f0-8a95-063a547e0e3b", false, "Karen" }
+                    { "9444982e-1751-4a4f-9e21-02c372198a64", 0, null, 1, null, "8eda1d02-fba6-497b-89d1-7d3a358fe122", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEK0yW8pllbFighz8mlwqgqxJb9/Gcu5u6AmM3UXHk6YMA7s3NjfflP12JrQo6FmQvw==", null, false, null, "f220ad61-9968-44d3-971b-bc75761cc556", false, "Admin" },
+                    { "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85", 0, null, 2, null, "a01a272e-ccb5-42ba-96b5-361ae5197e07", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAEJUuBkHWborfh5DHdoEm5Igv4BCNqr/ot3YKI7fFbDCUQbMzEDQ5QaUsvlge+lif2g==", null, false, null, "977ff2da-f029-4a16-92fb-7e16e911eb97", false, "Karen" }
                 });
 
             migrationBuilder.InsertData(
                 table: "CategoryProduct",
                 columns: new[] { "CategoriesId", "ProductsId" },
-                values: new object[] { 1, 1 });
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 2 },
+                    { 3, 3 }
+                });
 
             migrationBuilder.InsertData(
                 table: "Items",
@@ -373,12 +379,12 @@ namespace MVC_Webshop.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "c3064c70-d882-426c-b95f-c8d37ecf893f", "acffbb4c-e538-4f7c-82a0-a13dc751e6cb" });
+                values: new object[] { "49b3e32d-dddf-40fe-9994-37d49314b282", "9444982e-1751-4a4f-9e21-02c372198a64" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", "acffbb4c-e538-4f7c-82a0-a13dc751e6cb" });
+                values: new object[] { "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85", "9444982e-1751-4a4f-9e21-02c372198a64" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

@@ -41,6 +41,16 @@ namespace MVC_Webshop.Migrations
                         {
                             CategoriesId = 1,
                             ProductsId = 1
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 2
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 3
                         });
                 });
 
@@ -73,22 +83,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "3277b0f9-1901-4210-bcf3-edc3268d6691",
-                            ConcurrencyStamp = "6766151a-aa78-45d1-ae6f-d46856b6dedf",
+                            Id = "49b3e32d-dddf-40fe-9994-37d49314b282",
+                            ConcurrencyStamp = "fbfabc48-14d8-4499-b2ee-e449aa2602c4",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            ConcurrencyStamp = "bc5fee56-c704-40d7-97e5-f2ee63cc578b",
+                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            ConcurrencyStamp = "8e071371-d046-4851-9731-71e5827c8b5f",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "2135ed9f-69aa-423d-b8c0-72dbc38610b7",
-                            ConcurrencyStamp = "43278256-04d5-4fd3-89ee-85e79865906f",
+                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
+                            ConcurrencyStamp = "75f49bde-bef9-4ff0-8bcb-1a86616f796c",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -185,13 +195,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            RoleId = "3277b0f9-1901-4210-bcf3-edc3268d6691"
+                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            RoleId = "49b3e32d-dddf-40fe-9994-37d49314b282"
                         },
                         new
                         {
-                            UserId = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
-                            RoleId = "2135ed9f-69aa-423d-b8c0-72dbc38610b7"
+                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            RoleId = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85"
                         });
                 });
 
@@ -313,10 +323,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d8fe1bbb-d128-4b02-a034-bb2c043352d0",
+                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "323f20c2-01f2-4b76-95f6-fedde831a087",
+                            ConcurrencyStamp = "8eda1d02-fba6-497b-89d1-7d3a358fe122",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -326,18 +336,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEGtY6YnHphNCAx9jCzHlrlGjOAYKbRycJ6wc9/2ImFRNDfFzpxkzH54UZexdlc0Bjg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK0yW8pllbFighz8mlwqgqxJb9/Gcu5u6AmM3UXHk6YMA7s3NjfflP12JrQo6FmQvw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e6bd20eb-a458-48c4-b6af-b20a1afa7741",
+                            SecurityStamp = "f220ad61-9968-44d3-971b-bc75761cc556",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "2135ed9f-69aa-423d-b8c0-72dbc38610b7",
+                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "869d71dc-2ba8-4450-9e4b-b3a8707acf42",
+                            ConcurrencyStamp = "a01a272e-ccb5-42ba-96b5-361ae5197e07",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -347,9 +357,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEDaBQyAxQHmYIDhNqxZIkSVrdTWj3iJWeRhkluQo2r+hkEgM4uvOU64gx9K917j/6w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJUuBkHWborfh5DHdoEm5Igv4BCNqr/ot3YKI7fFbDCUQbMzEDQ5QaUsvlge+lif2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "959521c7-19f0-4183-b5ad-1918e9fbd2a6",
+                            SecurityStamp = "977ff2da-f029-4a16-92fb-7e16e911eb97",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -387,7 +397,6 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductId")
@@ -402,19 +411,19 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             Name = "Birds",
-                            ProductId = 1
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 2,
                             Name = "Fruit",
-                            ProductId = 2
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 3,
                             Name = "Bilar",
-                            ProductId = 3
+                            ProductId = 0
                         });
                 });
 
@@ -485,18 +494,18 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            ExpectedDelivery = "4",
-                            OrderDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1566),
+                            ExpectedDelivery = "2",
+                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(433),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1522)
+                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(393)
                         },
                         new
                         {
                             Id = 2,
-                            ExpectedDelivery = "4",
-                            OrderDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1582),
+                            ExpectedDelivery = "2",
+                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(449),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 12, 14, 31, 24, 427, DateTimeKind.Local).AddTicks(1580)
+                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(446)
                         });
                 });
 
@@ -537,32 +546,27 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Brand")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("ShortDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -574,7 +578,7 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             Brand = "Birdstuff",
-                            CategoryId = 1,
+                            CategoryId = 0,
                             Description = "it's a type of bird",
                             ImageUrl = "/img/bird.jpg",
                             Name = "Gerpgork",
@@ -586,7 +590,7 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 2,
                             Brand = "Chiquita",
-                            CategoryId = 2,
+                            CategoryId = 0,
                             Description = "it's a type of Banana",
                             ImageUrl = "/img/banana.jpg",
                             Name = "Banana",
@@ -598,7 +602,7 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 3,
                             Brand = "Volvo",
-                            CategoryId = 3,
+                            CategoryId = 0,
                             Description = "it's a type of car",
                             ImageUrl = "/img/volvo.jpg",
                             Name = "Volvo XC70",
