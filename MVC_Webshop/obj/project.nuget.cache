@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ad1g2Cp7adot2hzJBVhQcI4c3b2355m2cUBcf/nQTZGriKSnk25FoC8gCNdoP7I8xv1XB1vcHV88s4Fq4WtqGQ==",
+  "dgSpecHash": "TV4Rn77T1+UOkdALs4kYpiqEL4Gh/c+5Vb+OJAc4dU2TWSboV/ny+YO2icbAIQtWgVjqOdX+B6XGabuEEpF0vQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+  "projectFilePath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Elev\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

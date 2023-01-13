@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {}
+    "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {
+    "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+        "projectUniqueName": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
         "projectName": "MVC_Webshop",
-        "projectPath": "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+        "projectPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
         "packagesPath": "C:\\Users\\Elev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elev\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
+        "outputPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elev\\AppData\\Roaming\\NuGet\\NuGet.Config",
