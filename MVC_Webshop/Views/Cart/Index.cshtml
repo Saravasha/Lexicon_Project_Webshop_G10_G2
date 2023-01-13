@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Cart>
+
+@{
+	ViewData["Title"] = "Cart";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="container">
+	<div class="row"><b class="col">Id</b></div>
+	<hr />
+	@foreach (var item in Model)
+	{
+		<div class="row">
+			<div class="col"><p class="btn btn-outline-primary">@item.Id</p></div>
+			<div class="col"><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a></div>
+			<div class="col"><a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-warning">Details</a></div>
+			<div class="col"><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></div>
+		</div>
+	}
+	<hr />
+
+	<p>
+		<a asp-action="Create" class="btn btn-primary">Create New</a>
+	</p>
+</div>
