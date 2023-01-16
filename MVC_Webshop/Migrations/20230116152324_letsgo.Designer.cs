@@ -12,14 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230111150114_init")]
-    partial class init
+    [Migration("20230116152324_letsgo")]
+    partial class letsgo
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.12")
+                .HasAnnotation("ProductVersion", "6.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -75,22 +75,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c3064c70-d882-426c-b95f-c8d37ecf893f",
-                            ConcurrencyStamp = "feba3923-5a08-4511-8198-dd1785c7819c",
+                            Id = "1920cf5c-0725-48e7-aad3-b48abc740c1c",
+                            ConcurrencyStamp = "a4c329bd-b606-4940-a800-26f100eb9c90",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "acffbb4c-e538-4f7c-82a0-a13dc751e6cb",
-                            ConcurrencyStamp = "3ecda72d-3f08-4650-a7a3-3b3d5ccb9dce",
+                            Id = "abb3043d-df91-4a25-a23f-d88908a7c606",
+                            ConcurrencyStamp = "62b76bab-8215-4f07-9459-102babbd72e0",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "e2d48c5b-5bbc-40aa-aa75-19134f38b682",
-                            ConcurrencyStamp = "5f59fe66-00ce-441a-9beb-f77afc951f8f",
+                            Id = "758ede42-49da-4a63-a8a7-53ca5f8fbbb5",
+                            ConcurrencyStamp = "cb3fc134-a37d-4777-87dd-4b19c2b73256",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -187,13 +187,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "acffbb4c-e538-4f7c-82a0-a13dc751e6cb",
-                            RoleId = "c3064c70-d882-426c-b95f-c8d37ecf893f"
+                            UserId = "abb3043d-df91-4a25-a23f-d88908a7c606",
+                            RoleId = "1920cf5c-0725-48e7-aad3-b48abc740c1c"
                         },
                         new
                         {
-                            UserId = "acffbb4c-e538-4f7c-82a0-a13dc751e6cb",
-                            RoleId = "e2d48c5b-5bbc-40aa-aa75-19134f38b682"
+                            UserId = "abb3043d-df91-4a25-a23f-d88908a7c606",
+                            RoleId = "758ede42-49da-4a63-a8a7-53ca5f8fbbb5"
                         });
                 });
 
@@ -229,7 +229,7 @@ namespace MVC_Webshop.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CartId")
+                    b.Property<int?>("CartId")
                         .HasColumnType("int");
 
                     b.Property<string>("City")
@@ -272,7 +272,7 @@ namespace MVC_Webshop.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<int>("OrderId")
+                    b.Property<int?>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<string>("PasswordHash")
@@ -300,7 +300,8 @@ namespace MVC_Webshop.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CartId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[CartId] IS NOT NULL");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -315,10 +316,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "acffbb4c-e538-4f7c-82a0-a13dc751e6cb",
+                            Id = "abb3043d-df91-4a25-a23f-d88908a7c606",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "d5f3b771-2a2c-4bf9-9c03-52f4a533efc4",
+                            ConcurrencyStamp = "2829f0e7-64b2-4f13-8d86-abf05710ed5a",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -328,18 +329,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEK07F4Q5LCzK51mhkA5vGJRRu+zpSFkJZXryDhQs60N4fYvMdwiBUiEuWY4s27ZiLw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEExoTbLh4xuwIdyVYFCbHjAyiym2kZn8M4haEUOo8pt1IXerc78CoUkdFKgibsmw8Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9103a88d-ab90-400b-a61b-7ece4a797574",
+                            SecurityStamp = "86b61878-5bbd-4785-a323-99430c62ebfd",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "e2d48c5b-5bbc-40aa-aa75-19134f38b682",
+                            Id = "758ede42-49da-4a63-a8a7-53ca5f8fbbb5",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "8932d0ca-db2a-41c8-8035-737e6537ffee",
+                            ConcurrencyStamp = "c2ecc3d6-8ee3-43b8-8a47-037c5edc51ba",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -349,9 +350,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEBPw8mOaWRO08t0GBJ+C0Hk4idgIWon9uOeO77R3Hx/Vpqyqu/QFB9V3BRxiS5l9Ng==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELnSzUH5v4eh4+zMFhHSaYnDrk9mu0BoLtgP4hmw4NmhfiUnEEPYb/wfjlCwtbYCfg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "84c217b6-00f6-46f0-8a95-063a547e0e3b",
+                            SecurityStamp = "617fff78-dfa0-4af3-9337-1778757e4151",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -359,11 +360,11 @@ namespace MVC_Webshop.Migrations
 
             modelBuilder.Entity("MVC_Webshop.Models.Cart", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"), 1L, 1);
 
                     b.HasKey("Id");
 
@@ -487,18 +488,18 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            ExpectedDelivery = "2",
-                            OrderDate = new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1788),
+                            ExpectedDelivery = "3",
+                            OrderDate = new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3993),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1746)
+                            ShippingDate = new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3953)
                         },
                         new
                         {
                             Id = 2,
-                            ExpectedDelivery = "2",
-                            OrderDate = new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1804),
+                            ExpectedDelivery = "3",
+                            OrderDate = new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4010),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1802)
+                            ShippingDate = new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4007)
                         });
                 });
 
@@ -549,6 +550,10 @@ namespace MVC_Webshop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -574,6 +579,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Birdstuff",
                             CategoryId = 1,
                             Description = "it's a type of bird",
+                            ImageUrl = "/img/gerpgork.jpg",
                             Name = "Gerpgork",
                             Price = 2000.0,
                             Quantity = 1,
@@ -585,6 +591,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Chiquita",
                             CategoryId = 2,
                             Description = "it's a type of Banana",
+                            ImageUrl = "/img/Banana.jpg",
                             Name = "Banana",
                             Price = 5.0,
                             Quantity = 1,
@@ -596,6 +603,7 @@ namespace MVC_Webshop.Migrations
                             Brand = "Volvo",
                             CategoryId = 3,
                             Description = "it's a type of car",
+                            ImageUrl = "/img/Volvo.jpg",
                             Name = "Volvo XC70",
                             Price = 500000.0,
                             Quantity = 1,
@@ -673,9 +681,7 @@ namespace MVC_Webshop.Migrations
                 {
                     b.HasOne("MVC_Webshop.Models.Cart", "Cart")
                         .WithOne("User")
-                        .HasForeignKey("MVC_Webshop.Models.ApplicationUser", "CartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MVC_Webshop.Models.ApplicationUser", "CartId");
 
                     b.Navigation("Cart");
                 });
@@ -720,8 +726,7 @@ namespace MVC_Webshop.Migrations
                 {
                     b.Navigation("Items");
 
-                    b.Navigation("User")
-                        .IsRequired();
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("MVC_Webshop.Models.Order", b =>

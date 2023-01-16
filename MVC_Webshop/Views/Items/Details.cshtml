@@ -1,45 +1,24 @@
 ﻿@model MVC_Webshop.Models.Item
 
 @{
-    Layout = null;
+	ViewData["Title"] = "Details";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-</head>
-<body>
-
-<div>
-    <h4>Item</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProductIdRef)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProductIdRef)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cart)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cart.Id)
-        </dd>
-    </dl>
+<div class="container">
+	<h1>@ViewBag.Title</h1>
+	<h4>Item</h4>
+	<div class="row">
+		<b class="col">@Html.DisplayNameFor(model => model.ProductIdRef)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.Quantity)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.CartId)</b>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col">@Html.DisplayFor(model => model.ProductIdRef)</div>
+		<div class="col">@Html.DisplayFor(model => model.Quantity)</div>
+		<div class="col">@Html.DisplayFor(model => model.CartId)</div>
+	</div>
+	<div>
+		<a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-success">Edit</a>
+		<a asp-action="Index" class="btn btn-outline-info">Back to List</a></
+	</div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
-</body>
-</html>

@@ -102,7 +102,7 @@ namespace MVC_Webshop.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CartExists(cart.Id))
+                    if (!CartExists((int)cart.Id))
                     {
                         return NotFound();
                     }

@@ -8,11 +8,9 @@
 
 <div class="row">
     <h4>@Model.Id</h4>
-    <hr />
-    <dl class="row">
-    </dl>
 </div>
-<div class="row">
-    <div class="col"><a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-success">Edit</a></div>
-    <div class="col"><a asp-action="Index" class="btn btn-outline-info">Back to List</a></div>
+    <hr />
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-success">Edit</a>
+    <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
 </div>

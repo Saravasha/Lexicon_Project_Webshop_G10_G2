@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MVC_Webshop.Migrations
 {
-    public partial class init : Migration
+    public partial class letsgo : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,6 +60,7 @@ namespace MVC_Webshop.Migrations
                     Price = table.Column<double>(type: "float", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ShortDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -101,8 +102,8 @@ namespace MVC_Webshop.Migrations
                     City = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CartId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    CartId = table.Column<int>(type: "int", nullable: true),
+                    OrderId = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -125,8 +126,7 @@ namespace MVC_Webshop.Migrations
                         name: "FK_AspNetUsers_Carts_CartId",
                         column: x => x.CartId,
                         principalTable: "Carts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -308,9 +308,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "acffbb4c-e538-4f7c-82a0-a13dc751e6cb", "3ecda72d-3f08-4650-a7a3-3b3d5ccb9dce", "User", "USER" },
-                    { "c3064c70-d882-426c-b95f-c8d37ecf893f", "feba3923-5a08-4511-8198-dd1785c7819c", "Admin", "ADMIN" },
-                    { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", "5f59fe66-00ce-441a-9beb-f77afc951f8f", "Manager", "MANAGER" }
+                    { "1920cf5c-0725-48e7-aad3-b48abc740c1c", "a4c329bd-b606-4940-a800-26f100eb9c90", "Admin", "ADMIN" },
+                    { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", "cb3fc134-a37d-4777-87dd-4b19c2b73256", "Manager", "MANAGER" },
+                    { "abb3043d-df91-4a25-a23f-d88908a7c606", "62b76bab-8215-4f07-9459-102babbd72e0", "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -337,18 +337,18 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ExpectedDelivery", "OrderDate", "Shipped", "ShippingDate", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "2", new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1788), false, new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1746), null },
-                    { 2, "2", new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1804), false, new DateTime(2023, 1, 11, 16, 1, 14, 538, DateTimeKind.Local).AddTicks(1802), null }
+                    { 1, "3", new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3993), false, new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3953), null },
+                    { 2, "3", new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4010), false, new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4007), null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "Brand", "CategoryId", "Description", "Name", "Price", "Quantity", "ShortDescription" },
+                columns: new[] { "Id", "Brand", "CategoryId", "Description", "ImageUrl", "Name", "Price", "Quantity", "ShortDescription" },
                 values: new object[,]
                 {
-                    { 1, "Birdstuff", 1, "it's a type of bird", "Gerpgork", 2000.0, 1, "tb" },
-                    { 2, "Chiquita", 2, "it's a type of Banana", "Banana", 5.0, 1, "tb" },
-                    { 3, "Volvo", 3, "it's a type of car", "Volvo XC70", 500000.0, 1, "tb" }
+                    { 1, "Birdstuff", 1, "it's a type of bird", "/img/gerpgork.jpg", "Gerpgork", 2000.0, 1, "tb" },
+                    { 2, "Chiquita", 2, "it's a type of Banana", "/img/Banana.jpg", "Banana", 5.0, 1, "tb" },
+                    { 3, "Volvo", 3, "it's a type of car", "/img/Volvo.jpg", "Volvo XC70", 500000.0, 1, "tb" }
                 });
 
             migrationBuilder.InsertData(
@@ -356,8 +356,8 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "CartId", "City", "ConcurrencyStamp", "Country", "CreditCardNumber", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "OrderId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "acffbb4c-e538-4f7c-82a0-a13dc751e6cb", 0, null, 1, null, "d5f3b771-2a2c-4bf9-9c03-52f4a533efc4", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEK07F4Q5LCzK51mhkA5vGJRRu+zpSFkJZXryDhQs60N4fYvMdwiBUiEuWY4s27ZiLw==", null, false, null, "9103a88d-ab90-400b-a61b-7ece4a797574", false, "Admin" },
-                    { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", 0, null, 2, null, "8932d0ca-db2a-41c8-8035-737e6537ffee", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAEBPw8mOaWRO08t0GBJ+C0Hk4idgIWon9uOeO77R3Hx/Vpqyqu/QFB9V3BRxiS5l9Ng==", null, false, null, "84c217b6-00f6-46f0-8a95-063a547e0e3b", false, "Karen" }
+                    { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", 0, null, 2, null, "c2ecc3d6-8ee3-43b8-8a47-037c5edc51ba", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAELnSzUH5v4eh4+zMFhHSaYnDrk9mu0BoLtgP4hmw4NmhfiUnEEPYb/wfjlCwtbYCfg==", null, false, null, "617fff78-dfa0-4af3-9337-1778757e4151", false, "Karen" },
+                    { "abb3043d-df91-4a25-a23f-d88908a7c606", 0, null, 1, null, "2829f0e7-64b2-4f13-8d86-abf05710ed5a", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEExoTbLh4xuwIdyVYFCbHjAyiym2kZn8M4haEUOo8pt1IXerc78CoUkdFKgibsmw8Q==", null, false, null, "86b61878-5bbd-4785-a323-99430c62ebfd", false, "Admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -373,12 +373,12 @@ namespace MVC_Webshop.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "c3064c70-d882-426c-b95f-c8d37ecf893f", "acffbb4c-e538-4f7c-82a0-a13dc751e6cb" });
+                values: new object[] { "1920cf5c-0725-48e7-aad3-b48abc740c1c", "abb3043d-df91-4a25-a23f-d88908a7c606" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "e2d48c5b-5bbc-40aa-aa75-19134f38b682", "acffbb4c-e538-4f7c-82a0-a13dc751e6cb" });
+                values: new object[] { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", "abb3043d-df91-4a25-a23f-d88908a7c606" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -416,7 +416,8 @@ namespace MVC_Webshop.Migrations
                 name: "IX_AspNetUsers_CartId",
                 table: "AspNetUsers",
                 column: "CartId",
-                unique: true);
+                unique: true,
+                filter: "[CartId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
