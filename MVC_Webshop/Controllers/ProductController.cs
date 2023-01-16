@@ -13,6 +13,7 @@ namespace MVC_Webshop.Controllers
     {
         private readonly ApplicationDbContext _context;
         static ProductViewModel pvm = new();
+        static ProductCreateViewModel pcvm = new ProductCreateViewModel();
 
         public ProductController(ApplicationDbContext context)
         {
@@ -41,7 +42,6 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController/Create
         public IActionResult Create()
         {
-            var pcvm = new ProductCreateViewModel();
             var categories = _context.Categories;
 
             ViewBag.CategoryList = new SelectList(categories, "Id", "Name");
@@ -54,7 +54,7 @@ namespace MVC_Webshop.Controllers
         //[ValidateAntiForgeryToken]
         public IActionResult Create(ProductCreateViewModel product)
         {
-            var pcvm = new ProductCreateViewModel();
+            
 
             ModelState.Remove("Id");
             if(ModelState.IsValid && product.CategoryId != 0)
@@ -67,10 +67,16 @@ namespace MVC_Webshop.Controllers
                     ShortDescription = product.ShortDescription,
                     Description = product.Description,
                     Quantity = product.Quantity,
-                    CategoryId = product.CategoryId,
-
+                    //CategoryId = product.CategoryId,
+                    
                     ImageUrl = "/img/banana.jpg"
                 };
+
+                Category? cat = _context.Categories.Find(product.CategoryId);
+                if(cat != null)
+                {
+                    ProductToAdd.Categories.Add(cat);
+                }
 
                 _context.Products.Add(ProductToAdd);
                 _context.SaveChanges();

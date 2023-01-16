@@ -18,6 +18,6 @@ namespace MVC_Webshop.Models
         //Quantity in Stock
         public int? Quantity { get; set; }
         public int CategoryId { get; set; }
-        public List<Category> Categories { get; set; }
+        public List<Category> Categories { get; set; } = new();
     }
 }

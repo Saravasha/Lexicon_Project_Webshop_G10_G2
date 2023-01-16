@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230113154020_init")]
+    [Migration("20230116092700_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -85,22 +85,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "49b3e32d-dddf-40fe-9994-37d49314b282",
-                            ConcurrencyStamp = "fbfabc48-14d8-4499-b2ee-e449aa2602c4",
+                            Id = "593f694b-f5eb-45ce-ac1e-d6d5d0b5a0b2",
+                            ConcurrencyStamp = "a2630f1b-c33f-4b4b-9ceb-5c5a53c1a5f8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
-                            ConcurrencyStamp = "8e071371-d046-4851-9731-71e5827c8b5f",
+                            Id = "ef1cc105-91b4-49a7-8c59-68c875858bef",
+                            ConcurrencyStamp = "bdeafb70-15ca-4b49-8c9b-6b9236914b6d",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
-                            ConcurrencyStamp = "75f49bde-bef9-4ff0-8bcb-1a86616f796c",
+                            Id = "a3bcdebc-3d28-4cb6-a317-a5b73ce90fff",
+                            ConcurrencyStamp = "1e6ca8b3-d8c1-4b9d-b481-3a10f25233a9",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -197,13 +197,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
-                            RoleId = "49b3e32d-dddf-40fe-9994-37d49314b282"
+                            UserId = "ef1cc105-91b4-49a7-8c59-68c875858bef",
+                            RoleId = "593f694b-f5eb-45ce-ac1e-d6d5d0b5a0b2"
                         },
                         new
                         {
-                            UserId = "9444982e-1751-4a4f-9e21-02c372198a64",
-                            RoleId = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85"
+                            UserId = "ef1cc105-91b4-49a7-8c59-68c875858bef",
+                            RoleId = "a3bcdebc-3d28-4cb6-a317-a5b73ce90fff"
                         });
                 });
 
@@ -325,10 +325,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9444982e-1751-4a4f-9e21-02c372198a64",
+                            Id = "ef1cc105-91b4-49a7-8c59-68c875858bef",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "8eda1d02-fba6-497b-89d1-7d3a358fe122",
+                            ConcurrencyStamp = "bd8020fe-a0df-4184-ab87-c4127c86a038",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -338,18 +338,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEK0yW8pllbFighz8mlwqgqxJb9/Gcu5u6AmM3UXHk6YMA7s3NjfflP12JrQo6FmQvw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAZIWAbhgtWvQC+6i2QOXPH8YBzXjB50vtzOYB61YiSRNQYFAJrCNTHzcbrBIMskmQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f220ad61-9968-44d3-971b-bc75761cc556",
+                            SecurityStamp = "59aca5cd-5853-48f7-9838-f416234a4ee6",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "e1b17555-3ce3-4b9b-a52e-c50af5fe9a85",
+                            Id = "a3bcdebc-3d28-4cb6-a317-a5b73ce90fff",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "a01a272e-ccb5-42ba-96b5-361ae5197e07",
+                            ConcurrencyStamp = "9ce4076b-11a6-4232-8976-910a9eebf90e",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -359,9 +359,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEJUuBkHWborfh5DHdoEm5Igv4BCNqr/ot3YKI7fFbDCUQbMzEDQ5QaUsvlge+lif2g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAED1mjwSHBf8/t9AzKDxCit+Wm/eypPb879RRP/1yZkAIldCTf7jClCPeNMa8akeJHg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "977ff2da-f029-4a16-92fb-7e16e911eb97",
+                            SecurityStamp = "5ff70320-6e6e-48b3-9e6f-ed3aa859937d",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -497,17 +497,17 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             ExpectedDelivery = "2",
-                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(433),
+                            OrderDate = new DateTime(2023, 1, 16, 10, 27, 0, 622, DateTimeKind.Local).AddTicks(7300),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(393)
+                            ShippingDate = new DateTime(2023, 1, 16, 10, 27, 0, 622, DateTimeKind.Local).AddTicks(7267)
                         },
                         new
                         {
                             Id = 2,
                             ExpectedDelivery = "2",
-                            OrderDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(449),
+                            OrderDate = new DateTime(2023, 1, 16, 10, 27, 0, 622, DateTimeKind.Local).AddTicks(7313),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 13, 16, 40, 20, 445, DateTimeKind.Local).AddTicks(446)
+                            ShippingDate = new DateTime(2023, 1, 16, 10, 27, 0, 622, DateTimeKind.Local).AddTicks(7311)
                         });
                 });
 

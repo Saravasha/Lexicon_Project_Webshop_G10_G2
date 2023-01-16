@@ -58,7 +58,8 @@ namespace MVC_Webshop.Data
             //modelbuilder.Entity<Item>().HasData(new Item { Id = 2, CartId = 2, ProductIdRef = 2, Quantity = 2, });
 
             // Join Fluent API
-            modelbuilder.Entity<Product>().HasMany(p => p.Categories)
+            modelbuilder.Entity<Product>()
+                .HasMany(p => p.Categories)
                 .WithMany(c => c.Products)
                 .UsingEntity(j => j.HasData(
                     new { CategoriesId = 1, ProductsId = 1 },
