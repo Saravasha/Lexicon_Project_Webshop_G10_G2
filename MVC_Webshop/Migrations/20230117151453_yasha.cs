@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MVC_Webshop.Migrations
 {
-    public partial class letsgo : Migration
+    public partial class yasha : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -70,6 +70,21 @@ namespace MVC_Webshop.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NormalizedName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -104,6 +119,7 @@ namespace MVC_Webshop.Migrations
                     CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CartId = table.Column<int>(type: "int", nullable: true),
                     OrderId = table.Column<int>(type: "int", nullable: true),
+                    RoleId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -148,6 +164,32 @@ namespace MVC_Webshop.Migrations
                         principalTable: "Carts",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CartId = table.Column<int>(type: "int", nullable: true),
+                    OrderId = table.Column<int>(type: "int", nullable: true),
+                    RoleId = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserId);
+                    table.ForeignKey(
+                        name: "FK_Users_Carts_CartId",
+                        column: x => x.CartId,
+                        principalTable: "Carts",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -269,7 +311,8 @@ namespace MVC_Webshop.Migrations
                     ExpectedDelivery = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Shipped = table.Column<bool>(type: "bit", nullable: false),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    ApplicationUserViewModelUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -279,6 +322,11 @@ namespace MVC_Webshop.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Orders_Users_ApplicationUserViewModelUserId",
+                        column: x => x.ApplicationUserViewModelUserId,
+                        principalTable: "Users",
+                        principalColumn: "UserId");
                 });
 
             migrationBuilder.CreateTable(
@@ -308,9 +356,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "1920cf5c-0725-48e7-aad3-b48abc740c1c", "a4c329bd-b606-4940-a800-26f100eb9c90", "Admin", "ADMIN" },
-                    { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", "cb3fc134-a37d-4777-87dd-4b19c2b73256", "Manager", "MANAGER" },
-                    { "abb3043d-df91-4a25-a23f-d88908a7c606", "62b76bab-8215-4f07-9459-102babbd72e0", "User", "USER" }
+                    { "a4dac990-d303-4dc3-859d-4faafe158a71", "0f51f9c7-fa21-4895-bb5a-7754cbe89c20", "Admin", "ADMIN" },
+                    { "ccd47afc-fbef-4452-924c-9dbe2a559984", "257e7416-65e8-44d5-8471-dfc1c2246968", "User", "USER" },
+                    { "ed4d9f96-be0b-47f5-86c5-347f1d0ec29f", "3e943200-c4fd-4d00-9d08-3aaa40622e3d", "Manager", "MANAGER" }
                 });
 
             migrationBuilder.InsertData(
@@ -334,11 +382,11 @@ namespace MVC_Webshop.Migrations
 
             migrationBuilder.InsertData(
                 table: "Orders",
-                columns: new[] { "Id", "ExpectedDelivery", "OrderDate", "Shipped", "ShippingDate", "UserId" },
+                columns: new[] { "Id", "ApplicationUserViewModelUserId", "ExpectedDelivery", "OrderDate", "Shipped", "ShippingDate", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "3", new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3993), false, new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(3953), null },
-                    { 2, "3", new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4010), false, new DateTime(2023, 1, 16, 16, 23, 23, 537, DateTimeKind.Local).AddTicks(4007), null }
+                    { 1, null, "4", new DateTime(2023, 1, 17, 16, 14, 53, 275, DateTimeKind.Local).AddTicks(1183), false, new DateTime(2023, 1, 17, 16, 14, 53, 275, DateTimeKind.Local).AddTicks(1141), null },
+                    { 2, null, "4", new DateTime(2023, 1, 17, 16, 14, 53, 275, DateTimeKind.Local).AddTicks(1200), false, new DateTime(2023, 1, 17, 16, 14, 53, 275, DateTimeKind.Local).AddTicks(1198), null }
                 });
 
             migrationBuilder.InsertData(
@@ -353,11 +401,11 @@ namespace MVC_Webshop.Migrations
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "Address", "CartId", "City", "ConcurrencyStamp", "Country", "CreditCardNumber", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "OrderId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                columns: new[] { "Id", "AccessFailedCount", "Address", "CartId", "City", "ConcurrencyStamp", "Country", "CreditCardNumber", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "OrderId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "RoleId", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", 0, null, 2, null, "c2ecc3d6-8ee3-43b8-8a47-037c5edc51ba", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAELnSzUH5v4eh4+zMFhHSaYnDrk9mu0BoLtgP4hmw4NmhfiUnEEPYb/wfjlCwtbYCfg==", null, false, null, "617fff78-dfa0-4af3-9337-1778757e4151", false, "Karen" },
-                    { "abb3043d-df91-4a25-a23f-d88908a7c606", 0, null, 1, null, "2829f0e7-64b2-4f13-8d86-abf05710ed5a", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEExoTbLh4xuwIdyVYFCbHjAyiym2kZn8M4haEUOo8pt1IXerc78CoUkdFKgibsmw8Q==", null, false, null, "86b61878-5bbd-4785-a323-99430c62ebfd", false, "Admin" }
+                    { "ccd47afc-fbef-4452-924c-9dbe2a559984", 0, null, 1, null, "2b185c9c-6190-43e6-b7eb-db963bb929c3", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEBbUd33k/DhTloFSXZ6Pbu3t1UVmRDfFoOmtoxA1FGAxdBVZWYafXKbLIZFgKNvzqg==", null, false, null, null, "418e8403-d516-4d13-889e-f1adad2372d0", false, "Admin" },
+                    { "ed4d9f96-be0b-47f5-86c5-347f1d0ec29f", 0, null, 2, null, "f29c4431-1e81-4a7e-b842-980259a5cf81", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAEOkWK8NUkoguU/f2FDoQZxJcCyDbdLYMKJwgrjj/MMOPditmmc4TbcgJUhpxnqtwvw==", null, false, null, null, "a646e44e-4752-4091-9261-865c1dd7698d", false, "Karen" }
                 });
 
             migrationBuilder.InsertData(
@@ -373,12 +421,12 @@ namespace MVC_Webshop.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "1920cf5c-0725-48e7-aad3-b48abc740c1c", "abb3043d-df91-4a25-a23f-d88908a7c606" });
+                values: new object[] { "a4dac990-d303-4dc3-859d-4faafe158a71", "ccd47afc-fbef-4452-924c-9dbe2a559984" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "758ede42-49da-4a63-a8a7-53ca5f8fbbb5", "abb3043d-df91-4a25-a23f-d88908a7c606" });
+                values: new object[] { "ed4d9f96-be0b-47f5-86c5-347f1d0ec29f", "ccd47afc-fbef-4452-924c-9dbe2a559984" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -442,9 +490,19 @@ namespace MVC_Webshop.Migrations
                 column: "OrderId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Orders_ApplicationUserViewModelUserId",
+                table: "Orders",
+                column: "ApplicationUserViewModelUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Orders_UserId",
                 table: "Orders",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_CartId",
+                table: "Users",
+                column: "CartId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -474,6 +532,9 @@ namespace MVC_Webshop.Migrations
                 name: "OrderItems");
 
             migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -487,6 +548,9 @@ namespace MVC_Webshop.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Carts");

@@ -6,95 +6,89 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
-using MVC_Webshop.Models;
+using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Controllers
 {
-    public class OrdersController : Controller
+    public class RolesController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public OrdersController(ApplicationDbContext context)
+        public RolesController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Orders
+        // GET: Roles
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Orders.ToListAsync());
+              return View(await _context.Roles.ToListAsync());
         }
 
-        // GET: Orders/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: Roles/Details/5
+        public async Task<IActionResult> Details(string id)
         {
-            if (id == null || _context.Orders == null)
+            if (id == null || _context.Roles == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Orders
+            var applicationRoleViewModel = await _context.Roles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (order == null)
+            if (applicationRoleViewModel == null)
             {
                 return NotFound();
             }
 
-            return View(order);
+            return View(applicationRoleViewModel);
         }
 
-        // GET: Orders/Create
+        // GET: Roles/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Orders/Create
+        // POST: Roles/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ShippingDate,ExpectedDelivery,Shipped,OrderDate")] Order order)
+        public async Task<IActionResult> Create([Bind("Id,Name,UserId,NormalizedName,ConcurrencyStamp")] ApplicationRoleViewModel applicationRoleViewModel)
         {
-
-    //        var errors = ModelState
-    //.Where(x => x.Value.Errors.Count > 0)
-    //.Select(x => new { x.Key, x.Value.Errors })
-    //.ToArray();
-
             if (ModelState.IsValid)
             {
-                _context.Add(order);
+                _context.Add(applicationRoleViewModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(order);
+            return View(applicationRoleViewModel);
         }
 
-        // GET: Orders/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: Roles/Edit/5
+        public async Task<IActionResult> Edit(string id)
         {
-            if (id == null || _context.Orders == null)
+            if (id == null || _context.Roles == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Orders.FindAsync(id);
-            if (order == null)
+            var applicationRoleViewModel = await _context.Roles.FindAsync(id);
+            if (applicationRoleViewModel == null)
             {
                 return NotFound();
             }
-            return View(order);
+            return View(applicationRoleViewModel);
         }
 
-        // POST: Orders/Edit/5
+        // POST: Roles/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ShippingDate,ExpectedDelivery,Shipped,OrderDate")] Order order)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,UserId,NormalizedName,ConcurrencyStamp")] ApplicationRoleViewModel applicationRoleViewModel)
         {
-            if (id != order.Id)
+            if (id != applicationRoleViewModel.Id)
             {
                 return NotFound();
             }
@@ -103,12 +97,12 @@ namespace MVC_Webshop.Controllers
             {
                 try
                 {
-                    _context.Update(order);
+                    _context.Update(applicationRoleViewModel);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!OrderExists(order.Id))
+                    if (!ApplicationRoleViewModelExists(applicationRoleViewModel.Id))
                     {
                         return NotFound();
                     }
@@ -119,49 +113,49 @@ namespace MVC_Webshop.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(order);
+            return View(applicationRoleViewModel);
         }
 
-        // GET: Orders/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // GET: Roles/Delete/5
+        public async Task<IActionResult> Delete(string id)
         {
-            if (id == null || _context.Orders == null)
+            if (id == null || _context.Roles == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Orders
+            var applicationRoleViewModel = await _context.Roles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (order == null)
+            if (applicationRoleViewModel == null)
             {
                 return NotFound();
             }
 
-            return View(order);
+            return View(applicationRoleViewModel);
         }
 
-        // POST: Orders/Delete/5
+        // POST: Roles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            if (_context.Orders == null)
+            if (_context.Roles == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Orders'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Roles'  is null.");
             }
-            var order = await _context.Orders.FindAsync(id);
-            if (order != null)
+            var applicationRoleViewModel = await _context.Roles.FindAsync(id);
+            if (applicationRoleViewModel != null)
             {
-                _context.Orders.Remove(order);
+                _context.Roles.Remove(applicationRoleViewModel);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool OrderExists(int id)
+        private bool ApplicationRoleViewModelExists(string id)
         {
-          return _context.Orders.Any(e => e.Id == id);
+          return _context.Roles.Any(e => e.Id == id);
         }
     }
 }

@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MVC_Webshop.Areas.Identity.Data;
 using MVC_Webshop.Models;
+using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Data
 {
@@ -21,6 +23,11 @@ namespace MVC_Webshop.Data
         public DbSet<Cart> Carts { get; set; } = default!;
         public DbSet<Item> Items { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
+
+        public DbSet<ApplicationUserViewModel> Users { get; set; } = default!;
+
+        public DbSet<ApplicationRoleViewModel> Roles { get; set; } = default!;
+
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {

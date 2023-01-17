@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using MVC_Webshop.Models;
+using MVC_Webshop.Areas.Identity.Data;
 
 namespace MVC_Webshop.Areas.Identity.Pages.Account
 {

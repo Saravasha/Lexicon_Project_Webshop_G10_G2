@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
-using MVC_Webshop.Models;
+using MVC_Webshop.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("MVC_WebshopContextConnection") ?? throw new InvalidOperationException("Connection string 'MVC_WebshopContextConnection' not found.");
@@ -23,6 +25,10 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredLength = 1;
 });
 
+
+builder.Services.Configure<MvcViewOptions>(options =>
+    options.HtmlHelperOptions.CheckBoxHiddenInputRenderMode =
+        CheckBoxHiddenInputRenderMode.None);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

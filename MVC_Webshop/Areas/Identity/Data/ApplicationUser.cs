@@ -1,8 +1,9 @@
 ﻿
 
 using Microsoft.AspNetCore.Identity;
+using MVC_Webshop.Models;
 
-namespace MVC_Webshop.Models;
+namespace MVC_Webshop.Areas.Identity.Data;
 
 public class ApplicationUser : IdentityUser
 {
@@ -16,7 +17,7 @@ public class ApplicationUser : IdentityUser
     public int? CartId { get; set; }
     public Cart? Cart { get; set; }
     public int? OrderId { get; set; }
+    public string? RoleId { get; set; }
     public List<Order>? Orders { get; set; }
 
-}   
- 
+}
