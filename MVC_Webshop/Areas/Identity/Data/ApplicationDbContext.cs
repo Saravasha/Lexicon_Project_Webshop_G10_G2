@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Models;
 using Microsoft.AspNetCore.Identity;
+using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Data
 {
@@ -64,6 +65,7 @@ namespace MVC_Webshop.Data
                 .UsingEntity(j => j.HasData(
                     new { CategoriesId = 1, ProductsId = 1 },
                     new { CategoriesId = 2, ProductsId = 2 },
+                    new { CategoriesId = 3, ProductsId = 2},
                     new { CategoriesId = 3, ProductsId = 3 }
             ));
 
@@ -137,5 +139,9 @@ namespace MVC_Webshop.Data
                 }
             );
         }
+
+        //public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
+
+        //public DbSet<MVC_Webshop.ViewModels.ProductCreateViewModel> ProductCreateViewModel { get; set; }
     }
 }

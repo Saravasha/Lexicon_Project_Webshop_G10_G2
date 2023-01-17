@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVC_Webshop.Models.Category>
+﻿@model CategoryViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -14,19 +14,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ProductId)
+                Category ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Category
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.listOfCategories) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductId)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)

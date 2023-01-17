@@ -32,8 +32,11 @@ namespace MVC_Webshop.ViewModels
         [Display(Name = "Stock:")]
         public int? Quantity { get; set; }
 
+        //public int CategoryId { get; set; }
+
+
         [Display(Name = "Category:")]
         [Required(ErrorMessage = "Category is Required")]
-        public int CategoryId { get; set; }
+        public List<Category> categoriesMulti { get; set; } = new();
     }
 }

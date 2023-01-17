@@ -12,7 +12,6 @@ namespace MVC_Webshop.Controllers
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;
-        static ProductViewModel pvm = new();
         static ProductCreateViewModel pcvm = new ProductCreateViewModel();
 
         public ProductController(ApplicationDbContext context)
@@ -23,6 +22,8 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController
         public IActionResult Index()
         {
+            var pvm = new ProductViewModel();
+
             pvm.listOfProducts = _context.Products
                 .Include(c => c.Categories).ToList();
 
@@ -52,12 +53,10 @@ namespace MVC_Webshop.Controllers
         // POST: ProductController/Create
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public IActionResult Create(ProductCreateViewModel product)
+        public IActionResult Create(ProductCreateViewModel product, List<string> categoriesMulti)
         {
-            
-
             ModelState.Remove("Id");
-            if(ModelState.IsValid && product.CategoryId != 0)
+            if (ModelState.IsValid)
             {
                 var ProductToAdd = new Product()
                 {
@@ -67,15 +66,20 @@ namespace MVC_Webshop.Controllers
                     ShortDescription = product.ShortDescription,
                     Description = product.Description,
                     Quantity = product.Quantity,
-                    //CategoryId = product.CategoryId,
-                    
+
                     ImageUrl = "/img/banana.jpg"
                 };
 
-                Category? cat = _context.Categories.Find(product.CategoryId);
-                if(cat != null)
+                Category? catToAdd = new Category();
+                foreach (var item in categoriesMulti)
                 {
-                    ProductToAdd.Categories.Add(cat);
+                    int castItem = Int32.Parse(item);
+                    catToAdd = _context.Categories.FirstOrDefault(c => c.Id == castItem);
+
+                    if (catToAdd != null)
+                    {
+                        ProductToAdd.Categories.Add(catToAdd);
+                    }
                 }
 
                 _context.Products.Add(ProductToAdd);
@@ -85,7 +89,7 @@ namespace MVC_Webshop.Controllers
             }
             else
             {
-                if (product.CategoryId == 0)
+                if (product.categoriesMulti.Count == 0)
                 {
                     ViewBag.CategoryError = "Category is Required";
                 }
@@ -98,9 +102,30 @@ namespace MVC_Webshop.Controllers
         }
 
         // GET: ProductController/Edit/5
+        [HttpGet]
         public IActionResult Edit(int id)
         {
-            return View();
+            //Product? product = _context.Products.Find(id);
+
+            Product? product = _context.Products
+                .Include(c => c.Categories)
+                .FirstOrDefault(p => p.Id == id);
+
+            if (product != null)
+            {
+                pcvm.Name = product.Name;
+                pcvm.Brand = product.Brand;
+                pcvm.Price = product.Price;
+                pcvm.ShortDescription = product.ShortDescription;
+                //pcvm.ImageUrl = product.ImageUrl
+                pcvm.Quantity = product.Quantity;
+            }
+
+            var categories = _context.Categories;
+            string selectedVal = "1";
+            ViewBag.CategoryList = new MultiSelectList(categories, "Id", "Name", selectedVal);
+
+            return View(pcvm);
         }
 
         // POST: ProductController/Edit/5
@@ -108,11 +133,12 @@ namespace MVC_Webshop.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, IFormCollection collection)
         {
-            try
+            if (true)
             {
                 return RedirectToAction(nameof(Index));
+
             }
-            catch
+            else
             {
                 return View();
             }
@@ -121,6 +147,7 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController/Delete/5
         public IActionResult Delete(int id)
         {
+
             return View();
         }
 
@@ -129,14 +156,15 @@ namespace MVC_Webshop.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete(int id, IFormCollection collection)
         {
-            try
+            var prodToRemove = _context.Products.Find(id);
+
+            if (prodToRemove != null)
             {
-                return RedirectToAction(nameof(Index));
+                _context.Products.Remove(prodToRemove);
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction(nameof(Index));
+            
         }
     }
 }
