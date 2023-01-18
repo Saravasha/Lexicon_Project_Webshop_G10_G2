@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using MVC_Webshop.Models;
 using System.Xml.Linq;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVC_Webshop.ViewModels
 {
@@ -27,13 +28,24 @@ namespace MVC_Webshop.ViewModels
         [Display(Name = "Description:")]
         public string? Description { get; set; }
 
-        // PRODUCT IMAGE UPLOAD
+
+        [Display(Name = "Product Image")]
+        public string? ImageUrl { get; set; }
+
+        [NotMapped]
+        public IFormFile ImageUp { get; set; }
+
+
+
+        //public IFormFile ImageUrl { get; set; }
 
         [Display(Name = "Stock:")]
         public int? Quantity { get; set; }
 
         //public int CategoryId { get; set; }
 
+
+        public List<int>? CategoryIds { get; set; } = new();
 
         [Display(Name = "Category:")]
         [Required(ErrorMessage = "Category is Required")]

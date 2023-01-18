@@ -7,16 +7,41 @@ using MVC_Webshop.Models;
 using MVC_Webshop.ViewModels;
 using System.Linq;
 
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using System.Runtime.CompilerServices;
+
 namespace MVC_Webshop.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        static ProductCreateViewModel pcvm = new ProductCreateViewModel();
 
-        public ProductController(ApplicationDbContext context)
+        //HELPER FUNCTIONS
+        string UploadedFile(ProductCreateViewModel product)
+        {
+            string? uniqueFileName = null;
+
+            if (product.ImageUp != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + product.ImageUp.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    product.ImageUp.CopyTo(fileStream);
+                }
+            }
+
+            return "/images/" + uniqueFileName;
+        }
+
+        private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment webHostEnvironment;
+
+        public ProductController(ApplicationDbContext context, IWebHostEnvironment webHost)
         {
             _context = context;
+            webHostEnvironment = webHost;
         }
 
         // GET: ProductController
@@ -43,6 +68,7 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController/Create
         public IActionResult Create()
         {
+            ProductCreateViewModel pcvm = new ProductCreateViewModel();
             var categories = _context.Categories;
 
             ViewBag.CategoryList = new SelectList(categories, "Id", "Name");
@@ -55,7 +81,13 @@ namespace MVC_Webshop.Controllers
         //[ValidateAntiForgeryToken]
         public IActionResult Create(ProductCreateViewModel product, List<string> categoriesMulti)
         {
+            ProductCreateViewModel pcvm = new ProductCreateViewModel();
+
+            string uniqueFileName = UploadedFile(product);
+            product.ImageUrl = uniqueFileName;
+
             ModelState.Remove("Id");
+            ModelState.Remove("ImageUrl");
             if (ModelState.IsValid)
             {
                 var ProductToAdd = new Product()
@@ -66,8 +98,7 @@ namespace MVC_Webshop.Controllers
                     ShortDescription = product.ShortDescription,
                     Description = product.Description,
                     Quantity = product.Quantity,
-
-                    ImageUrl = "/img/banana.jpg"
+                    ImageUrl = uniqueFileName
                 };
 
                 Category? catToAdd = new Category();
@@ -80,6 +111,7 @@ namespace MVC_Webshop.Controllers
                     {
                         ProductToAdd.Categories.Add(catToAdd);
                     }
+
                 }
 
                 _context.Products.Add(ProductToAdd);
@@ -106,10 +138,16 @@ namespace MVC_Webshop.Controllers
         public IActionResult Edit(int id)
         {
             //Product? product = _context.Products.Find(id);
-
+            ProductCreateViewModel pcvm = new ProductCreateViewModel();
             Product? product = _context.Products
                 .Include(c => c.Categories)
                 .FirstOrDefault(p => p.Id == id);
+
+            List<int> categoriesIds = new();
+            foreach(var productNum in product.Categories)
+            {
+                categoriesIds.Add(productNum.Id);
+            }
 
             if (product != null)
             {
@@ -119,11 +157,12 @@ namespace MVC_Webshop.Controllers
                 pcvm.ShortDescription = product.ShortDescription;
                 //pcvm.ImageUrl = product.ImageUrl
                 pcvm.Quantity = product.Quantity;
+                pcvm.CategoryIds = categoriesIds;
             }
 
             var categories = _context.Categories;
-            string selectedVal = "1";
-            ViewBag.CategoryList = new MultiSelectList(categories, "Id", "Name", selectedVal);
+            
+            ViewBag.CategoryList = new MultiSelectList(categories, "Id", "Name");
 
             return View(pcvm);
         }
@@ -147,12 +186,22 @@ namespace MVC_Webshop.Controllers
         // GET: ProductController/Delete/5
         public IActionResult Delete(int id)
         {
+            var prodToRemove = _context.Products.Find(id);
 
-            return View();
+            if (prodToRemove != null)
+            {
+                _context.Products.Remove(prodToRemove);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction(nameof(Index));
+
+            //return View();
         }
 
         // POST: ProductController/Delete/5
         [HttpPost]
+        [HttpDelete]
         [ValidateAntiForgeryToken]
         public IActionResult Delete(int id, IFormCollection collection)
         {
@@ -161,10 +210,12 @@ namespace MVC_Webshop.Controllers
             if (prodToRemove != null)
             {
                 _context.Products.Remove(prodToRemove);
+                _context.SaveChanges();
             }
 
             return RedirectToAction(nameof(Index));
             
         }
-    }
+
+}
 }

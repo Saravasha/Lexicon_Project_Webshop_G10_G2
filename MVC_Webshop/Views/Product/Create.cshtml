@@ -8,7 +8,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -35,11 +35,20 @@
                 <textarea asp-for="Description" class="form-control"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>*@
+
+            <div class="form-group">
+                <label asp-for="ImageUp" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="ImageUp" class="custom-file-input" id="FLFrontImage"
+                    onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])" />
+                    <label class="custom-file-label" for="FLFrontImage">Choose file</label>
+                </div>
+                <span asp-validation-for="ImageUp" class="text-danger"></span>
+
+                <img id="FrontImagePrv" src="" alt="product" width="150" height="150" style="border: 1px; margin-top:20px;margin-left:120px;"
+
+            </div>
+
             <div class="form-group">
                 <label asp-for="Quantity" class="control-label"></label>
                 <input asp-for="Quantity" class="form-control" />
@@ -48,12 +57,12 @@
             <div class="form-group">
                 <label asp-for="categoriesMulti" class="control-label"></label>
                 <select asp-for="categoriesMulti" asp-items="ViewBag.CategoryList" multiple class="form-control dropdown-margin-bottom">
-                    <option disabled selected>Select Category</option>
+                    @*<option disabled selected>Select Category</option>*@
                 </select>
-                    @if (ViewBag.CategoryError!= null)
-                    {
-                        <span class="error-message">@ViewBag.CategoryError</span>
-                    }
+                @if (ViewBag.CategoryError != null)
+                {
+                    <span class="error-message">@ViewBag.CategoryError</span>
+                }
             </div>
 
 
@@ -69,6 +78,9 @@
 </div>
 
 
-
-
-
+<script type="text/javascript">
+    $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    })
+</script>
