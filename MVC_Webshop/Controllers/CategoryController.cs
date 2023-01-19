@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
 using MVC_Webshop.Models;
 using MVC_Webshop.ViewModels;
@@ -65,31 +66,52 @@ namespace MVC_Webshop.Controllers
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var ccvm = new CategoryCreateViewModel();
+            var category = _context.Categories.Find(id);
+            ccvm.Name = category.Name;
+            return View(ccvm);
         }
 
         // POST: CategoryController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, CategoryCreateViewModel collection)
         {
-            try
+            var categoryToEdit = _context.Categories.Find(id);
+
+            if(ModelState.IsValid)
             {
+                categoryToEdit.Name = collection.Name;
+
+                _context.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-
-                //ViewBag.CategoryError
-
-                return View();
+                return View(collection);
             }
         }
 
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            //Category? catRemove = _context.Categories.Find(id);
+            Category? categoryToDelete = _context.Categories.Include(x => x.Products).FirstOrDefault(y => y.Id == id);
+
+            if(categoryToDelete != null && categoryToDelete.Products.Count != 0)
+            {
+                ViewBag.IsInUse = "isinuse";
+                cvm.listOfCategories = _context.Categories.ToList();
+                return View("Index", cvm);
+            }
+            else
+            {
+                _context.Categories.Remove(categoryToDelete);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
         }
 
         // POST: CategoryController/Delete/5

@@ -7,8 +7,8 @@ namespace MVC_Webshop.ViewModels
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Product Name is required")]
-        [Display(Name = "Product Name:")]
+        [Required(ErrorMessage = "Category Name is required")]
+        [Display(Name = "Category Name:")]
         public string Name { get; set; }
 
         [Display(Name = "Category:")]

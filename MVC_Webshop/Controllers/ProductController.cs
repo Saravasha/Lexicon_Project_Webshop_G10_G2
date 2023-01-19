@@ -137,13 +137,12 @@ namespace MVC_Webshop.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            //Product? product = _context.Products.Find(id);
             ProductCreateViewModel pcvm = new ProductCreateViewModel();
             Product? product = _context.Products
                 .Include(c => c.Categories)
                 .FirstOrDefault(p => p.Id == id);
 
-            List<int> categoriesIds = new();
+            List<int>? categoriesIds = new();
             foreach(var productNum in product.Categories)
             {
                 categoriesIds.Add(productNum.Id);
@@ -155,14 +154,17 @@ namespace MVC_Webshop.Controllers
                 pcvm.Brand = product.Brand;
                 pcvm.Price = product.Price;
                 pcvm.ShortDescription = product.ShortDescription;
-                //pcvm.ImageUrl = product.ImageUrl
+                //pcvm.ImageUrl = product.ImageUrl;
                 pcvm.Quantity = product.Quantity;
                 pcvm.CategoryIds = categoriesIds;
+
+                var categories = _context.Categories;
+
+                ViewBag.CategoryList = new MultiSelectList(categories, "Id", "Name");
+                ViewBag.Image = product.ImageUrl;
             }
 
-            var categories = _context.Categories;
             
-            ViewBag.CategoryList = new MultiSelectList(categories, "Id", "Name");
 
             return View(pcvm);
         }
@@ -170,12 +172,41 @@ namespace MVC_Webshop.Controllers
         // POST: ProductController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Edit(int id, ProductCreateViewModel prod, List<string> CategoryIds)
         {
-            if (true)
-            {
-                return RedirectToAction(nameof(Index));
+            Product? productToEdit = _context.Products.Find(id);
 
+
+            ModelState.Remove("Id");
+            ModelState.Remove("ImageUrl");
+            ModelState.Remove("ImageUp");
+            if (productToEdit != null && ModelState.IsValid)
+            {
+                productToEdit.Name = prod.Name;
+                productToEdit.Brand = prod.Brand;
+                productToEdit.Price = prod.Price;
+                productToEdit.ShortDescription = prod.ShortDescription;
+                productToEdit.Description = prod.Description;
+                productToEdit.Quantity = prod.Quantity;
+                productToEdit.ImageUrl = productToEdit.ImageUrl;
+
+                Category? catToAdd = new Category();
+                foreach (var item in CategoryIds)
+                {
+                    int castItem = Int32.Parse(item);
+                    catToAdd = _context.Categories.FirstOrDefault(c => c.Id == castItem);
+
+                    if (catToAdd != null)
+                    {
+                        productToEdit.Categories.Add(catToAdd);
+                    }
+
+                }
+
+                _context.Products.Update(productToEdit);
+                _context.SaveChanges();
+
+                return RedirectToAction(nameof(Index));
             }
             else
             {

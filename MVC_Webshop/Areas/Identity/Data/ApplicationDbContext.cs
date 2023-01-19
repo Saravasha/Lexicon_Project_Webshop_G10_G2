@@ -140,6 +140,8 @@ namespace MVC_Webshop.Data
             );
         }
 
+        public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
+
         //public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
 
         //public DbSet<MVC_Webshop.ViewModels.ProductCreateViewModel> ProductCreateViewModel { get; set; }
