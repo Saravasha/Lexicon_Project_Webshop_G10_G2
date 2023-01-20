@@ -34,7 +34,7 @@ namespace MVC_Webshop.Controllers
             }
 
             var applicationRoleViewModel = await _context.Roles
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (applicationRoleViewModel == null)
             {
                 return NotFound();
@@ -88,7 +88,7 @@ namespace MVC_Webshop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Id,Name,UserId,NormalizedName,ConcurrencyStamp")] ApplicationRoleViewModel applicationRoleViewModel)
         {
-            if (id != applicationRoleViewModel.Id)
+            if (id != applicationRoleViewModel.UserId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace MVC_Webshop.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ApplicationRoleViewModelExists(applicationRoleViewModel.Id))
+                    if (!ApplicationRoleViewModelExists(applicationRoleViewModel.UserId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace MVC_Webshop.Controllers
             }
 
             var applicationRoleViewModel = await _context.Roles
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (applicationRoleViewModel == null)
             {
                 return NotFound();
@@ -155,7 +155,7 @@ namespace MVC_Webshop.Controllers
 
         private bool ApplicationRoleViewModelExists(string id)
         {
-          return _context.Roles.Any(e => e.Id == id);
+          return _context.Roles.Any(e => e.UserId == id);
         }
     }
 }
