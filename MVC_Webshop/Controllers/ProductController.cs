@@ -143,7 +143,7 @@ namespace MVC_Webshop.Controllers
                 .FirstOrDefault(p => p.Id == id);
 
             List<int>? categoriesIds = new();
-            foreach(var productNum in product.Categories)
+            foreach (var productNum in product.Categories)
             {
                 categoriesIds.Add(productNum.Id);
             }
@@ -164,7 +164,7 @@ namespace MVC_Webshop.Controllers
                 ViewBag.Image = product.ImageUrl;
             }
 
-            
+
 
             return View(pcvm);
         }
@@ -189,6 +189,21 @@ namespace MVC_Webshop.Controllers
                 productToEdit.Description = prod.Description;
                 productToEdit.Quantity = prod.Quantity;
                 productToEdit.ImageUrl = productToEdit.ImageUrl;
+
+                var catToDelete = _context.Products.Include(c => c.Categories)
+                                        .FirstOrDefault(p => p.Id == id);
+
+                List<Category> temp = new List<Category>();
+
+                foreach (var item in catToDelete.Categories)
+                {
+                    temp.Add(item);
+                }
+
+                foreach (var cat in temp)
+                {
+                    catToDelete.Categories.Remove(cat);
+                }
 
                 Category? catToAdd = new Category();
                 foreach (var item in CategoryIds)
@@ -245,8 +260,8 @@ namespace MVC_Webshop.Controllers
             }
 
             return RedirectToAction(nameof(Index));
-            
+
         }
 
-}
+    }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mvifog6+LYp5pQ7sa6Zfwu0JWOHzUb6Q5nEho9Wic+o=",
+  "Hash": "Zel7/38v4p0DA3oLUd7ehlSfQIxbOvPlNHhYmGMH2HM=",
   "Source": "MVC_Webshop",
   "BasePath": "_content/MVC_Webshop",
   "Mode": "Default",
@@ -1205,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2ad74efc-171c-4b77-8f2c-0d3712f30546_Skärmklipp.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\4dd4d032-5b23-4a92-a659-9170cddbc3f2_glass01.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "images/4dd4d032-5b23-4a92-a659-9170cddbc3f2_glass01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4dd4d032-5b23-4a92-a659-9170cddbc3f2_glass01.jpg"
     },
     {
       "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\61a5176d-4602-4ea9-a868-06eb136762a1_bird.jpg",
