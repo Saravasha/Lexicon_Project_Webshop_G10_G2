@@ -10454,19 +10454,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elev\\.nuget\\packages\\": {}
+    "C:\\Users\\katten\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+      "projectUniqueName": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
       "projectName": "MVC_Webshop",
-      "projectPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
-      "packagesPath": "C:\\Users\\Elev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
+      "projectPath": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+      "packagesPath": "C:\\Users\\katten\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Elev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\katten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10474,6 +10481,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10552,7 +10560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },
