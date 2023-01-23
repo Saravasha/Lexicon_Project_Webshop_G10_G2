@@ -1,4 +1,4 @@
-﻿using MVC_Webshop.Areas.Identity.Data;
+﻿using MVC_Webshop.Data;
 
 namespace MVC_Webshop.ViewModels
 {

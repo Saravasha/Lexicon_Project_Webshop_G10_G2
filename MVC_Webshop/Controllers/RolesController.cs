@@ -34,7 +34,7 @@ namespace MVC_Webshop.Controllers
             }
 
             var applicationRoleViewModel = await _context.Roles
-                .FirstOrDefaultAsync(m => m.UserId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (applicationRoleViewModel == null)
             {
                 return NotFound();
@@ -125,7 +125,7 @@ namespace MVC_Webshop.Controllers
             }
 
             var applicationRoleViewModel = await _context.Roles
-                .FirstOrDefaultAsync(m => m.UserId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (applicationRoleViewModel == null)
             {
                 return NotFound();
@@ -155,7 +155,7 @@ namespace MVC_Webshop.Controllers
 
         private bool ApplicationRoleViewModelExists(string id)
         {
-          return _context.Roles.Any(e => e.UserId == id);
+          return _context.Roles.Any(e => e.Id == id);
         }
     }
 }

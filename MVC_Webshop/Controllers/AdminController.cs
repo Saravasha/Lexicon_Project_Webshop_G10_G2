@@ -1,7 +1,6 @@
-﻿using Identity.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using MVC_Webshop.Areas.Identity.Data;
+using MVC_Webshop.Data;
 
 namespace Identity.Controllers
 {
@@ -24,7 +23,7 @@ namespace Identity.Controllers
         public IActionResult Create() => View();
 
         [HttpPost]
-        public async Task<IActionResult> Create(User user)
+        public async Task<IActionResult> Create(ApplicationUser user)
         {
             if (ModelState.IsValid)
             {
@@ -36,7 +35,7 @@ namespace Identity.Controllers
                     //TwoFactorEnabled = true
                 };
 
-                IdentityResult result = await _userManager.CreateAsync(appUser, user.Password);
+                IdentityResult result = await _userManager.CreateAsync(appUser, user.PasswordHash);
                 
                 if (result.Succeeded)
                     return RedirectToAction("Index");

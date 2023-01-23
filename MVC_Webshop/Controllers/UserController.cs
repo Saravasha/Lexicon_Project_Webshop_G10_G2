@@ -36,7 +36,7 @@ namespace MVC_Webshop.Controllers
 
             var applicationUserViewModel = await _context.Users
                 .Include(a => a.Cart)
-                .FirstOrDefaultAsync(m => m.UserId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (applicationUserViewModel == null)
             {
                 return NotFound();
@@ -132,7 +132,7 @@ namespace MVC_Webshop.Controllers
 
             var applicationUserViewModel = await _context.Users
                 .Include(a => a.Cart)
-                .FirstOrDefaultAsync(m => m.UserId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (applicationUserViewModel == null)
             {
                 return NotFound();
@@ -162,7 +162,7 @@ namespace MVC_Webshop.Controllers
 
         private bool ApplicationUserViewModelExists(string id)
         {
-          return _context.Users.Any(e => e.UserId == id);
+          return _context.Users.Any(e => e.Id == id);
         }
     }
 }

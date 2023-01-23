@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MVC_Webshop.Areas.Identity.Data;
 using MVC_Webshop.Models;
 using MVC_Webshop.ViewModels;
 
@@ -24,9 +23,6 @@ namespace MVC_Webshop.Data
         public DbSet<Item> Items { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
 
-        //public DbSet<ApplicationUserViewModel> Users { get; set; } = default!;
-
-        //public DbSet<ApplicationRoleViewModel> Roles { get; set; } = default!;
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
@@ -54,10 +50,12 @@ namespace MVC_Webshop.Data
             // Order
             modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
             modelbuilder.Entity<Order>().HasData(new Order { Id = 2, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
+            modelbuilder.Entity<Order>().HasData(new Order { Id = 3, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
 
             // Cart
             modelbuilder.Entity<Cart>().HasData(new Cart { Id = 1 });
             modelbuilder.Entity<Cart>().HasData(new Cart { Id = 2 });
+            modelbuilder.Entity<Cart>().HasData(new Cart { Id = 3 });
 
             // Item
             modelbuilder.Entity<Item>().HasData(new Item { Id = 1, CartId = 1, ProductIdRef = 1, Quantity = 1, });
@@ -97,7 +95,7 @@ namespace MVC_Webshop.Data
             modelbuilder.Entity<ApplicationUser>().HasData(
                 new ApplicationUser
                 {
-                    Id = userId,
+                    Id = adminId,
                     Email = "admin@admin.com",
                     NormalizedEmail = "ADMIN@ADMIN.COM",
                     UserName = "Admin",
@@ -123,6 +121,20 @@ namespace MVC_Webshop.Data
                     CartId = 2,
                     OrderId = 2,
                     PasswordHash = passwordHasher.HashPassword(null, "password")
+                },
+                new ApplicationUser
+                {
+                    Id = userId,
+                    Email = "random@user.com",
+                    NormalizedEmail = "RANDOM@USER.COM",
+                    UserName = "Joe",
+                    NormalizedUserName = "JOE",
+                    FirstName = "Joe",
+                    LastName = "Sixpack",
+                    CreditCardNumber = "123",
+                    CartId = 3,
+                    OrderId = 3,
+                    PasswordHash = passwordHasher.HashPassword(null, "password")
                 }
             );
 
@@ -136,8 +148,13 @@ namespace MVC_Webshop.Data
                 {
                     RoleId = managerId,
                     UserId = userId
-                }
-            );
+                },
+				new IdentityUserRole<string>
+				{
+					RoleId = userId,
+					UserId = userId
+				}
+			);
         }
     }
 }
