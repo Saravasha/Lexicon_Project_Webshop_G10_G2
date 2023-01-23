@@ -31,7 +31,7 @@ namespace Identity.Controllers
                 ApplicationUser appUser = new ApplicationUser
                 {
 
-                    //UserName = user.Name,
+                    UserName = user.UserName,
                     Email = user.Email,
                     //TwoFactorEnabled = true
                 };
