@@ -26,6 +26,13 @@ namespace MVC_Webshop.Controllers
             return View(pvm);
         }
 
+        public IActionResult Details(int id)
+        {
+            Product? prod = _context.Products.Find(id);
+
+            return View(prod);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

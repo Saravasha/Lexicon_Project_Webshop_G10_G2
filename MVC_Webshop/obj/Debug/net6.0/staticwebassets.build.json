@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5g6mjgDemdRi7HGhBc+Iv3vaKP/wNHcqGOW8OxQ/HSU=",
+  "Hash": "Q/MaE9pLB2qCt29JYBx1UKbwogVVfnJxPISAQpXGI6Q=",
   "Source": "MVC_Webshop",
   "BasePath": "_content/MVC_Webshop",
   "Mode": "Default",
@@ -1171,6 +1171,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagesDesign\\design-04.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-01.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "imagesDesign/hero-image-01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesDesign\\hero-image-01.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-02.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "imagesDesign/hero-image-02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesDesign\\hero-image-02.jpg"
     },
     {
       "Identity": "C:\\Users\\katten\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
