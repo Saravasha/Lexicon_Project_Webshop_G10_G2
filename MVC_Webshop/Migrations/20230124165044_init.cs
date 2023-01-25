@@ -50,6 +50,20 @@ namespace MVC_Webshop.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CategoryCreateViewModel",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CategoryCreateViewModel", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -60,7 +74,7 @@ namespace MVC_Webshop.Migrations
                     Price = table.Column<double>(type: "float", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ShortDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -309,9 +323,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2be98bde-7772-4105-837d-f54732d79d31", "6e869e64-c738-487d-8d4c-609cdcc3a665", "User", "USER" },
-                    { "54b1df86-66e9-4cbf-8c75-b015a1388aab", "6ffca190-e4ec-4e2c-8183-67cb5304296d", "Manager", "MANAGER" },
-                    { "f349b9e4-4053-44d2-a53a-5c5872819145", "a9a91cde-fbaa-419a-8e0f-be7f3e14971c", "Admin", "ADMIN" }
+                    { "53db8c92-a481-4464-95e0-d93fb45c8195", "136717fd-aed6-4f4f-a713-005b088d88d4", "Manager", "MANAGER" },
+                    { "a2534b98-d03e-4de0-bb0f-f00a9772ddbc", "5198bdb7-6e7a-4bd7-8a7b-7cbe3a6fdda4", "User", "USER" },
+                    { "b59e4b4b-a157-41a6-b6d9-abc84834529f", "af857470-6eb9-4b8c-98e0-3c9145279bfd", "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -328,9 +342,9 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "Name", "ProductId" },
                 values: new object[,]
                 {
-                    { 1, "Birds", 0 },
+                    { 1, "Berry", 0 },
                     { 2, "Fruit", 0 },
-                    { 3, "Bilar", 0 }
+                    { 3, "Drinks", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -338,8 +352,8 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "ExpectedDelivery", "OrderDate", "Shipped", "ShippingDate", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "1", new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(5995), false, new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(5951), null },
-                    { 2, "1", new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(6009), false, new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(6007), null }
+                    { 1, "4", new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5152), false, new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5009), null },
+                    { 2, "4", new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5227), false, new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5224), null }
                 });
 
             migrationBuilder.InsertData(
@@ -347,9 +361,10 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "Brand", "CategoryId", "Description", "ImageUrl", "Name", "Price", "Quantity", "ShortDescription" },
                 values: new object[,]
                 {
-                    { 1, "Birdstuff", 0, "it's a type of bird", "/img/bird.jpg", "Gerpgork", 2000.0, 1, "tb" },
-                    { 2, "Chiquita", 0, "it's a type of Banana", "/img/banana.jpg", "Banana", 5.0, 1, "tb" },
-                    { 3, "Volvo", 0, "it's a type of car", "/img/volvo.jpg", "Volvo XC70", 500000.0, 1, "tb" }
+                    { 1, "Frukt & Grönt", 0, "Dessa mangosar är plockade av elitpersonal djupt nere i den farliga mangodalen.", "/imagesProduct/8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg", "Mango", 5.0, 200, "Fina mango från Mangodalen" },
+                    { 2, "Sura Gubben", 0, "Dessa citroner som odlas på hemlig utomjordisk plats har den finaste och söta surhet som någonsin uppmätts i en citron.", "/imagesProduct/3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg", "Citron", 4.7999999999999998, 800, "Färska och sura citroner" },
+                    { 3, "Äppelmannen & Co", 0, "Dessa härliga äpplen är odlade av äppelmannen i hans trädgård. De är friska och alltid färska. Dessa bör man passa på att köpa när de finns eftersom de är svåra att få tag i när de inte finns.", "/imagesProduct/c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg", "Gröna äpplen", 6.0, 140, "Snabba äpplen med frisk smak" },
+                    { 4, "Mr Blueberry", 0, "Dessa bär smakar bäst efter att man mosat en näve bär i handen och sen slickar rent fingrarna..", "/imagesProduct/4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg", "Blåbär", 0.040000000000000001, 1000000, "Små runda blåa blåbär" }
                 });
 
             migrationBuilder.InsertData(
@@ -357,8 +372,8 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "CartId", "City", "ConcurrencyStamp", "Country", "CreditCardNumber", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "OrderId", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PostalCode", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "2be98bde-7772-4105-837d-f54732d79d31", 0, null, 1, null, "05fdc023-cfba-4372-af51-23358e419eca", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAENVBpzwdXzaDyeXU2seqd+Mz+sNpScY+Lkx47UNKr1JBK/Pis+YKiKbWMYZVOjBDSg==", null, false, null, "700d9b3b-5c5d-498c-8595-98a5b8244b28", false, "Admin" },
-                    { "54b1df86-66e9-4cbf-8c75-b015a1388aab", 0, null, 2, null, "1e7fd52d-6868-479b-9e79-a27cc12d1762", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAENFnwWBSZZs7HSYpP71niw4c0SziadfsbX8VnJ9dTshEPo+R13xUZLRmfY11zDUqPQ==", null, false, null, "8a1739eb-9267-4d29-a4c0-94b518b51d1e", false, "Karen" }
+                    { "53db8c92-a481-4464-95e0-d93fb45c8195", 0, null, 2, null, "bcd87f8e-b3c6-41b8-929c-19e420450647", null, "123", "karen@manager.com", false, "Karen", "Managerson", false, null, "KAREN@MANAGER.COM", "KAREN", 2, "AQAAAAEAACcQAAAAEB4eJ11usKcODZusRgz5SjEoKqJL2jBPfyIdfW3EZXvbWX9/yu9uzh8MQP+vTS8JaA==", null, false, null, "3d631e31-9153-4c31-90f0-8e967e1e7414", false, "Karen" },
+                    { "a2534b98-d03e-4de0-bb0f-f00a9772ddbc", 0, null, 1, null, "773328d7-934e-4122-b66f-479333edbc81", null, "234", "admin@admin.com", false, "Admin", "Adminson", false, null, "ADMIN@ADMIN.COM", "ADMIN", 1, "AQAAAAEAACcQAAAAEI+yR6jDY5arFhXEz2wDgSbznkEJ1Mx93QDmdjrByP/D7JPyxxVVAaGHZw3shRRg0w==", null, false, null, "305adce2-7f15-4df2-97f8-df3b61976bdb", false, "Admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -366,10 +381,10 @@ namespace MVC_Webshop.Migrations
                 columns: new[] { "CategoriesId", "ProductsId" },
                 values: new object[,]
                 {
-                    { 1, 1 },
+                    { 1, 4 },
+                    { 2, 1 },
                     { 2, 2 },
-                    { 3, 2 },
-                    { 3, 3 }
+                    { 2, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -380,12 +395,12 @@ namespace MVC_Webshop.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "54b1df86-66e9-4cbf-8c75-b015a1388aab", "2be98bde-7772-4105-837d-f54732d79d31" });
+                values: new object[] { "53db8c92-a481-4464-95e0-d93fb45c8195", "a2534b98-d03e-4de0-bb0f-f00a9772ddbc" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "f349b9e4-4053-44d2-a53a-5c5872819145", "2be98bde-7772-4105-837d-f54732d79d31" });
+                values: new object[] { "b59e4b4b-a157-41a6-b6d9-abc84834529f", "a2534b98-d03e-4de0-bb0f-f00a9772ddbc" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -469,6 +484,9 @@ namespace MVC_Webshop.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "CategoryCreateViewModel");
 
             migrationBuilder.DropTable(
                 name: "CategoryProduct");

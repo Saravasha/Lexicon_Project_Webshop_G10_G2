@@ -32,6 +32,7 @@ namespace MVC_Webshop.ViewModels
         [Display(Name = "Product Image")]
         public string? ImageUrl { get; set; }
 
+        [Display(Name = "Product Image")]
         [NotMapped]
         public IFormFile ImageUp { get; set; }
 

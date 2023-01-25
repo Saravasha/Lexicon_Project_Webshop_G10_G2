@@ -23,7 +23,7 @@ namespace MVC_Webshop.Controllers
 
             if (product.ImageUp != null)
             {
-                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "imagesProduct");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + product.ImageUp.FileName;
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
@@ -32,7 +32,7 @@ namespace MVC_Webshop.Controllers
                 }
             }
 
-            return "/images/" + uniqueFileName;
+            return "/imagesProduct/" + uniqueFileName;
         }
 
         private readonly ApplicationDbContext _context;

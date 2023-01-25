@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230118140329_init")]
+    [Migration("20230124165044_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,7 +41,7 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            CategoriesId = 1,
+                            CategoriesId = 2,
                             ProductsId = 1
                         },
                         new
@@ -51,13 +51,13 @@ namespace MVC_Webshop.Migrations
                         },
                         new
                         {
-                            CategoriesId = 3,
-                            ProductsId = 2
+                            CategoriesId = 2,
+                            ProductsId = 3
                         },
                         new
                         {
-                            CategoriesId = 3,
-                            ProductsId = 3
+                            CategoriesId = 1,
+                            ProductsId = 4
                         });
                 });
 
@@ -90,22 +90,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f349b9e4-4053-44d2-a53a-5c5872819145",
-                            ConcurrencyStamp = "a9a91cde-fbaa-419a-8e0f-be7f3e14971c",
+                            Id = "b59e4b4b-a157-41a6-b6d9-abc84834529f",
+                            ConcurrencyStamp = "af857470-6eb9-4b8c-98e0-3c9145279bfd",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "2be98bde-7772-4105-837d-f54732d79d31",
-                            ConcurrencyStamp = "6e869e64-c738-487d-8d4c-609cdcc3a665",
+                            Id = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            ConcurrencyStamp = "5198bdb7-6e7a-4bd7-8a7b-7cbe3a6fdda4",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "54b1df86-66e9-4cbf-8c75-b015a1388aab",
-                            ConcurrencyStamp = "6ffca190-e4ec-4e2c-8183-67cb5304296d",
+                            Id = "53db8c92-a481-4464-95e0-d93fb45c8195",
+                            ConcurrencyStamp = "136717fd-aed6-4f4f-a713-005b088d88d4",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -202,13 +202,13 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "2be98bde-7772-4105-837d-f54732d79d31",
-                            RoleId = "f349b9e4-4053-44d2-a53a-5c5872819145"
+                            UserId = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            RoleId = "b59e4b4b-a157-41a6-b6d9-abc84834529f"
                         },
                         new
                         {
-                            UserId = "2be98bde-7772-4105-837d-f54732d79d31",
-                            RoleId = "54b1df86-66e9-4cbf-8c75-b015a1388aab"
+                            UserId = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            RoleId = "53db8c92-a481-4464-95e0-d93fb45c8195"
                         });
                 });
 
@@ -330,10 +330,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2be98bde-7772-4105-837d-f54732d79d31",
+                            Id = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "05fdc023-cfba-4372-af51-23358e419eca",
+                            ConcurrencyStamp = "773328d7-934e-4122-b66f-479333edbc81",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -343,18 +343,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAENVBpzwdXzaDyeXU2seqd+Mz+sNpScY+Lkx47UNKr1JBK/Pis+YKiKbWMYZVOjBDSg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEI+yR6jDY5arFhXEz2wDgSbznkEJ1Mx93QDmdjrByP/D7JPyxxVVAaGHZw3shRRg0w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "700d9b3b-5c5d-498c-8595-98a5b8244b28",
+                            SecurityStamp = "305adce2-7f15-4df2-97f8-df3b61976bdb",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
                         new
                         {
-                            Id = "54b1df86-66e9-4cbf-8c75-b015a1388aab",
+                            Id = "53db8c92-a481-4464-95e0-d93fb45c8195",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "1e7fd52d-6868-479b-9e79-a27cc12d1762",
+                            ConcurrencyStamp = "bcd87f8e-b3c6-41b8-929c-19e420450647",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -364,9 +364,9 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAENFnwWBSZZs7HSYpP71niw4c0SziadfsbX8VnJ9dTshEPo+R13xUZLRmfY11zDUqPQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEB4eJ11usKcODZusRgz5SjEoKqJL2jBPfyIdfW3EZXvbWX9/yu9uzh8MQP+vTS8JaA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8a1739eb-9267-4d29-a4c0-94b518b51d1e",
+                            SecurityStamp = "3d631e31-9153-4c31-90f0-8e967e1e7414",
                             TwoFactorEnabled = false,
                             UserName = "Karen"
                         });
@@ -417,7 +417,7 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Birds",
+                            Name = "Berry",
                             ProductId = 0
                         },
                         new
@@ -429,7 +429,7 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 3,
-                            Name = "Bilar",
+                            Name = "Drinks",
                             ProductId = 0
                         });
                 });
@@ -501,18 +501,18 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(5995),
+                            ExpectedDelivery = "4",
+                            OrderDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5152),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(5951)
+                            ShippingDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5009)
                         },
                         new
                         {
                             Id = 2,
-                            ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(6009),
+                            ExpectedDelivery = "4",
+                            OrderDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5227),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 18, 15, 3, 29, 61, DateTimeKind.Local).AddTicks(6007)
+                            ShippingDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5224)
                         });
                 });
 
@@ -562,7 +562,6 @@ namespace MVC_Webshop.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -585,39 +584,71 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            Brand = "Birdstuff",
+                            Brand = "Frukt & Grönt",
                             CategoryId = 0,
-                            Description = "it's a type of bird",
-                            ImageUrl = "/img/bird.jpg",
-                            Name = "Gerpgork",
-                            Price = 2000.0,
-                            Quantity = 1,
-                            ShortDescription = "tb"
+                            Description = "Dessa mangosar är plockade av elitpersonal djupt nere i den farliga mangodalen.",
+                            ImageUrl = "/imagesProduct/8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
+                            Name = "Mango",
+                            Price = 5.0,
+                            Quantity = 200,
+                            ShortDescription = "Fina mango från Mangodalen"
                         },
                         new
                         {
                             Id = 2,
-                            Brand = "Chiquita",
+                            Brand = "Sura Gubben",
                             CategoryId = 0,
-                            Description = "it's a type of Banana",
-                            ImageUrl = "/img/banana.jpg",
-                            Name = "Banana",
-                            Price = 5.0,
-                            Quantity = 1,
-                            ShortDescription = "tb"
+                            Description = "Dessa citroner som odlas på hemlig utomjordisk plats har den finaste och söta surhet som någonsin uppmätts i en citron.",
+                            ImageUrl = "/imagesProduct/3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
+                            Name = "Citron",
+                            Price = 4.7999999999999998,
+                            Quantity = 800,
+                            ShortDescription = "Färska och sura citroner"
                         },
                         new
                         {
                             Id = 3,
-                            Brand = "Volvo",
+                            Brand = "Äppelmannen & Co",
                             CategoryId = 0,
-                            Description = "it's a type of car",
-                            ImageUrl = "/img/volvo.jpg",
-                            Name = "Volvo XC70",
-                            Price = 500000.0,
-                            Quantity = 1,
-                            ShortDescription = "tb"
+                            Description = "Dessa härliga äpplen är odlade av äppelmannen i hans trädgård. De är friska och alltid färska. Dessa bör man passa på att köpa när de finns eftersom de är svåra att få tag i när de inte finns.",
+                            ImageUrl = "/imagesProduct/c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
+                            Name = "Gröna äpplen",
+                            Price = 6.0,
+                            Quantity = 140,
+                            ShortDescription = "Snabba äpplen med frisk smak"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Brand = "Mr Blueberry",
+                            CategoryId = 0,
+                            Description = "Dessa bär smakar bäst efter att man mosat en näve bär i handen och sen slickar rent fingrarna..",
+                            ImageUrl = "/imagesProduct/4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
+                            Name = "Blåbär",
+                            Price = 0.040000000000000001,
+                            Quantity = 1000000,
+                            ShortDescription = "Små runda blåa blåbär"
                         });
+                });
+
+            modelBuilder.Entity("MVC_Webshop.ViewModels.CategoryCreateViewModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CategoryCreateViewModel");
                 });
 
             modelBuilder.Entity("CategoryProduct", b =>
