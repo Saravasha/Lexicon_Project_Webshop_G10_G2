@@ -57,7 +57,6 @@
             <div class="form-group">
                 <label asp-for="categoriesMulti" class="control-label"></label>
                 <select asp-for="categoriesMulti" asp-items="ViewBag.CategoryList" multiple class="form-control dropdown-margin-bottom">
-                    @*<option disabled selected>Select Category</option>*@
                 </select>
                 @if (ViewBag.CategoryError != null)
                 {
