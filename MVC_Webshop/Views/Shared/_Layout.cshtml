@@ -14,7 +14,7 @@
     <header class="shop-main-nav">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sweet ~ Nature</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nature Shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,26 +45,18 @@
         </nav>
     </header>
 
-    @*HERO SECTION*@
-@*    <section class="bg-dark py-5 container-fluid px-4 px-lg-5 my-0 mb-4 text-center text-white">
-        <h1 class="display-4 fw-bolder">Sweets from the Nature</h1>
-        <p class="lead fw-normal text-white-50 mb-0">Handplockad frukt & grönt av högsta kvalitet</p>
-    </section>*@
-
-    <section class="mb-4 text-center text-white" id="hero">
+    <section class="mb-4 text-center" id="hero">
         <div class="hero-img-box container-fluid">
-            <div class="row">
-                <h1 class="display-4 fw-bolder text-dark text-uppercase">Sweets from the Nature</h1>
-                @*<p class="lead fw-normal text-white-50 mb-0  text-dark">Handplockad frukt & grönt av högsta kvalitet</p>*@
-                <img class="col-12" src="~/imagesDesign/hero-image-02.jpg" />
-            </div>
+        </div>
+        <div class="hero-text">
+            <h1 class="display-4 fw-bolder text-uppercase">Sweets from the Nature</h1>
         </div>
     </section>
 
-@*    <div class="container">
-        <main role="main" class="pb-3">*@
-            @RenderBody()
-@*        </main>
+    @*    <div class="container">
+    <main role="main" class="pb-3">*@
+    @RenderBody()
+    @*        </main>
     </div>*@
 
     <footer class="border-top footer text-muted">
@@ -72,7 +64,7 @@
             &copy; 2023 - MVC_Webshop - <a asp-area="" asp-controller="Home" asp-action="Index">Till Startsidan</a>
         </div>
     </footer>
-    
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

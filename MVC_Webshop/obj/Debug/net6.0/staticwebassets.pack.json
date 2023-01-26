@@ -13,88 +13,52 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\095f94f1-0611-493e-b061-375edf263074_glass02.jpg",
-      "PackagePath": "staticwebassets\\images\\095f94f1-0611-493e-b061-375edf263074_glass02.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-01.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\design-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\156930c0-bd10-4aa2-84a0-b21141694079_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\156930c0-bd10-4aa2-84a0-b21141694079_Skärmklipp.PNG"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-02.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\design-02.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\180d18a7-5a36-444f-8a73-bf5871448f76_bird.jpg",
-      "PackagePath": "staticwebassets\\images\\180d18a7-5a36-444f-8a73-bf5871448f76_bird.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-03.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\design-03.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\23916141-5b3d-4566-8ff8-aafa5fc05e87_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\23916141-5b3d-4566-8ff8-aafa5fc05e87_Skärmklipp.PNG"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-04.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\design-04.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\2a833f50-78c2-41e2-addf-a5639b17beb8_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\2a833f50-78c2-41e2-addf-a5639b17beb8_Skärmklipp.PNG"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-01.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\hero-image-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\2ad74efc-171c-4b77-8f2c-0d3712f30546_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\2ad74efc-171c-4b77-8f2c-0d3712f30546_Skärmklipp.PNG"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-02.jpg",
+      "PackagePath": "staticwebassets\\imagesDesign\\hero-image-02.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\4dd4d032-5b23-4a92-a659-9170cddbc3f2_glass01.jpg",
-      "PackagePath": "staticwebassets\\images\\4dd4d032-5b23-4a92-a659-9170cddbc3f2_glass01.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\61a5176d-4602-4ea9-a868-06eb136762a1_bird.jpg",
-      "PackagePath": "staticwebassets\\images\\61a5176d-4602-4ea9-a868-06eb136762a1_bird.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\64b5a1b9-62ab-4306-ab15-1ed8c6a1db5d_glass01.jpg",
-      "PackagePath": "staticwebassets\\images\\64b5a1b9-62ab-4306-ab15-1ed8c6a1db5d_glass01.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\8b2967f5-1868-43d2-9602-c133691cba54_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\8b2967f5-1868-43d2-9602-c133691cba54_Skärmklipp.PNG"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\8d225372-e07e-4602-a59e-4ad5977fa2bb_glass01.jpg",
-      "PackagePath": "staticwebassets\\images\\8d225372-e07e-4602-a59e-4ad5977fa2bb_glass01.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg"
     },
     {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\9794c5db-78e6-4580-af35-387af9d0a52c_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\9794c5db-78e6-4580-af35-387af9d0a52c_Skärmklipp.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\aa97087d-828f-4e59-89b9-46d9ad31164a_volvo.jpg",
-      "PackagePath": "staticwebassets\\images\\aa97087d-828f-4e59-89b9-46d9ad31164a_volvo.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\bb5f742b-dfd3-425d-a96a-e70ca775a38d_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\bb5f742b-dfd3-425d-a96a-e70ca775a38d_Skärmklipp.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\c112f7dc-c88c-4bf0-a721-b17627a104a9_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\c112f7dc-c88c-4bf0-a721-b17627a104a9_Skärmklipp.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\c71a58bd-64bf-4163-93b9-8199bde5ae45_glass01.jpg",
-      "PackagePath": "staticwebassets\\images\\c71a58bd-64bf-4163-93b9-8199bde5ae45_glass01.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\ee20d173-9655-4936-867e-fe8dd94a2d86_glass02.jpg",
-      "PackagePath": "staticwebassets\\images\\ee20d173-9655-4936-867e-fe8dd94a2d86_glass02.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\images\\f0815fc8-dfe0-409d-9b0c-1274761a3632_Skärmklipp.PNG",
-      "PackagePath": "staticwebassets\\images\\f0815fc8-dfe0-409d-9b0c-1274761a3632_Skärmklipp.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\img\\banana.jpg",
-      "PackagePath": "staticwebassets\\img\\banana.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\img\\bird.jpg",
-      "PackagePath": "staticwebassets\\img\\bird.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\img\\volvo.jpg",
-      "PackagePath": "staticwebassets\\img\\volvo.jpg"
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg"
     },
     {
       "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\js\\site.js",
