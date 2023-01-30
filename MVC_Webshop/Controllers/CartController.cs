@@ -22,6 +22,7 @@ namespace MVC_Webshop.Controllers
         {
             Cart? theCart = _context.Carts.Include(i => i.Items).FirstOrDefault(x => x.Id == 1);
 
+
             return View(theCart);
         }
 
