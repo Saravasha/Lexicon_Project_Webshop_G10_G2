@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using MVC_Webshop.Data;
 
 namespace MVC_Webshop.Models
 {
@@ -7,8 +7,8 @@ namespace MVC_Webshop.Models
     public class Cart
     {
         [Key]
-        public int Id { get; set; }
-        public ApplicationUser User { get; set; }
-        public List<Item> Items { get; set; }
+        public int? Id { get; set; }
+        public ApplicationUser? User { get; set; }
+        public List<Item>? Items { get; set; }
     }
 }

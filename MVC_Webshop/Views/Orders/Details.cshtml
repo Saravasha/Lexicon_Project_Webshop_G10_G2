@@ -1,0 +1,28 @@
+﻿@model MVC_Webshop.Models.Order
+
+@{
+	ViewData["Title"] = "Details";
+}
+<div class="container">
+	<h1>@ViewBag.Title</h1>
+	<h4>Order</h4>
+	<div class="row">
+		<b class="col">@Html.DisplayNameFor(model => model.Id)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.ShippingDate)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.ExpectedDelivery)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.Shipped)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.OrderDate)</b>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col">@Html.DisplayFor(model => model.Id)</div>
+		<div class="col">@Html.DisplayFor(model => model.ShippingDate)</div>
+		<div class="col">@Html.DisplayFor(model => model.ExpectedDelivery)</div>
+		<div class="col">@Html.DisplayFor(model => model.Shipped)</div>
+		<div class="col">@Html.DisplayFor(model => model.OrderDate)</div>
+	</div>
+	<div class="mt-1">
+		<a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-success">Edit</a>
+		<a asp-action="Index" class="btn btn-outline-info">Back to List</a></
+	</div>
+</div>

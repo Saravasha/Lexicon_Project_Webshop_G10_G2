@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Item>
+
+@{
+	ViewData["Title"] = "Items";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="container">
+	<div class="row">
+		<b class="col">@Html.DisplayNameFor(model => model.ProductIdRef)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.Quantity)</b>
+		<b class="col">@Html.DisplayNameFor(model => model.CartId)</b>
+		<div class="col">&nbsp;</div>
+	</div>
+	<hr />
+
+	<div>
+		@foreach (var item in Model)
+		{
+			<div class="row mt-1">
+				<div class="col">
+					@Html.DisplayFor(modelItem => item.ProductIdRef)
+				</div>
+				<div class="col">
+					@Html.DisplayFor(modelItem => item.Quantity)
+				</div>
+				<div class="col">
+					@Html.DisplayFor(modelItem => item.CartId)
+				</div>
+				<div class="col">
+					<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a>
+					<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-warning">Details</a>
+					<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+				</div>
+			</div>
+		}
+	</div>
+	<p class="mt-1">
+		<a asp-action="Create" class="btn btn-primary">Create New</a>
+	</p>
+</div>

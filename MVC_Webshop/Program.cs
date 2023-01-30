@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
-using MVC_Webshop.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("MVC_WebshopContextConnection") ?? throw new InvalidOperationException("Connection string 'MVC_WebshopContextConnection' not found.");
@@ -10,6 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
@@ -20,9 +22,13 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequireLowercase = false;
     options.Password.RequiredUniqueChars = 1;
     options.Password.RequireUppercase = false;
-    options.Password.RequiredLength = 6;
+    options.Password.RequiredLength = 1;
 });
+builder.Services.AddHttpContextAccessor();
 
+builder.Services.Configure<MvcViewOptions>(options =>
+    options.HtmlHelperOptions.CheckBoxHiddenInputRenderMode =
+        CheckBoxHiddenInputRenderMode.None);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -37,13 +43,17 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.MapRazorPages();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
+
+app.UseAuthentication();
 
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",

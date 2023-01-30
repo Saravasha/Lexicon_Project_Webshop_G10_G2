@@ -1,0 +1,34 @@
+﻿@model MVC_Webshop.Models.Order
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>@ViewBag.Title</h1>
+
+
+<h3>Are you sure you want to delete "@Model?.Id"?</h3>
+<div>
+    <h4>Order</h4>
+    <div class="row">
+        <b class="col">@Html.DisplayNameFor(model => model.Id)</b>
+        <b class="col">@Html.DisplayNameFor(model => model.ShippingDate)</b>
+        <b class="col">@Html.DisplayNameFor(model => model.ExpectedDelivery)</b>
+        <b class="col">@Html.DisplayNameFor(model => model.Shipped)</b>
+        <b class="col">@Html.DisplayNameFor(model => model.OrderDate)</b>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col">@Html.DisplayFor(model => model.Id)</div>
+        <div class="col">@Html.DisplayFor(model => model.ShippingDate)</div>
+        <div class="col">@Html.DisplayFor(model => model.ExpectedDelivery)</div>
+        <div class="col">@Html.DisplayFor(model => model.Shipped)</div>
+        <div class="col">@Html.DisplayFor(model => model.OrderDate)</div>
+    </div>
+
+    <form asp-action="Delete" class="mt-1">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+    </form>
+</div>

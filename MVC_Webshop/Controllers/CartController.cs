@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 using MVC_Webshop.Data;
 using MVC_Webshop.Models;
-using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Controllers
 {
@@ -18,81 +19,143 @@ namespace MVC_Webshop.Controllers
             _context = context;
         }
 
-        public ActionResult Index()
+        // GET: Cart
+        public async Task<IActionResult> Index()
         {
-            Cart? theCart = _context.Carts.Include(i => i.Items).FirstOrDefault(x => x.Id == 1);
-
-
-            return View(theCart);
+              return View(await _context.Carts.ToListAsync());
         }
 
-        // GET: CartController/Details/5
-        public ActionResult Details(int id)
+        // GET: Cart/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Carts == null)
+            {
+                return NotFound();
+            }
+
+            var cart = await _context.Carts
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cart == null)
+            {
+                return NotFound();
+            }
+
+            return View(cart);
+        }
+
+        // GET: Cart/Create
+        public IActionResult Create()
         {
             return View();
         }
 
-        // GET: CartController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: CartController/Create
+        // POST: Cart/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create([Bind("Id")] Cart cart)
         {
-            try
+            if (ModelState.IsValid)
             {
+                _context.Add(cart);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(cart);
         }
 
-        // GET: CartController/Edit/5
-        public ActionResult Edit(int id)
+        // GET: Cart/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null || _context.Carts == null)
+            {
+                return NotFound();
+            }
+
+            var cart = await _context.Carts.FindAsync(id);
+            if (cart == null)
+            {
+                return NotFound();
+            }
+            return View(cart);
         }
 
-        // POST: CartController/Edit/5
+        // POST: Cart/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("Id")] Cart cart)
         {
-            try
+            if (id != cart.Id)
             {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(cart);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!CartExists((int)cart.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(cart);
         }
 
-        // GET: CartController/Delete/5
-        public ActionResult Delete(int id)
+        // GET: Cart/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null || _context.Carts == null)
+            {
+                return NotFound();
+            }
+
+            var cart = await _context.Carts
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cart == null)
+            {
+                return NotFound();
+            }
+
+            return View(cart);
         }
 
-        // POST: CartController/Delete/5
-        [HttpPost]
+        // POST: Cart/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            if (_context.Carts == null)
             {
-                return RedirectToAction(nameof(Index));
+                return Problem("Entity set 'ApplicationDbContext.Carts'  is null.");
             }
-            catch
+            var cart = await _context.Carts.FindAsync(id);
+            if (cart != null)
             {
-                return View();
+                _context.Carts.Remove(cart);
             }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool CartExists(int id)
+        {
+          return _context.Carts.Any(e => e.Id == id);
         }
     }
 }
