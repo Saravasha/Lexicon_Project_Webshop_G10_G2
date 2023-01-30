@@ -3,23 +3,25 @@
 @{
 	ViewData["Title"] = "Cart";
 }
+<div class="container">
 
-<h1>@ViewBag.Title</h1>
+	<h1>@ViewBag.Title</h1>
 
-<h4>Create</h4>
-<hr />
-<div class="row">
-	<div class="col">
-		<form asp-action="Create">
-			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="form-group">
-				<input type="submit" value="Create" class="btn btn-primary" />
-			</div>
-		</form>
+	<h4>Create</h4>
+	<hr />
+	<div class="row">
+		<div class="col">
+			<form asp-action="Create">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="form-group">
+					<input type="submit" value="Create" class="btn btn-primary" />
+				</div>
+			</form>
+		</div>
+
+		<div class="col">
+			<a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+		</div>
+
 	</div>
-
-	<div class="col">
-		<a asp-action="Index" class="btn btn-outline-info">Back to List</a>
-	</div>
-
 </div>

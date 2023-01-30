@@ -19,6 +19,24 @@ namespace MVC_Webshop.Controllers
             _context = context;
         }
 
+
+        // GET: User/Edit/5
+        public IActionResult AddProductToCart(string id)
+        {
+            
+                if (id == null || _context.Users == null)
+                {
+                    return NotFound();
+                }
+
+                var applicationUserViewModel = _context.Items.Include(id);
+                if (applicationUserViewModel == null)
+                {
+                    return NotFound();
+                }
+            }
+        }
+
         // GET: Items
         public async Task<IActionResult> Index()
         {

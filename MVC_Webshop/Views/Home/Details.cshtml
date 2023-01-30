@@ -82,10 +82,10 @@
                 <p class="lead">@Model.Description</p>
                 <div class="d-flex">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                    <button class="btn btn-success flex-shrink-0" type="button">
+                    <a asp-controller="Items" asp-action="AddProductToCart" asp-route-id="@Model.Id" class="btn btn-success flex-shrink-0" type="button">
                         <i class="bi-cart-fill me-1"></i>
                         Köp Mig!
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
