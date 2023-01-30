@@ -1,11 +1,38 @@
-﻿@{
+﻿@model ProductViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@* **** Product list **** *@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
+            @* **** Product **** *@
+            @foreach (var prod in Model.listOfProducts)
+            {
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img src="@prod.ImageUrl" class="card-img-top" alt="..." />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">@prod.Name</h5>
+                                @(prod.Price) kr/st
+                            </div>
+                            <hr />
+                            <div class="text-center">@prod.ShortDescription</div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a asp-action="Details" asp-route-id="@prod.Id" class="btn btn-outline-dark mt-auto">Se Mer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            @* **** END Product **** *@
 
-    <p>wwww</p>
-</div>
+        </div>
+    </div>
+</section>

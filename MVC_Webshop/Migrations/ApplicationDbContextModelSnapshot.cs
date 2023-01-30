@@ -39,8 +39,23 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            CategoriesId = 1,
+                            CategoriesId = 2,
                             ProductsId = 1
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 2
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 3
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 4
                         });
                 });
 
@@ -73,22 +88,37 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
+<<<<<<< HEAD
                             Id = "528591c2-1746-45df-b543-32c9e358c032",
                             ConcurrencyStamp = "456e857d-6c06-466e-971e-192b8cad22e8",
+=======
+                            Id = "b59e4b4b-a157-41a6-b6d9-abc84834529f",
+                            ConcurrencyStamp = "af857470-6eb9-4b8c-98e0-3c9145279bfd",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
+<<<<<<< HEAD
                             Id = "86078e4d-bc14-41f7-a883-17772b1edc92",
                             ConcurrencyStamp = "4de291ec-211d-46b8-a2db-b5d47450c214",
+=======
+                            Id = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            ConcurrencyStamp = "5198bdb7-6e7a-4bd7-8a7b-7cbe3a6fdda4",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
+<<<<<<< HEAD
                             Id = "b9435db4-b9aa-464a-acd0-3aff22f7fb08",
                             ConcurrencyStamp = "4d4a09fc-b609-4176-8d6c-cec9348cf1f1",
+=======
+                            Id = "53db8c92-a481-4464-95e0-d93fb45c8195",
+                            ConcurrencyStamp = "136717fd-aed6-4f4f-a713-005b088d88d4",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -185,6 +215,7 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
+<<<<<<< HEAD
                             UserId = "86078e4d-bc14-41f7-a883-17772b1edc92",
                             RoleId = "528591c2-1746-45df-b543-32c9e358c032"
                         },
@@ -197,6 +228,15 @@ namespace MVC_Webshop.Migrations
                         {
                             UserId = "86078e4d-bc14-41f7-a883-17772b1edc92",
                             RoleId = "86078e4d-bc14-41f7-a883-17772b1edc92"
+=======
+                            UserId = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            RoleId = "b59e4b4b-a157-41a6-b6d9-abc84834529f"
+                        },
+                        new
+                        {
+                            UserId = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            RoleId = "53db8c92-a481-4464-95e0-d93fb45c8195"
+>>>>>>> origin/MikaelHomeCodeMerge01
                         });
                 });
 
@@ -325,10 +365,17 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
+<<<<<<< HEAD
                             Id = "528591c2-1746-45df-b543-32c9e358c032",
                             AccessFailedCount = 0,
                             CartId = 1,
                             ConcurrencyStamp = "8b2be594-e182-405f-a5be-02c7ca83717a",
+=======
+                            Id = "a2534b98-d03e-4de0-bb0f-f00a9772ddbc",
+                            AccessFailedCount = 0,
+                            CartId = 1,
+                            ConcurrencyStamp = "773328d7-934e-4122-b66f-479333edbc81",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -338,18 +385,31 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
                             OrderId = 1,
+<<<<<<< HEAD
                             PasswordHash = "AQAAAAEAACcQAAAAEJEinBxv9RwSr6+etszOxq6/KL6NtgTKZ7awzmfs7YQmHiy/JtjDpM1QEWMgVtetGA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "a817167b-84dc-408a-9ccd-cdbab958b6e2",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEI+yR6jDY5arFhXEz2wDgSbznkEJ1Mx93QDmdjrByP/D7JPyxxVVAaGHZw3shRRg0w==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "305adce2-7f15-4df2-97f8-df3b61976bdb",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         },
                         new
                         {
+<<<<<<< HEAD
                             Id = "b9435db4-b9aa-464a-acd0-3aff22f7fb08",
                             AccessFailedCount = 0,
                             CartId = 2,
                             ConcurrencyStamp = "c4331eaf-cfeb-435a-9bdf-51713f182c76",
+=======
+                            Id = "53db8c92-a481-4464-95e0-d93fb45c8195",
+                            AccessFailedCount = 0,
+                            CartId = 2,
+                            ConcurrencyStamp = "bcd87f8e-b3c6-41b8-929c-19e420450647",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -359,9 +419,15 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "KAREN@MANAGER.COM",
                             NormalizedUserName = "KAREN@MANAGER.COM",
                             OrderId = 2,
+<<<<<<< HEAD
                             PasswordHash = "AQAAAAEAACcQAAAAEH14jTLQrFkaOEfBd7vgHIWK2TcNyOdAr1olH6+jnwQVyxTRGLA1TFNUsXBVKNqNBQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "f979ee40-d951-4903-88e7-59cbd48f3e64",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEB4eJ11usKcODZusRgz5SjEoKqJL2jBPfyIdfW3EZXvbWX9/yu9uzh8MQP+vTS8JaA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "3d631e31-9153-4c31-90f0-8e967e1e7414",
+>>>>>>> origin/MikaelHomeCodeMerge01
                             TwoFactorEnabled = false,
                             UserName = "karen@manager.com"
                         },
@@ -424,7 +490,6 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductId")
@@ -438,20 +503,20 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Birds",
-                            ProductId = 1
+                            Name = "Berry",
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 2,
                             Name = "Fruit",
-                            ProductId = 2
+                            ProductId = 0
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Bilar",
-                            ProductId = 3
+                            Name = "Drinks",
+                            ProductId = 0
                         });
                 });
 
@@ -527,14 +592,22 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
+<<<<<<< HEAD
                             ExpectedDelivery = "1",
                             OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7376),
                             Shipped = false,
                             ShippingDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7333)
+=======
+                            ExpectedDelivery = "4",
+                            OrderDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5152),
+                            Shipped = false,
+                            ShippingDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5009)
+>>>>>>> origin/MikaelHomeCodeMerge01
                         },
                         new
                         {
                             Id = 2,
+<<<<<<< HEAD
                             ExpectedDelivery = "1",
                             OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7394),
                             Shipped = false,
@@ -547,6 +620,12 @@ namespace MVC_Webshop.Migrations
                             OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7405),
                             Shipped = false,
                             ShippingDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7403)
+=======
+                            ExpectedDelivery = "4",
+                            OrderDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5227),
+                            Shipped = false,
+                            ShippingDate = new DateTime(2023, 1, 24, 17, 50, 43, 373, DateTimeKind.Local).AddTicks(5224)
+>>>>>>> origin/MikaelHomeCodeMerge01
                         });
                 });
 
@@ -587,14 +666,15 @@ namespace MVC_Webshop.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Brand")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
@@ -602,17 +682,15 @@ namespace MVC_Webshop.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("ShortDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -623,6 +701,7 @@ namespace MVC_Webshop.Migrations
                         new
                         {
                             Id = 1,
+<<<<<<< HEAD
                             Brand = "Birdstuff",
                             CategoryId = 1,
                             Description = "it's a type of bird",
@@ -631,10 +710,21 @@ namespace MVC_Webshop.Migrations
                             Price = 2000.0,
                             Quantity = 1,
                             ShortDescription = "tb"
+=======
+                            Brand = "Frukt & Grönt",
+                            CategoryId = 0,
+                            Description = "Dessa mangosar är plockade av elitpersonal djupt nere i den farliga mangodalen.",
+                            ImageUrl = "/imagesProduct/8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
+                            Name = "Mango",
+                            Price = 5.0,
+                            Quantity = 200,
+                            ShortDescription = "Fina mango från Mangodalen"
+>>>>>>> origin/MikaelHomeCodeMerge01
                         },
                         new
                         {
                             Id = 2,
+<<<<<<< HEAD
                             Brand = "Chiquita",
                             CategoryId = 2,
                             Description = "it's a type of Banana",
@@ -643,10 +733,21 @@ namespace MVC_Webshop.Migrations
                             Price = 5.0,
                             Quantity = 1,
                             ShortDescription = "tb"
+=======
+                            Brand = "Sura Gubben",
+                            CategoryId = 0,
+                            Description = "Dessa citroner som odlas på hemlig utomjordisk plats har den finaste och söta surhet som någonsin uppmätts i en citron.",
+                            ImageUrl = "/imagesProduct/3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
+                            Name = "Citron",
+                            Price = 4.7999999999999998,
+                            Quantity = 800,
+                            ShortDescription = "Färska och sura citroner"
+>>>>>>> origin/MikaelHomeCodeMerge01
                         },
                         new
                         {
                             Id = 3,
+<<<<<<< HEAD
                             Brand = "Volvo",
                             CategoryId = 3,
                             Description = "it's a type of car",
@@ -699,6 +800,49 @@ namespace MVC_Webshop.Migrations
                     b.HasIndex("CartId");
 
                     b.ToTable("ApplicationUserViewModel");
+=======
+                            Brand = "Äppelmannen & Co",
+                            CategoryId = 0,
+                            Description = "Dessa härliga äpplen är odlade av äppelmannen i hans trädgård. De är friska och alltid färska. Dessa bör man passa på att köpa när de finns eftersom de är svåra att få tag i när de inte finns.",
+                            ImageUrl = "/imagesProduct/c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
+                            Name = "Gröna äpplen",
+                            Price = 6.0,
+                            Quantity = 140,
+                            ShortDescription = "Snabba äpplen med frisk smak"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Brand = "Mr Blueberry",
+                            CategoryId = 0,
+                            Description = "Dessa bär smakar bäst efter att man mosat en näve bär i handen och sen slickar rent fingrarna..",
+                            ImageUrl = "/imagesProduct/4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
+                            Name = "Blåbär",
+                            Price = 0.040000000000000001,
+                            Quantity = 1000000,
+                            ShortDescription = "Små runda blåa blåbär"
+                        });
+                });
+
+            modelBuilder.Entity("MVC_Webshop.ViewModels.CategoryCreateViewModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CategoryCreateViewModel");
+>>>>>>> origin/MikaelHomeCodeMerge01
                 });
 
             modelBuilder.Entity("CategoryProduct", b =>

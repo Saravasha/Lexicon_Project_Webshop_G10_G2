@@ -76,12 +76,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Items/Create.cshtml]
@@ -142,6 +154,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/siava/Source/Repos/Lexicon_Project_Webshop_G10_G2/MVC_Webshop/Views/Role/AddUserToRole.cshtml]

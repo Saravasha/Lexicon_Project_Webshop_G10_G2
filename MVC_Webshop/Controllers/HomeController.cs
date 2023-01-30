@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MVC_Webshop.Data;
+using MVC_Webshop.Models;
 using MVC_Webshop.ViewModels;
 using System.Diagnostics;
 
@@ -6,21 +9,28 @@ namespace MVC_Webshop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var pvm = new ProductViewModel();
+
+            pvm.listOfProducts = _context.Products
+                .Include(c => c.Categories).ToList();
+
+            return View(pvm);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Details(int id)
         {
-            return View();
+            Product? prod = _context.Products.Find(id);
+
+            return View(prod);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

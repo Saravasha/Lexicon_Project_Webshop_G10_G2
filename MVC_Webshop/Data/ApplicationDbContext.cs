@@ -3,7 +3,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Models;
+using Microsoft.AspNetCore.Identity;
 using MVC_Webshop.ViewModels;
+using System;
+using System.Text;
 
 namespace MVC_Webshop.Data
 {
@@ -29,7 +32,6 @@ namespace MVC_Webshop.Data
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             base.OnModelCreating(modelbuilder);
-            //modelbuilder.ApplyConfiguration(new ApplicationUserEntityConfiguration());
 
             string adminId = Guid.NewGuid().ToString();
             string userId = Guid.NewGuid().ToString();
@@ -38,15 +40,30 @@ namespace MVC_Webshop.Data
             Random rando = new Random();
             var number = rando.Next(1, 5).ToString();
 
-            // Product
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", ImageUrl = "/img/gerpgork.jpg", Quantity = 1, CategoryId = 1, });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", ImageUrl = "/img/Banana.jpg", Quantity = 1, CategoryId = 2 });
-            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", ImageUrl = "/img/Volvo.jpg", Quantity = 1, CategoryId = 3 });
-
             // Category
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 1, ProductId = 1, Name = "Birds", });
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 2, ProductId = 2, Name = "Fruit", });
-            modelbuilder.Entity<Category>().HasData(new Category { Id = 3, ProductId = 3, Name = "Bilar", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 1, ProductId = 1, Name = "Birds", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 2, ProductId = 2, Name = "Fruit", });
+            //modelbuilder.Entity<Category>().HasData(new Category { Id = 3, ProductId = 3, Name = "Bilar", });
+
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 1,  Name = "Berry", });
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 2,  Name = "Fruit", });
+            modelbuilder.Entity<Category>().HasData(new Category { Id = 3,  Name = "Drinks", });
+
+            // Product
+            //modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Gerpgork", Brand = "Birdstuff", Price = 2000, Description = "it's a type of bird", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/bird.jpg" });
+            //modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Banana", Brand = "Chiquita", Price = 5, Description = "it's a type of Banana", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/banana.jpg" });
+            //modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Volvo XC70", Brand = "Volvo", Price = 500000, Description = "it's a type of car", ShortDescription = "tb", Quantity = 1, ImageUrl = "/img/volvo.jpg" });
+
+            // Fruits Products
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 1, Name = "Mango", Brand = "Frukt & Grönt", Price = 5, Description = "Dessa mangosar är plockade av elitpersonal djupt nere i den farliga mangodalen.", ShortDescription = "Fina mango från Mangodalen", Quantity = 200 , ImageUrl = "/imagesProduct/8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg" });
+
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 2, Name = "Citron", Brand = "Sura Gubben", Price = 4.8, Description = "Dessa citroner som odlas på hemlig utomjordisk plats har den finaste och söta surhet som någonsin uppmätts i en citron.", ShortDescription = "Färska och sura citroner", Quantity = 800, ImageUrl = "/imagesProduct/3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg" });
+
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 3, Name = "Gröna äpplen", Brand = "Äppelmannen & Co", Price = 6, Description = "Dessa härliga äpplen är odlade av äppelmannen i hans trädgård. De är friska och alltid färska. Dessa bör man passa på att köpa när de finns eftersom de är svåra att få tag i när de inte finns.", ShortDescription = "Snabba äpplen med frisk smak", Quantity = 140, ImageUrl = "/imagesProduct/c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg" });
+
+            modelbuilder.Entity<Product>().HasData(new Product { Id = 4, Name = "Blåbär", Brand = "Mr Blueberry", Price = 0.04, Description = "Dessa bär smakar bäst efter att man mosat en näve bär i handen och sen slickar rent fingrarna..", ShortDescription = "Små runda blåa blåbär", Quantity = 1000000, ImageUrl = "/imagesProduct/4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg" });
+
+
 
             // Order
             modelbuilder.Entity<Order>().HasData(new Order { Id = 1, ShippingDate = DateTime.Now, ExpectedDelivery = number, Shipped = false, OrderDate = DateTime.Now });
@@ -63,10 +80,15 @@ namespace MVC_Webshop.Data
             //modelbuilder.Entity<Item>().HasData(new Item { Id = 2, CartId = 2, ProductIdRef = 2, Quantity = 2, });
 
             // Join Fluent API
-            modelbuilder.Entity<Product>().HasMany(p => p.Categories)
+            modelbuilder.Entity<Product>()
+                .HasMany(p => p.Categories)
                 .WithMany(c => c.Products)
-                .UsingEntity(j => j.HasData(new { CategoriesId = 1, ProductsId = 1 }
-                ));
+                .UsingEntity(j => j.HasData(
+                    new { CategoriesId = 2, ProductsId = 1 },
+                    new { CategoriesId = 2, ProductsId = 2 },
+                    new { CategoriesId = 2, ProductsId = 3},
+                    new { CategoriesId = 1, ProductsId = 4 }
+            ));
 
             //modelbuilder.Entity<Cart>().HasMany(t => t.Items);
 
@@ -158,7 +180,10 @@ namespace MVC_Webshop.Data
 			);
         }
 
+        public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
 
+        //public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
 
+        //public DbSet<MVC_Webshop.ViewModels.ProductCreateViewModel> ProductCreateViewModel { get; set; }
     }
 }

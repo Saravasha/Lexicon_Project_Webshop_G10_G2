@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {}
+    "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {
+    "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+        "projectUniqueName": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
         "projectName": "MVC_Webshop",
-        "projectPath": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
-        "packagesPath": "C:\\Users\\siava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
+        "projectPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\MVC_Webshop.csproj",
+        "packagesPath": "C:\\Users\\Elev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\siava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Elev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +82,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/MikaelHomeCodeMerge01
         }
       }
     }
