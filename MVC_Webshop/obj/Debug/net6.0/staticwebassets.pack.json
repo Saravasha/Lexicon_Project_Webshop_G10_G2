@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg"
     },
     {
+      "Id": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\e7e51c34-8a97-405d-ba3c-4ec8ec6e2e07_pear-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\e7e51c34-8a97-405d-ba3c-4ec8ec6e2e07_pear-01.jpg"
+    },
+    {
       "Id": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kF+lZ2WSAYf+8z3kfVIpa6hjExo/NegnHKeJ6JGilu8=",
+  "Hash": "YCqn4YvcNgtcOsqc+jsM+S8/Tto7lL7Y+JtYU0HERnk=",
   "Source": "MVC_Webshop",
   "BasePath": "_content/MVC_Webshop",
   "Mode": "Default",
@@ -1341,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\e7e51c34-8a97-405d-ba3c-4ec8ec6e2e07_pear-01.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "imagesProduct/e7e51c34-8a97-405d-ba3c-4ec8ec6e2e07_pear-01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesProduct\\e7e51c34-8a97-405d-ba3c-4ec8ec6e2e07_pear-01.jpg"
     },
     {
       "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\js\\site.js",
