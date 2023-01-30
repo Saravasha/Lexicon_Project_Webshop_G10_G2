@@ -2,12 +2,12 @@
 
 namespace MVC_Webshop.ViewModels
 {
-    public class CreateApplicationRoleViewModel
+    public class CreateApplicationUserViewModel
     {
 
-        public ApplicationRoleViewModel NewRole { get; set; } = new ApplicationRoleViewModel();
+        public ApplicationUserViewModel NewUser { get; set; } = new ApplicationUserViewModel();
 
-        public List<ApplicationRole> Roles = new List<ApplicationRole>();
+        public List<ApplicationUserViewModel> Users = new List<ApplicationUserViewModel>();
 
     }
 }

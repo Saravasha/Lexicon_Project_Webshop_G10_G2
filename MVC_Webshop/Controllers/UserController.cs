@@ -36,7 +36,7 @@ namespace MVC_Webshop.Controllers
 
             var applicationUserViewModel = await _context.Users
                 .Include(a => a.Cart)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (applicationUserViewModel == null)
             {
                 return NotFound();
@@ -132,7 +132,7 @@ namespace MVC_Webshop.Controllers
 
             var applicationUserViewModel = await _context.Users
                 .Include(a => a.Cart)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (applicationUserViewModel == null)
             {
                 return NotFound();
@@ -148,7 +148,7 @@ namespace MVC_Webshop.Controllers
         {
             if (_context.Users == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Users'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.ApplicationUserViewModel'  is null.");
             }
             var applicationUserViewModel = await _context.Users.FindAsync(id);
             if (applicationUserViewModel != null)
@@ -162,7 +162,7 @@ namespace MVC_Webshop.Controllers
 
         private bool ApplicationUserViewModelExists(string id)
         {
-          return _context.Users.Any(e => e.Id == id);
+          return _context.Users.Any(e => e.UserId == id);
         }
     }
 }

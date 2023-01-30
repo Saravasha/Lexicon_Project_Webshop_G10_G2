@@ -23,6 +23,7 @@ namespace MVC_Webshop.Data
         public DbSet<Item> Items { get; set; } = default!;
         public DbSet<OrderItem> OrderItems { get; set; } = default!;
 
+        public DbSet<ApplicationUser> Users { get; set; } = default!;
 
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
@@ -98,8 +99,8 @@ namespace MVC_Webshop.Data
                     Id = adminId,
                     Email = "admin@admin.com",
                     NormalizedEmail = "ADMIN@ADMIN.COM",
-                    UserName = "Admin",
-                    NormalizedUserName = "ADMIN",
+                    UserName = "admin@admin.com",
+                    NormalizedUserName = "ADMIN@ADMIN.COM",
                     FirstName = "Admin",
                     LastName = "Adminson",
                     CreditCardNumber = "234",
@@ -113,8 +114,8 @@ namespace MVC_Webshop.Data
                     Id = managerId,
                     Email = "karen@manager.com",
                     NormalizedEmail = "KAREN@MANAGER.COM",
-                    UserName = "Karen",
-                    NormalizedUserName = "KAREN",
+                    UserName = "karen@manager.com",
+                    NormalizedUserName = "KAREN@MANAGER.COM",
                     FirstName = "Karen",
                     LastName = "Managerson",
                     CreditCardNumber = "123",
@@ -127,8 +128,8 @@ namespace MVC_Webshop.Data
                     Id = userId,
                     Email = "random@user.com",
                     NormalizedEmail = "RANDOM@USER.COM",
-                    UserName = "Joe",
-                    NormalizedUserName = "JOE",
+                    UserName = "random@user.com",
+                    NormalizedUserName = "RANDOM@USER.COM",
                     FirstName = "Joe",
                     LastName = "Sixpack",
                     CreditCardNumber = "123",
@@ -156,5 +157,8 @@ namespace MVC_Webshop.Data
 				}
 			);
         }
+
+
+
     }
 }

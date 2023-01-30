@@ -7,6 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\1Roles\**" />
+    <Compile Remove="Views\1User\**" />
+    <Content Remove="Views\1Roles\**" />
+    <Content Remove="Views\1User\**" />
+    <EmbeddedResource Remove="Views\1Roles\**" />
+    <EmbeddedResource Remove="Views\1User\**" />
+    <None Remove="Views\1Roles\**" />
+    <None Remove="Views\1User\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\1RolesController.cs" />
+    <Compile Remove="Controllers\1UserController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />

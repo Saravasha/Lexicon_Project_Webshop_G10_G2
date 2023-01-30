@@ -1,12 +1,11 @@
-﻿
-
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using MVC_Webshop.Models;
 
 namespace MVC_Webshop.Data;
 
 public class ApplicationUser : IdentityUser
 {
+    public string? UserId { get; set; }
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Address { get; set; }

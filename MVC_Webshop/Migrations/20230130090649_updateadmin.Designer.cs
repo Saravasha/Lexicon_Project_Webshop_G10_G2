@@ -4,6 +4,7 @@ using MVC_Webshop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_Webshop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230130090649_updateadmin")]
+    partial class updateadmin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,22 +75,22 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "528591c2-1746-45df-b543-32c9e358c032",
-                            ConcurrencyStamp = "456e857d-6c06-466e-971e-192b8cad22e8",
+                            Id = "f47ff870-5af1-49df-adf7-a4564168e2b0",
+                            ConcurrencyStamp = "ff7eb4f7-0952-43d0-96e9-c63fb20c0f29",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "86078e4d-bc14-41f7-a883-17772b1edc92",
-                            ConcurrencyStamp = "4de291ec-211d-46b8-a2db-b5d47450c214",
+                            Id = "cfaa22b5-f221-4f6d-a5df-50035540744f",
+                            ConcurrencyStamp = "f22cb42a-3212-4660-b05f-9186ff4d1961",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "b9435db4-b9aa-464a-acd0-3aff22f7fb08",
-                            ConcurrencyStamp = "4d4a09fc-b609-4176-8d6c-cec9348cf1f1",
+                            Id = "9546df1a-3cc1-44c4-bb7c-146ebefd0383",
+                            ConcurrencyStamp = "936602d0-b61b-4cb4-a44b-dfc1fe0f0697",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -185,18 +187,18 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "86078e4d-bc14-41f7-a883-17772b1edc92",
-                            RoleId = "528591c2-1746-45df-b543-32c9e358c032"
+                            UserId = "cfaa22b5-f221-4f6d-a5df-50035540744f",
+                            RoleId = "f47ff870-5af1-49df-adf7-a4564168e2b0"
                         },
                         new
                         {
-                            UserId = "86078e4d-bc14-41f7-a883-17772b1edc92",
-                            RoleId = "b9435db4-b9aa-464a-acd0-3aff22f7fb08"
+                            UserId = "cfaa22b5-f221-4f6d-a5df-50035540744f",
+                            RoleId = "9546df1a-3cc1-44c4-bb7c-146ebefd0383"
                         },
                         new
                         {
-                            UserId = "86078e4d-bc14-41f7-a883-17772b1edc92",
-                            RoleId = "86078e4d-bc14-41f7-a883-17772b1edc92"
+                            UserId = "cfaa22b5-f221-4f6d-a5df-50035540744f",
+                            RoleId = "cfaa22b5-f221-4f6d-a5df-50035540744f"
                         });
                 });
 
@@ -299,9 +301,6 @@ namespace MVC_Webshop.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -325,10 +324,10 @@ namespace MVC_Webshop.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "528591c2-1746-45df-b543-32c9e358c032",
+                            Id = "f47ff870-5af1-49df-adf7-a4564168e2b0",
                             AccessFailedCount = 0,
                             CartId = 1,
-                            ConcurrencyStamp = "8b2be594-e182-405f-a5be-02c7ca83717a",
+                            ConcurrencyStamp = "09ae3001-729f-4581-a6b7-caec2a4064a5",
                             CreditCardNumber = "234",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
@@ -338,18 +337,18 @@ namespace MVC_Webshop.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
                             OrderId = 1,
-                            PasswordHash = "AQAAAAEAACcQAAAAEJEinBxv9RwSr6+etszOxq6/KL6NtgTKZ7awzmfs7YQmHiy/JtjDpM1QEWMgVtetGA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMs5fpaGQV6tl3uoIWXMbtuXqthrdoCq7WOSUAS6dAlU0hslYc4XhCn3536rOivgNA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a817167b-84dc-408a-9ccd-cdbab958b6e2",
+                            SecurityStamp = "e45b85de-0b71-4935-b474-93b8ac3087c8",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         },
                         new
                         {
-                            Id = "b9435db4-b9aa-464a-acd0-3aff22f7fb08",
+                            Id = "9546df1a-3cc1-44c4-bb7c-146ebefd0383",
                             AccessFailedCount = 0,
                             CartId = 2,
-                            ConcurrencyStamp = "c4331eaf-cfeb-435a-9bdf-51713f182c76",
+                            ConcurrencyStamp = "e547e9e5-6294-47c5-89fd-5ca073800212",
                             CreditCardNumber = "123",
                             Email = "karen@manager.com",
                             EmailConfirmed = false,
@@ -357,20 +356,20 @@ namespace MVC_Webshop.Migrations
                             LastName = "Managerson",
                             LockoutEnabled = false,
                             NormalizedEmail = "KAREN@MANAGER.COM",
-                            NormalizedUserName = "KAREN@MANAGER.COM",
+                            NormalizedUserName = "KAREN",
                             OrderId = 2,
-                            PasswordHash = "AQAAAAEAACcQAAAAEH14jTLQrFkaOEfBd7vgHIWK2TcNyOdAr1olH6+jnwQVyxTRGLA1TFNUsXBVKNqNBQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGPh/HjWHMLwwJrxePKpeQNAJ8JuwkB1/wceDR5LCEEqTKR84AW36s7diTDOsqPjvA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f979ee40-d951-4903-88e7-59cbd48f3e64",
+                            SecurityStamp = "aeae8fb6-5dd9-4cd4-a35a-b035071c26c5",
                             TwoFactorEnabled = false,
-                            UserName = "karen@manager.com"
+                            UserName = "Karen"
                         },
                         new
                         {
-                            Id = "86078e4d-bc14-41f7-a883-17772b1edc92",
+                            Id = "cfaa22b5-f221-4f6d-a5df-50035540744f",
                             AccessFailedCount = 0,
                             CartId = 3,
-                            ConcurrencyStamp = "4d2fc456-6e2e-4f04-84cd-8f48ab5a56b7",
+                            ConcurrencyStamp = "4094bc7e-6cc9-47d1-b378-ad3ef2fac2b5",
                             CreditCardNumber = "123",
                             Email = "random@user.com",
                             EmailConfirmed = false,
@@ -378,13 +377,13 @@ namespace MVC_Webshop.Migrations
                             LastName = "Sixpack",
                             LockoutEnabled = false,
                             NormalizedEmail = "RANDOM@USER.COM",
-                            NormalizedUserName = "RANDOM@USER.COM",
+                            NormalizedUserName = "JOE",
                             OrderId = 3,
-                            PasswordHash = "AQAAAAEAACcQAAAAEAx/jQiK36FwNJfNtzxHVglMgpyz7XsPX9w1GBVY/0HUILMjaz+zU3Gyq01vfGYVvg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKCtpSslL8GuDHy+VAh//lz6AWzFXeyfY2J/UJHsQ1R6DHHNPPz/e+Ks48fitGG4DA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6f157957-e858-4ca3-b943-b984cc6a8563",
+                            SecurityStamp = "cc65f618-bd60-4f95-985e-3154e44f0aa8",
                             TwoFactorEnabled = false,
-                            UserName = "random@user.com"
+                            UserName = "Joe"
                         });
                 });
 
@@ -496,9 +495,6 @@ namespace MVC_Webshop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("ApplicationUserViewModelUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("ExpectedDelivery")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -517,8 +513,6 @@ namespace MVC_Webshop.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserViewModelUserId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
@@ -528,25 +522,25 @@ namespace MVC_Webshop.Migrations
                         {
                             Id = 1,
                             ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7376),
+                            OrderDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(783),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7333)
+                            ShippingDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(739)
                         },
                         new
                         {
                             Id = 2,
                             ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7394),
+                            OrderDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(904),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7392)
+                            ShippingDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(900)
                         },
                         new
                         {
                             Id = 3,
                             ExpectedDelivery = "1",
-                            OrderDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7405),
+                            OrderDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(920),
                             Shipped = false,
-                            ShippingDate = new DateTime(2023, 1, 30, 14, 14, 49, 105, DateTimeKind.Local).AddTicks(7403)
+                            ShippingDate = new DateTime(2023, 1, 30, 10, 6, 48, 672, DateTimeKind.Local).AddTicks(918)
                         });
                 });
 
@@ -658,49 +652,6 @@ namespace MVC_Webshop.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MVC_Webshop.ViewModels.ApplicationUserViewModel", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("CartId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CreditCardNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
-
-                    b.HasIndex("CartId");
-
-                    b.ToTable("ApplicationUserViewModel");
-                });
-
             modelBuilder.Entity("CategoryProduct", b =>
                 {
                     b.HasOne("MVC_Webshop.Models.Category", null)
@@ -789,10 +740,6 @@ namespace MVC_Webshop.Migrations
 
             modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
                 {
-                    b.HasOne("MVC_Webshop.ViewModels.ApplicationUserViewModel", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("ApplicationUserViewModelUserId");
-
                     b.HasOne("MVC_Webshop.Data.ApplicationUser", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId");
@@ -811,15 +758,6 @@ namespace MVC_Webshop.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("MVC_Webshop.ViewModels.ApplicationUserViewModel", b =>
-                {
-                    b.HasOne("MVC_Webshop.Models.Cart", "Cart")
-                        .WithMany()
-                        .HasForeignKey("CartId");
-
-                    b.Navigation("Cart");
-                });
-
             modelBuilder.Entity("MVC_Webshop.Data.ApplicationUser", b =>
                 {
                     b.Navigation("Orders");
@@ -835,11 +773,6 @@ namespace MVC_Webshop.Migrations
             modelBuilder.Entity("MVC_Webshop.Models.Order", b =>
                 {
                     b.Navigation("OrderItems");
-                });
-
-            modelBuilder.Entity("MVC_Webshop.ViewModels.ApplicationUserViewModel", b =>
-                {
-                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
