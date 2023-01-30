@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\imagesDesign\\hero-image-02.jpg"
     },
     {
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg"
+    },
+    {
       "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
       "PackagePath": "staticwebassets\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
       "PackagePath": "staticwebassets\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
+      "PackagePath": "staticwebassets\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg"
     },
     {
       "Id": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",

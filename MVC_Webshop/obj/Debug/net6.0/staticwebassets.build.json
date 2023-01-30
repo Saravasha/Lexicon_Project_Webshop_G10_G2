@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UA+Mnezo8SCM8ECAZ+Kg/j+C2ZrDTn3tlS+9EW4wq8I=",
+  "Hash": "EHWNYTHcW+4C/powya++ysuIkuk9ifHT9rNUwLDGQLY=",
   "Source": "MVC_Webshop",
   "BasePath": "_content/MVC_Webshop",
   "Mode": "Default",
@@ -1207,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\hero-image-02.jpg"
     },
     {
+      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "imagesProduct/3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
@@ -1256,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
+      "SourceId": "MVC_Webshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "BasePath": "_content/MVC_Webshop",
+      "RelativePath": "imagesProduct/7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg"
     },
     {
       "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",

@@ -142,6 +142,8 @@ namespace MVC_Webshop.Controllers
                 .Include(c => c.Categories)
                 .FirstOrDefault(p => p.Id == id);
 
+
+
             List<int>? categoriesIds = new();
             foreach (var productNum in product.Categories)
             {
@@ -154,6 +156,7 @@ namespace MVC_Webshop.Controllers
                 pcvm.Brand = product.Brand;
                 pcvm.Price = product.Price;
                 pcvm.ShortDescription = product.ShortDescription;
+                pcvm.Description = product.Description;
                 //pcvm.ImageUrl = product.ImageUrl;
                 pcvm.Quantity = product.Quantity;
                 pcvm.CategoryIds = categoriesIds;
