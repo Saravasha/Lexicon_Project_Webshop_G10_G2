@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EHWNYTHcW+4C/powya++ysuIkuk9ifHT9rNUwLDGQLY=",
+  "Hash": "kF+lZ2WSAYf+8z3kfVIpa6hjExo/NegnHKeJ6JGilu8=",
   "Source": "MVC_Webshop",
   "BasePath": "_content/MVC_Webshop",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "MVC_Webshop\\wwwroot",
       "Source": "MVC_Webshop",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "Pattern": "**"
     }
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\favicon.ico",
+      "Identity": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\favicon.ico",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -218,7 +218,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
@@ -226,15 +225,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -245,7 +235,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
@@ -253,15 +242,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -272,7 +252,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
@@ -280,15 +259,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -299,7 +269,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
@@ -307,15 +276,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -326,7 +286,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
@@ -334,15 +293,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -353,7 +303,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
@@ -361,15 +310,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -380,7 +320,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
@@ -388,15 +327,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -407,7 +337,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
@@ -415,15 +344,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -434,7 +354,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
@@ -442,15 +361,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -461,7 +371,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
@@ -469,15 +378,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -488,7 +388,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
@@ -496,15 +395,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -515,7 +405,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
@@ -523,15 +412,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -542,7 +422,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
@@ -550,15 +429,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -569,7 +439,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
@@ -577,15 +446,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -596,7 +456,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
@@ -604,15 +463,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -623,7 +473,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
@@ -631,15 +480,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -650,7 +490,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
@@ -658,15 +497,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -677,7 +507,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
@@ -685,15 +514,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -704,7 +524,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
@@ -712,15 +531,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -731,7 +541,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
@@ -739,15 +548,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -758,7 +558,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
@@ -766,15 +565,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -785,7 +575,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
@@ -793,15 +582,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -812,7 +592,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
@@ -820,15 +599,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -839,7 +609,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
@@ -847,15 +616,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -866,7 +626,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
@@ -874,15 +633,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -893,7 +643,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
@@ -901,15 +650,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -920,7 +660,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
@@ -928,15 +667,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -947,7 +677,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
@@ -955,15 +684,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -974,7 +694,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
@@ -982,15 +701,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1001,7 +711,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
@@ -1009,15 +718,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1028,7 +728,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
@@ -1036,15 +735,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1055,7 +745,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
@@ -1063,15 +752,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1082,7 +762,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
@@ -1090,15 +769,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1109,7 +779,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
@@ -1117,15 +786,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1136,7 +796,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
@@ -1144,15 +803,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1163,7 +813,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
@@ -1171,15 +820,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1190,7 +830,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
@@ -1198,15 +837,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1217,7 +847,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
@@ -1225,15 +854,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1244,7 +864,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
@@ -1252,15 +871,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1271,7 +881,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -1279,15 +888,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1298,7 +898,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
@@ -1306,15 +905,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1325,7 +915,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
@@ -1333,15 +922,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1352,7 +932,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
@@ -1360,15 +939,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1379,7 +949,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
@@ -1387,15 +956,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1406,7 +966,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
@@ -1414,15 +973,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1433,7 +983,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
@@ -1441,15 +990,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1460,7 +1000,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
@@ -1468,15 +1007,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1487,7 +1017,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
@@ -1495,15 +1024,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\",
->>>>>>> origin/MikaelHomeCodeMerge01
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1514,17 +1034,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\siava\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-=======
-      "OriginalItemSpec": "C:\\Users\\Elev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
->>>>>>> origin/MikaelHomeCodeMerge01
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC_Webshop.styles.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC_Webshop.styles.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "MVC_Webshop.styles.css",
       "AssetKind": "All",
@@ -1535,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC_Webshop.styles.css"
+      "OriginalItemSpec": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC_Webshop.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC_Webshop.bundle.scp.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC_Webshop.bundle.scp.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "MVC_Webshop.bundle.scp.css",
       "AssetKind": "All",
@@ -1552,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC_Webshop.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC_Webshop.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\css\\site.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1572,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\favicon.ico",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1589,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/design-01.jpg",
       "AssetKind": "All",
@@ -1606,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\design-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-02.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-02.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/design-02.jpg",
       "AssetKind": "All",
@@ -1623,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\design-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-03.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-03.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/design-03.jpg",
       "AssetKind": "All",
@@ -1640,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\design-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-04.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\design-04.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/design-04.jpg",
       "AssetKind": "All",
@@ -1657,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\design-04.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/hero-image-01.jpg",
       "AssetKind": "All",
@@ -1674,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\hero-image-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-02.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesDesign\\hero-image-02.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesDesign/hero-image-02.jpg",
       "AssetKind": "All",
@@ -1691,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\imagesDesign\\hero-image-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg",
       "AssetKind": "All",
@@ -1708,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\3a7f3d8d-2303-4e0d-9149-3f329bb420dc_strawberry-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg",
       "AssetKind": "All",
@@ -1725,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\3aeac812-a431-4711-83b3-079816d8a7c1_lemon-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg",
       "AssetKind": "All",
@@ -1742,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\3e349fa2-4320-4d82-aa93-5c9acf7b9c96_lime-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg",
       "AssetKind": "All",
@@ -1759,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\4b518a1f-27a4-4ad6-8996-ce900469135b_blueberry-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg",
       "AssetKind": "All",
@@ -1776,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\7875657a-66ab-4c69-a1a9-a12011b5ea4f_pear-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg",
       "AssetKind": "All",
@@ -1793,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\8fa4535c-a692-4407-83f6-e74e4dcd903b_mango-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg",
       "AssetKind": "All",
@@ -1810,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\c8894c3b-9e69-4a34-97fd-3296ad428e49_apple-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "imagesProduct/dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg",
       "AssetKind": "All",
@@ -1827,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\imagesProduct\\dc918361-f7ae-4a6e-b35f-e49e79b6362c_lime-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\js\\site.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1844,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1861,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1878,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1895,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1912,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1929,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1946,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1963,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1980,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1997,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2014,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2031,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2048,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2065,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2082,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2099,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2116,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2133,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2150,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2167,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2184,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2201,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2218,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2235,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2252,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2269,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2286,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2303,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2320,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2337,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2354,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2371,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2388,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2405,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2422,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2439,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2456,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2473,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2490,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2507,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2524,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2541,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2558,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2575,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2592,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2609,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2626,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2643,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2660,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2677,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2694,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2711,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2728,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2745,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2762,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2779,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2796,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "MVC_Webshop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Elev\\source\\repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\siava\\Source\\Repos\\Lexicon_Project_Webshop_G10_G2\\MVC_Webshop\\wwwroot\\",
       "BasePath": "_content/MVC_Webshop",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
