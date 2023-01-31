@@ -18,4 +18,9 @@ public class ApplicationUser : IdentityUser
     public int? OrderId { get; set; }
     public string? RoleId { get; set; }
     public List<Order>? Orders { get; set; }
+
+    internal object Include()
+    {
+        throw new NotImplementedException();
+    }
 }

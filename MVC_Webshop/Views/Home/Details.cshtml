@@ -1,8 +1,49 @@
-﻿@model MVC_Webshop.Models.Product
+﻿@model MVC_Webshop.ViewModels.ProductUserViewModel
 
 @{
-    ViewData["Title"] = "Detaljer för vara";
+	ViewData["Title"] = "Detaljer för vara";
 }
+
+
+
+<!-- Product section-->
+<section class="py-5 product-details">
+	<div class="mb-4 container px-4 px-lg-5">
+		<a asp-action="Index" class="back-to-products">Visa alla produkter</a>
+	</div>
+	<div class="container px-4 px-lg-5 my-5">
+		<div class="row gx-4 gx-lg-5 align-items-center">
+			<div class="col-md-6">
+				<img class="card-img-top mb-5 mb-md-0" src="@Model.Product.ImageUrl" alt="@Model.Product.Name" />
+			</div>
+			<div class="col-md-6">
+				<h1 class="display-5 fw-bolder product-name">@Model.Product.Name</h1>
+				<div class="small mb-1 brand-name">@Model.Product.Brand</div>
+				<div class="fs-5 mb-5">
+					<span class="">@(Model.Product.Price) kr/st</span>
+				</div>
+				<p class="lead">@Model.Product.Description</p>
+				<div class="d-flex">
+					<form asp-controller="Items" asp-action="AddProductToCart" method="post">
+
+						<input class="form-control text-center me-3" id="inputQuantity" name="inputQuantity" type="number" value="1" style="max-width: 5rem" />
+                        <input type="hidden" value="@Model.User.CartId" name="cartId" />
+						<input type="hidden" value="@Model.Product.Id" name="prodId" />
+                        <button type="submit" class="btn btn-success flex-shrink-0">
+
+						<i class="bi-cart-fill me-1">
+						</i>
+						Köp Mig!
+                        </button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+						@*<a asp-controller="Items" asp-action="AddProductToCart" asp-route-id="@Model.Id" class="btn btn-success flex-shrink-0" type="button"></a>*@
+
+
 
 @*<div>
     <h4>Product</h4>
@@ -62,32 +103,3 @@
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
 
 </div>*@
-
-<!-- Product section-->
-<section class="py-5 product-details">
-    <div class="mb-4 container px-4 px-lg-5">
-        <a asp-action="Index" class="back-to-products">Visa alla produkter</a>
-    </div>
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6">
-                <img class="card-img-top mb-5 mb-md-0" src="@Model.ImageUrl" alt="@Model.Name" />
-            </div>
-            <div class="col-md-6">
-                <h1 class="display-5 fw-bolder product-name">@Model.Name</h1>
-                <div class="small mb-1 brand-name">@Model.Brand</div>
-                <div class="fs-5 mb-5">
-                    <span class="">@(Model.Price) kr/st</span>
-                </div>
-                <p class="lead">@Model.Description</p>
-                <div class="d-flex">
-                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                    <a asp-controller="Items" asp-action="AddProductToCart" asp-route-id="@Model.Id" class="btn btn-success flex-shrink-0" type="button">
-                        <i class="bi-cart-fill me-1"></i>
-                        Köp Mig!
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

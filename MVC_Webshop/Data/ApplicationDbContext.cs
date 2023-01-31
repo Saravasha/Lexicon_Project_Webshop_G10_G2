@@ -29,6 +29,7 @@ namespace MVC_Webshop.Data
         public DbSet<ApplicationUser> Users { get; set; } = default!;
 
 
+
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             base.OnModelCreating(modelbuilder);
@@ -180,7 +181,7 @@ namespace MVC_Webshop.Data
 			);
         }
 
-        public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
+        //public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
 
         //public DbSet<MVC_Webshop.ViewModels.CategoryCreateViewModel> CategoryCreateViewModel { get; set; }
 

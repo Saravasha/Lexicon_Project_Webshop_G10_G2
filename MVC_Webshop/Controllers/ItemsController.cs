@@ -20,21 +20,20 @@ namespace MVC_Webshop.Controllers
         }
 
 
-        // GET: User/Edit/5
-        public IActionResult AddProductToCart(string id)
-        {
-            
-                if (id == null || _context.Users == null)
-                {
-                    return NotFound();
-                }
+        //GET: User/Edit/5
 
-                var applicationUserViewModel = _context.Items.Include(id);
-                if (applicationUserViewModel == null)
-                {
-                    return NotFound();
-                }
-            }
+        // Lägga till Produkt som Item i Cart
+        [HttpPost]
+        public IActionResult AddProductToCart(int inputQuantity, int cartId, int prodId)
+        {
+            Item itemToAdd = new();
+
+            itemToAdd.ProductIdRef = prodId;
+            itemToAdd.Quantity = inputQuantity;
+            itemToAdd.CartId = cartId;
+            _context.Items.Add(itemToAdd);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Items
@@ -173,14 +172,14 @@ namespace MVC_Webshop.Controllers
             {
                 _context.Items.Remove(item);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ItemExists(int id)
         {
-          return _context.Items.Any(e => e.Id == id);
+            return _context.Items.Any(e => e.Id == id);
         }
     }
 }

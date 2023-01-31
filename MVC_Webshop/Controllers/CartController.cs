@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_Webshop.Data;
 using MVC_Webshop.Models;
+using MVC_Webshop.ViewModels;
 
 namespace MVC_Webshop.Controllers
 {
@@ -14,18 +17,42 @@ namespace MVC_Webshop.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public CartController(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public CartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
+
+
 
         // GET: Cart
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Carts.ToListAsync());
+            CartItemViewModel civm = new CartItemViewModel();
+            
+            Cart showUserCart = new Cart(); 
+            
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = _userManager.Users.FirstOrDefault(u => u.Id == userId);
+            // Inloggade usern
+            var itemsInCart = _context.Items.Where(t => t.CartId == user.CartId).ToList();
+
+            //var test = new ICollection<Product>();
+
+            List<Product> products = new List<Product>();
+
+            foreach(var prod in itemsInCart)
+            {
+                products.Add(_context.Products.Find(prod.Id));
+            }
+            //var getProductByItemRefId = _context.Products.
+
+            return View(products);
         }
 
-        // GET: Cart/Details/5
+        // GET: Ctesttestrt/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Carts == null)
