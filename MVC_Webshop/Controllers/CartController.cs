@@ -28,7 +28,7 @@ namespace MVC_Webshop.Controllers
 
 
         // GET: Cart
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             CartItemViewModel civm = new CartItemViewModel();
             
@@ -45,11 +45,22 @@ namespace MVC_Webshop.Controllers
 
             foreach(var prod in itemsInCart)
             {
-                products.Add(_context.Products.Find(prod.Id));
+                products.Add(_context.Products.Find(prod.ProductIdRef));
+            
             }
+
+            List<int> items = new List<int>();
+            foreach(var item in itemsInCart)
+            {
+                items.Add(item.Quantity);
+            }
+
+            civm.Products = products;
+            civm.UserId= user;
+            civm.Items = items;
             //var getProductByItemRefId = _context.Products.
 
-            return View(products);
+            return View(civm);
         }
 
         // GET: Ctesttestrt/Details/5

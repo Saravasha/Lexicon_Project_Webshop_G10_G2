@@ -1,4 +1,4 @@
-﻿@model List<Product>
+﻿@model CartItemViewModel
 
 @{
 	ViewData["Title"] = "Cart";
@@ -6,28 +6,59 @@
 
 <div class="container">
 
-<h1>@ViewBag.Title</h1>
-
-<div class="container">
+	<h1>@ViewBag.Title</h1>
 	<div class="row">
-		<b class="col">Id</b>
+		<b class="col">Name</b>
+		<b class="col">Price</b>
+		<b class="col">Short Description</b>
+		<b class="col">Quantity</b>
 	</div>
 	<hr />
-	@foreach (var item in Model)
-	{
-		<div class="row">
-			<div class="col">
-				<p class="btn btn-outline-primary">@item.Id</p>
-			</div>
-			<div class="col">
-				<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a>
-				<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-warning">Details</a>
-				<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-			</div>
+	<div>
+		@{
+			int loopIndex = 0;
+			foreach (var product in Model.Products)
+			{
+				<div class="row">
+					<p class="col">@product.Name</p>
+					<p class="col">@product.Price</p>
+					<p class="col">@product.ShortDescription</p>
+					<p class="col">@Model.Items[loopIndex]</p>
+				</div>
+				loopIndex++;
+			}
+		}
+	</div>
+	<div class="row">
+		<div class="col">
+			@{
+				double? totalSum = 0;
+				foreach (var product in Model.Products)
+				{
+					totalSum += product.Price;
+				}
+
+				<p>
+					@totalSum
+				</p>
+			}
+
 		</div>
-	}
+	</div>
+	<div class="row">
+		<div class="col">
+			<a asp-action="Edit" class="btn btn-outline-success">Gå till kassan</a>
+		</div>
+	</div>
 	<p class="mt-1">
 		<a asp-action="Create" class="btn btn-primary">Create New</a>
 	</p>
 </div>
-</div>
+
+
+
+@*<a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-outline-success">Edit</a>*@
+@*<a asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-warning">Details</a>
+			<a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>*@
+@*<div class="col">
+			</div>*@

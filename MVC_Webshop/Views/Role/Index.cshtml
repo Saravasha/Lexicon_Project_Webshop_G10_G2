@@ -2,8 +2,9 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="container">
 
-<h1>List ov Roles</h1>
+<h1>Roles</h1>
 
 <a asp-action="Create" class="btn btn-primary">Create a new Role</a>
 <a asp-action="AddUserToRole" class="btn btn-success">Add User to Role</a>
@@ -28,11 +29,13 @@
             <td>@role.Name</td>
             <td>
 @*                @if (role.Name != "User" && role.Name != "Admin")*@
-                {
+                @*{
+                }*@
                     <a asp-action="Delete" asp-route-id="@role.Id" class="btn btn-danger btn-sm">Delete Role</a>
-                }
             </td>
         </tr>
 
     }
 </table>
+
+</div>
