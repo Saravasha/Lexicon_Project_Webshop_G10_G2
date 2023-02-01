@@ -1,29 +1,29 @@
-[Person]
+[Person(Siavash)]
 Vi börjar med att introducera oss.
 
-[Person]
+[Person(Siavash)]
 Vi meddelar att vi tar emot frågor vid slutet av presentationen så skriv gärna ner på papper för senare.
 
-[Person]
+[Person(Alla)]
 Vi berättar om hur vi började göra med projektet, vilket var att skapa en git repo, ett mvc projekt och ett react projekt via remote.
 
-[Github_Project-Länk]
+[Github_Project-Länk(Siavash)]
 Vi visar vår Github Project Board
 
-[DrawIO-Länk]
+[DrawIO-Länk(Siavash)]
 Vi visar vår Databas modellering i .drawio
 
-[Utvecklingsmiljö]
+[Utvecklingsmiljö(Siavash = Dator, Mikael = Scen)]
 Vi går igenom våra Modeller, Controllers och Views
 
-[Utvecklingsmiljö]
+[Utvecklingsmiljö(Siavash = Scen, Mikael = )]
 Vi går igenom vår Identitykonfiguration.
 
-[WebApp]
+[WebApp(Den som vill)]
 Vi går igenom vår applikations funktionalitet.
 
-[Person]
+[Person(Alla)]
 (Vi kan berätta om hur det har varit att arbeta i en gruppskonstellation.)
 
-[Person]
+[Person(Siavash eller den som vill)]
 Vi tar emot frågor.
