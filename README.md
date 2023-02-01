@@ -1,4 +1,5 @@
-# Lexicon_Project_Webshop_G10_G2
+# Presentation av Projektarbetet
+
 Lexicon Projektarbete Grupp 2
 
-Presentation av Projektarbetet
+
